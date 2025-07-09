@@ -1,6 +1,14 @@
 import './App.css';
 
 function App() {
+  const handleScrollToNext = (e) => {
+    e.preventDefault();
+    const nextSection = document.getElementById('next-section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="App">
       <div className="header-section">
@@ -16,10 +24,12 @@ function App() {
           <br></br>
           <br></br>
 
-          <div className="cta-section">
-            <div className="cta-icon">→</div>
+          <a href="#next-section" className="cta-button" onClick={handleScrollToNext}>
+            <svg className="cta-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             <span className="cta-text">Start your journey</span>
-          </div>
+          </a>
         </div>
         <div className="image-content">
           <div className="banner-container">
@@ -29,6 +39,14 @@ function App() {
               className="banner"
             />
           </div>
+        </div>
+      </div>
+      
+      {/* Sección de ejemplo para scroll */}
+      <div id="next-section" className="next-section">
+        <div className="next-content">
+          <h2>Welcome to the Future</h2>
+          <p>This is the next section where users will land after clicking the button.</p>
         </div>
       </div>
     </div>
