@@ -91,7 +91,7 @@ body {
   height: 100%;
   object-fit: cover;
   border: none;
-  border-radius: 0;
+  border-radius: 0 0 0 20px;
   box-shadow: none;
   margin: 0;
 }
@@ -103,29 +103,74 @@ body {
 }
 
 .next-section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  padding: 60px 20px;
 }
 
 .next-content {
   text-align: center;
-  padding: 40px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .next-content h2 {
   font-size: 2.5rem;
   color: #2c2c2c;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 300;
 }
 
-.next-content p {
+.explanation-text {
   font-size: 1.2rem;
   color: #666;
   line-height: 1.6;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+  filter: grayscale(0.3);
+  transition: all 0.3s ease;
+}
+
+.feature-title {
+  font-size: 1.4rem;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  max-width: 250px;
 }
 
 /* Tablet styles */
@@ -146,8 +191,16 @@ body {
     font-size: 2.2rem;
   }
   
-  .next-content p {
+  .explanation-text {
     font-size: 1.1rem;
+  }
+  
+  .features-grid {
+    gap: 30px;
+  }
+  
+  .feature-title {
+    font-size: 1.3rem;
   }
 }
 
@@ -196,8 +249,28 @@ body {
     font-size: 2rem;
   }
   
-  .next-content p {
+  .explanation-text {
     font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .feature-title {
+    font-size: 1.2rem;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+    max-width: 300px;
   }
 }
 
@@ -234,8 +307,22 @@ body {
     font-size: 1.8rem;
   }
   
-  .next-content p {
+  .explanation-text {
     font-size: 0.9rem;
+    margin-bottom: 35px;
+  }
+  
+  .feature-icon {
+    font-size: 2.2rem;
+    color: #333;
+  }
+  
+  .feature-title {
+    font-size: 1.1rem;
+  }
+  
+  .feature-description {
+    font-size: 0.85rem;
   }
 }
 
@@ -259,5 +346,23 @@ body {
   
   .next-content h2 {
     font-size: 1.5rem;
+  }
+  
+  .explanation-text {
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .feature-title {
+    font-size: 1rem;
+  }
+  
+  .feature-description {
+    font-size: 0.8rem;
   }
 }
