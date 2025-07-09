@@ -1,24 +1,22 @@
-import React, { useState } from 'react';
-import './InvestmentCalculator.css'; // Will reuse or adapt general calculator styles
+import React, { useState, useEffect } from 'react';
+import './InvestmentCalculator.css';
 
 const InvestmentCalculator = () => {
-  const [investmentAmount, setInvestmentAmount] = useState('');
-  const [selectedTeslaModel, setSelectedTeslaModel] = useState('model3'); // Default model
+  const [investmentAmount, setInvestmentAmount] = useState(5000); // Default investment
+  const [selectedTeslaModel, setSelectedTeslaModel] = useState('model3');
   const [estimatedGrossReturn, setEstimatedGrossReturn] = useState(null);
   const [estimatedNetReturn, setEstimatedNetReturn] = useState(null);
 
   const TESLA_MODELS_COST = {
     model3: { name: 'Tesla Model 3', cost: 40000 },
     modelY: { name: 'Tesla Model Y', cost: 45000 },
-    modelS: { name: 'Tesla Model S', cost: 75000 }, // Example
-    modelX: { name: 'Tesla Model X', cost: 85000 }, // Example
+    modelS: { name: 'Tesla Model S', cost: 75000 },
+    modelX: { name: 'Tesla Model X', cost: 85000 },
   };
-  // This is a highly simplified placeholder. Realistically, this would be a complex calculation.
-  const AVG_MONTHLY_PROFIT_PER_FULL_VEHICLE_SHARE = 300; // Example: €300 profit per month for owning 1 full car
-  const CARFLI_RETENTION_RATE = 0.20; // 20%
+  const AVG_MONTHLY_PROFIT_PER_FULL_VEHICLE_SHARE = 300;
+  const CARFLI_RETENTION_RATE = 0.20;
 
-  const handleCalculateReturn = (e) => {
-    e.preventDefault();
+  useEffect(() => {
     const amount = parseFloat(investmentAmount);
     const modelData = TESLA_MODELS_COST[selectedTeslaModel];
 
@@ -28,35 +26,35 @@ const InvestmentCalculator = () => {
       return;
     }
 
-    // Calculate the fraction of a vehicle the investment represents
     const vehicleFraction = amount / modelData.cost;
-
-    // Estimate gross return based on this fraction
     const grossReturn = vehicleFraction * AVG_MONTHLY_PROFIT_PER_FULL_VEHICLE_SHARE;
     const netReturn = grossReturn * (1 - CARFLI_RETENTION_RATE);
 
     setEstimatedGrossReturn(grossReturn.toFixed(2));
     setEstimatedNetReturn(netReturn.toFixed(2));
-  };
+  }, [investmentAmount, selectedTeslaModel]);
+
 
   return (
-    <div className="calculator-section investment-calculator"> {/* Note: Reusing .calculator-section from driver calc CSS for base styling */}
+    <div className="calculator-section investment-calculator">
       <div className="calculator-content">
         <h2>Investment Return Estimator</h2>
         <p className="calculator-description">
           Estimate your potential monthly return by investing in Carfli's Tesla fleet.
         </p>
-        <form onSubmit={handleCalculateReturn} className="calculator-form">
+        <div className="calculator-form"> {/* No form submission, live update */}
           <div className="form-group">
-            <label htmlFor="investmentAmount">Amount to invest (€):</label>
+            <label htmlFor="investmentAmount">
+              Amount to invest: <span className="slider-value-display">€{parseFloat(investmentAmount).toLocaleString()}</span>
+            </label>
             <input
-              type="number"
+              type="range"
               id="investmentAmount"
               value={investmentAmount}
               onChange={(e) => setInvestmentAmount(e.target.value)}
-              placeholder="e.g., 5000"
-              min="100" // Example minimum investment
-              required
+              min="500" // Min investment
+              max="50000" // Max investment for slider
+              step="100" // Step amount
             />
           </div>
           <div className="form-group">
@@ -65,17 +63,16 @@ const InvestmentCalculator = () => {
               id="teslaModel"
               value={selectedTeslaModel}
               onChange={(e) => setSelectedTeslaModel(e.target.value)}
-              required
             >
               {Object.entries(TESLA_MODELS_COST).map(([key, model]) => (
                 <option key={key} value={key}>
-                  {model.name} (Base cost: €{model.cost.toLocaleString()})
+                  {model.name} (Base: €{model.cost.toLocaleString()})
                 </option>
               ))}
             </select>
           </div>
-          <button type="submit" className="calculate-button">Calculate</button>
-        </form>
+          {/* Calculate button removed as it's live */}
+        </div>
 
         {estimatedGrossReturn !== null && estimatedNetReturn !== null && (
           <div className="results-output">

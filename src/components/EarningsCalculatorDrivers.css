@@ -1,138 +1,169 @@
-/* General Calculator Section Styles (can be shared if another calculator is similar) */
+/* General Calculator Section Styles */
 .calculator-section {
   padding: 60px 20px;
-  background-color: #ffffff; /* Or a light contrasting color like #f0f4f8 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #F2F2F2;
 }
 
-.calculator-content {
-  max-width: 650px;
+.driver-calculator .calculator-content,
+.investment-calculator .calculator-content {
+  max-width: 600px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 30px 35px;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
+  margin: 0 auto;
 }
 
 .calculator-content h2 {
-  font-size: 2.2rem;
-  color: #2c2c2c;
+  font-size: 2rem;
+  color: #000000;
   margin-bottom: 15px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 300;
 }
 
 .calculator-description {
   font-size: 1rem;
-  color: #666;
+  color: #555555;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .calculator-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px; /* Increased gap for sliders */
 }
 
 .calculator-form .form-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align labels to the left */
+  align-items: flex-start;
   text-align: left;
 }
 
 .calculator-form label {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #333333;
+  margin-bottom: 8px; /* Increased margin for slider */
   font-weight: 500;
 }
 
-.calculator-form input[type="number"],
-.calculator-form select { /* Added select for potential future use or other calculators */
+.calculator-form label .slider-value-display { /* Style for the span showing slider value */
+  font-weight: 600;
+  color: #000000;
+  margin-left: 8px;
+  background-color: #F2F2F2;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* Estilos para input type="range" (slider) */
+.calculator-form input[type="range"] {
   width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  box-sizing: border-box; /* Important for width 100% */
-  transition: border-color 0.3s ease;
+  /* margin-top: 5px; No margin top needed if label has more bottom margin */
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px; /* Altura del track un poco mayor */
+  background: #DDDDDD;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.calculator-form input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px; /* Tamaño del thumb un poco mayor */
+  height: 22px;
+  background: #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra más definida */
+}
+
+.calculator-form input[type="range"]::-moz-range-thumb {
+  width: 20px; /* Ajustar para Firefox */
+  height: 20px;
+  background: #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Removed .slider-value class as value is now displayed in label's span */
+
+.calculator-form input[type="number"],
+.calculator-form select {
+  border-color: #DDDDDD;
 }
 
 .calculator-form input[type="number"]:focus,
 .calculator-form select:focus {
-  outline: none;
-  border-color: #007bff; /* Highlight focus */
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  border-color: #333333;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
 }
 
+/* Calculate button is removed as per JS logic, but styles kept if re-added */
 .calculate-button {
   padding: 12px 25px;
-  background-color: #007bff; /* Primary button color */
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;
   border: none;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px; /* Space above button */
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 15px;
 }
 
 .calculate-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #333333;
 }
 
 .results-output {
-  margin-top: 30px;
-  background-color: #f9f9f9;
+  margin-top: 30px; /* Increased margin top */
+  background-color: #F2F2F2;
   padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #e7e7e7;
+  border-radius: 6px;
   text-align: left;
 }
 
 .results-output h3 {
-  font-size: 1.4rem;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 12px;
   font-weight: 500;
 }
 
 .results-output p {
   font-size: 1rem;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 10px;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
 
 .results-output p strong {
-  color: #333;
+  color: #000000;
 }
 
 .results-note {
-  font-size: 0.85rem !important; /* Ensure specificity */
-  color: #777 !important;
-  margin-top: 15px !important;
+  font-size: 0.8rem !important;
+  color: #555555 !important;
+  margin-top: 12px !important;
   font-style: italic;
-}
-
-/* Specific to Driver Calculator if needed, or can be kept general */
-.driver-calculator .calculator-content {
-  /* border-top: 5px solid #007bff; */ /* Example accent for driver calc */
 }
 
 
 /* Tablet styles */
 @media (max-width: 1024px) {
   .calculator-content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -141,46 +172,33 @@
   .calculator-section {
     padding: 40px 15px;
   }
-  .calculator-content {
-    padding: 25px;
+  .driver-calculator .calculator-content,
+  .investment-calculator .calculator-content {
+    padding: 25px 20px;
   }
   .calculator-content h2 {
-    font-size: 1.8rem;
-  }
-  .calculator-description {
-    font-size: 0.95rem;
-  }
-  .calculate-button {
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
   .results-output h3 {
-    font-size: 1.3rem;
-  }
-  .results-output p {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 }
 
 /* Small mobile styles */
 @media (max-width: 480px) {
   .calculator-content h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
-  .calculator-form input[type="number"],
-  .calculator-form select {
-    padding: 10px 12px;
-    font-size: 0.95rem;
+  .calculator-form label { /* Ensure label text doesn't get too small */
+    font-size: 0.85rem;
   }
+  .calculator-form label .slider-value-display {
+    font-size: 0.8rem;
+  }
+  /* Calculate button styles for mobile if it were present */
+  /*
   .calculate-button {
-    padding: 10px 20px;
+    font-size: 1rem;
   }
-  .results-output {
-    padding: 15px;
-  }
-  .results-output h3 {
-    font-size: 1.2rem;
-  }
-   .results-output p {
-    font-size: 0.9rem;
-  }
+  */
 }

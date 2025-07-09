@@ -2,39 +2,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9f9f9; /* Slightly off-white background */
-  padding: 70px 20px; /* Increased padding */
+  background-color: #FFFFFF; /* Fondo blanco para esta sección */
+  padding: 60px 20px; /* Ajustar padding según sea necesario */
 }
 
 .how-it-works-content {
   text-align: center;
-  max-width: 1200px;
+  max-width: 1100px; /* Coincidir con max-width general si se usa */
   width: 100%;
 }
 
 .how-it-works-content h2 {
-  font-size: 2.6rem; /* Adjusted size */
-  color: #2c2c2c;
-  margin-bottom: 25px; /* Adjusted margin */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 300;
+  font-size: 2.2rem; /* Usar tamaños definidos en index.css o ajustarlos */
+  color: #000000; /* Negro para títulos */
+  margin-bottom: 20px;
+  font-weight: 300; /* Mantener consistencia */
 }
 
-.explanation-text { /* This class is also used in WhyCarfli, ensure consistency or make specific if needed */
-  font-size: 1.15rem; /* Adjusted size */
-  color: #555; /* Darker gray for better readability */
-  line-height: 1.65;
-  margin-bottom: 50px;
-  max-width: 750px;
+.explanation-text {
+  font-size: 1.1rem;
+  color: #555555; /* Gris para texto explicativo */
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .steps-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly smaller minmax */
-  gap: 35px; /* Increased gap */
-  margin-top: 40px; /* Increased margin */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
   align-items: stretch;
 }
 
@@ -43,88 +42,75 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 25px 20px; /* Increased padding */
-  background: #ffffff; /* White background for items */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.07); /* Softer, more modern shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 25px;
+  background: #F2F2F2; /* Fondo gris claro para los items, contrastando con el blanco de la sección */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra muy sutil */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   height: 100%;
   justify-content: flex-start;
 }
 
 .step-item:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .step-icon {
-  font-size: 2.8rem; /* Slightly larger icons */
-  margin-bottom: 20px;
-  color: #333; /* Maintained color */
-  /* filter: grayscale(0.3); Removed grayscale for more vibrant icons */
-  transition: color 0.3s ease;
-  height: 55px;
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  color: #333333; /* Iconos en gris oscuro */
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.step-item:hover .step-icon {
-  color: #007bff; /* Example hover color - can be theme color */
-}
+/* .step-item:hover .step-icon { color: #000000; } /* Opcional: oscurecer icono en hover */
 
 .step-title {
-  font-size: 1.35rem; /* Slightly larger title */
-  color: #2c2c2c;
-  margin-bottom: 12px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-weight: 500; /* Medium weight */
-  min-height: 40px; /* Ensure titles have space, adjust as needed */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 1.25rem;
+  color: #000000; /* Títulos de paso en negro */
+  margin-bottom: 10px;
+  font-weight: 500; /* Un poco más de peso para los títulos de paso */
+  min-height: auto; /* Ajustar si es necesario para alinear títulos */
 }
 
 .step-description {
-  font-size: 0.95rem; /* Adjusted size */
-  color: #666;
-  line-height: 1.55;
-  max-width: 250px; /* Adjusted max-width */
-  margin-bottom: 0; /* Removed bottom margin as items are self-contained */
+  font-size: 0.95rem;
+  color: #333333; /* Texto de descripción en gris oscuro */
+  line-height: 1.5;
+  max-width: 100%; /* Ocupar el espacio disponible */
   flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 /* Future Vision Section */
 .future-vision {
-  margin-top: 60px;
-  padding: 30px;
-  background-color: #e9ecef; /* Light grey background */
-  border-radius: 8px;
+  margin-top: 50px;
+  padding: 25px;
+  background-color: transparent; /* Fondo transparente para integrarse con el blanco de la sección */
+  border-top: 1px solid #F2F2F2; /* Un borde sutil arriba */
   text-align: center;
 }
 
 .future-icon {
-  font-size: 3rem;
-  color: #007bff; /* Example theme color */
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #333333;
+  margin-bottom: 12px;
 }
 
 .future-vision h4 {
-  font-size: 1.5rem;
-  color: #2c2c2c;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 8px;
   font-weight: 500;
 }
 
 .future-vision p {
   font-size: 1rem;
-  color: #555;
+  color: #555555;
   line-height: 1.6;
-  max-width: 650px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -132,92 +118,41 @@
 /* Tablet styles */
 @media (max-width: 1024px) {
   .how-it-works-content h2 {
-    font-size: 2.3rem;
+    font-size: 2rem; /* Ajustado de h2 base */
   }
   .explanation-text {
-    font-size: 1.1rem;
-  }
-  .steps-grid {
-    gap: 25px;
+    font-size: 1.05rem;
   }
   .step-title {
-    font-size: 1.25rem;
-  }
-  .future-vision h4 {
-    font-size: 1.3rem;
-  }
-  .future-vision p {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
   }
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
   .how-it-works-section {
-    padding: 50px 15px;
-  }
-  .how-it-works-content h2 {
-    font-size: 2.1rem;
-  }
-  .explanation-text {
-    font-size: 1rem;
-    margin-bottom: 35px;
+    padding: 40px 15px;
   }
   .steps-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
   .step-icon {
-    font-size: 2.5rem;
-    height: 50px;
-  }
-  .step-title {
-    font-size: 1.2rem;
-    min-height: auto; /* Allow height to adjust on mobile */
-  }
-  .step-description {
-    font-size: 0.9rem;
-    max-width: 90%; /* Allow more width on mobile */
-  }
-  .future-vision {
-    margin-top: 40px;
-    padding: 20px;
-  }
-  .future-icon {
-    font-size: 2.5rem;
-  }
-  .future-vision h4 {
-    font-size: 1.2rem;
-  }
-  .future-vision p {
-    font-size: 0.9rem;
-  }
-}
-
-/* Small mobile styles */
-@media (max-width: 480px) {
-  .how-it-works-content h2 {
-    font-size: 1.9rem;
-  }
-  .explanation-text {
-    font-size: 0.95rem;
-  }
-  .step-icon {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   .step-title {
     font-size: 1.1rem;
   }
   .step-description {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+  }
+  .future-vision {
+    margin-top: 30px;
+    padding: 20px 10px; /* Menos padding en móvil */
   }
   .future-icon {
     font-size: 2.2rem;
   }
   .future-vision h4 {
-    font-size: 1.1rem;
-  }
-  .future-vision p {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
 }

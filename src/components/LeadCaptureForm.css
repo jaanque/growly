@@ -1,71 +1,68 @@
 .lead-capture-section {
-  padding: 70px 20px;
-  background-color: #e9ecef; /* Light gray background for contrast */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 60px 20px;
+  background-color: #FFFFFF; /* Fondo blanco para esta sección, contrastando con el body #F2F2F2 */
 }
 
 .lead-capture-content {
-  max-width: 700px;
+  max-width: 700px; /* Mantener un ancho razonable para el formulario */
   width: 100%;
-  background-color: #ffffff;
-  padding: 35px 40px;
-  border-radius: 10px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF; /* Asegurar que el contenido del formulario sea blanco */
+  padding: 30px 35px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Sombra sutil */
   text-align: center;
+  margin: 0 auto; /* Centrar el contenido */
 }
 
 .lead-capture-content h2 {
-  font-size: 2.4rem;
-  color: #2c2c2c;
+  font-size: 2.2rem; /* h2 base */
+  color: #000000;
   margin-bottom: 15px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 300;
 }
 
 .lead-capture-description {
-  font-size: 1.05rem;
-  color: #666;
+  font-size: 1rem;
+  color: #555555;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .tabs-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #DDDDDD; /* Borde gris claro */
 }
 
 .tab-button {
-  padding: 12px 20px;
-  font-size: 1rem;
+  padding: 10px 18px; /* Ajustar padding */
+  font-size: 0.95rem; /* Ajustar tamaño de fuente */
   font-weight: 500;
-  color: #555;
+  color: #555555; /* Color de tab inactivo */
   background-color: transparent;
   border: none;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent; /* Borde inferior transparente */
   cursor: pointer;
-  transition: color 0.3s ease, border-bottom-color 0.3s ease;
-  margin: 0 5px;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  margin: 0 3px; /* Reducir margen */
   position: relative;
-  top: 1px; /* Align with container border */
+  top: 1px;
 }
 
 .tab-button.active {
-  color: #007bff; /* Active tab color */
-  border-bottom-color: #007bff;
+  color: #000000; /* Tab activo en negro */
+  border-bottom-color: #000000; /* Borde inferior negro */
 }
 
 .tab-button:hover:not(.active) {
-  color: #0056b3;
+  color: #000000; /* Hover en negro para tabs inactivos */
 }
 
 .lead-form {
   display: flex;
   flex-direction: column;
-  gap: 18px; /* Gap between form groups */
+  gap: 15px;
 }
 
 .lead-form .form-group {
@@ -77,97 +74,89 @@
 
 .lead-form label {
   font-size: 0.9rem;
-  color: #444;
-  margin-bottom: 7px;
+  color: #333333;
+  margin-bottom: 5px;
   font-weight: 500;
 }
 
+/* Inputs y textareas heredan de index.css, aquí solo ajustes específicos si son necesarios */
 .lead-form input[type="text"],
 .lead-form input[type="email"] {
-  width: 100%;
-  padding: 10px 14px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
+  /* Hereda la mayoría de los estilos de index.css */
+  border-color: #DDDDDD; /* Asegurar borde gris claro */
 }
 
 .lead-form input[type="text"]:focus,
 .lead-form input[type="email"]:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  border-color: #333333;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.05); /* Sombra más sutil en focus */
 }
 
 .form-group.privacy-consent {
   flex-direction: row;
   align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 8px; /* Ajustar gap */
+  margin-top: 8px;
 }
 
 .form-group.privacy-consent input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
+  width: 16px; /* Ajustar tamaño de checkbox */
+  height: 16px;
+  accent-color: #000000; /* Color del checkmark (si el navegador lo soporta) */
 }
 
 .form-group.privacy-consent label {
-  font-size: 0.85rem;
-  color: #555;
+  font-size: 0.8rem; /* Más pequeño */
+  color: #555555;
   font-weight: 400;
-  margin-bottom: 0; /* Reset margin */
+  margin-bottom: 0;
 }
 
 .form-group.privacy-consent label a {
-  color: #007bff;
-  text-decoration: none;
+  color: #000000; /* Enlace en negro */
 }
 .form-group.privacy-consent label a:hover {
-  text-decoration: underline;
+  color: #333333; /* Oscurecer al hacer hover */
 }
 
 .submit-button {
   padding: 12px 25px;
-  background-color: #28a745; /* Green for submit, or use primary color */
-  color: white;
+  background-color: #000000; /* Botón de envío negro */
+  color: #FFFFFF;
   border: none;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1rem; /* Ajustar tamaño */
   font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 15px;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 12px; /* Ajustar margen */
 }
 
 .submit-button:hover {
-  background-color: #218838; /* Darker green on hover */
+  background-color: #333333;
 }
 
 .submission-message {
-  margin-top: 20px;
-  font-size: 0.95rem;
-  color: #155724; /* Success message color */
-  background-color: #d4edda; /* Success message background */
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #c3e6cb;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #333333; /* Color de mensaje de éxito */
+  background-color: #F2F2F2; /* Fondo gris claro para mensaje */
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD; /* Borde gris claro */
 }
 
 /* Tablet styles */
 @media (max-width: 768px) {
   .lead-capture-content {
-    padding: 30px 25px;
+    padding: 25px 20px;
   }
   .lead-capture-content h2 {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
   .tab-button {
-    padding: 10px 15px;
-    font-size: 0.95rem;
+    padding: 10px 12px; /* Ajustar padding de tabs */
+    font-size: 0.9rem;
   }
 }
 
@@ -177,30 +166,22 @@
     padding: 40px 15px;
   }
   .lead-capture-content {
-    padding: 25px 20px;
+    padding: 20px 15px;
   }
   .lead-capture-content h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .lead-capture-description {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   .tabs-container {
-    flex-wrap: wrap; /* Allow tabs to wrap on small screens */
+    flex-wrap: wrap;
   }
   .tab-button {
-    font-size: 0.9rem;
-    padding: 10px;
-    margin: 3px;
-    flex-grow: 1; /* Allow tabs to take up space */
-    min-width: 120px; /* Minimum width for wrapped tabs */
-  }
-  .lead-form input[type="text"],
-  .lead-form input[type="email"] {
-    font-size: 0.9rem;
-    padding: 9px 12px;
-  }
-  .submit-button {
-    font-size: 1rem;
+    font-size: 0.85rem;
+    padding: 8px 10px;
+    margin: 2px;
+    flex-grow: 1;
+    min-width: 100px;
   }
 }
