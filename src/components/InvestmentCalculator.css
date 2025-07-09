@@ -1,0 +1,25 @@
+/* Styles for InvestmentCalculator - can leverage general .calculator-section styles */
+
+/* If specific styles are needed for .investment-calculator beyond .calculator-section */
+.investment-calculator .calculator-content {
+  /* Example: Add a different top border or accent if desired */
+  /* border-top: 5px solid #28a745; */ /* Green accent for investment */
+}
+
+/* Ensure dropdowns (select elements) look consistent with inputs */
+.investment-calculator .calculator-form select {
+  /* Styles are inherited from .calculator-form select in EarningsCalculatorDrivers.css */
+  /* Add any overrides or specific select styling here if necessary */
+  appearance: none; /* Basic reset for custom arrow later if desired */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%208l5%205%205-5z%22%20fill%3D%22%23555%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px; /* Make space for the arrow */
+}
+
+/* Further specific styling for the investment calculator can be added below */
+/* For example, if the results output needs a different layout or emphasis */
+.investment-calculator .results-output {
+  /* background-color: #e6f7ff; */ /* Light blue tint for investment results */
+}

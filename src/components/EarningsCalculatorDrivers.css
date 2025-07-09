@@ -1,0 +1,186 @@
+/* General Calculator Section Styles (can be shared if another calculator is similar) */
+.calculator-section {
+  padding: 60px 20px;
+  background-color: #ffffff; /* Or a light contrasting color like #f0f4f8 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-content {
+  max-width: 650px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.calculator-content h2 {
+  font-size: 2.2rem;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 300;
+}
+
+.calculator-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calculator-form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align labels to the left */
+  text-align: left;
+}
+
+.calculator-form label {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.calculator-form input[type="number"],
+.calculator-form select { /* Added select for potential future use or other calculators */
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box; /* Important for width 100% */
+  transition: border-color 0.3s ease;
+}
+
+.calculator-form input[type="number"]:focus,
+.calculator-form select:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight focus */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.calculate-button {
+  padding: 12px 25px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Space above button */
+}
+
+.calculate-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.results-output {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e7e7e7;
+  text-align: left;
+}
+
+.results-output h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.results-output p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.results-output p strong {
+  color: #333;
+}
+
+.results-note {
+  font-size: 0.85rem !important; /* Ensure specificity */
+  color: #777 !important;
+  margin-top: 15px !important;
+  font-style: italic;
+}
+
+/* Specific to Driver Calculator if needed, or can be kept general */
+.driver-calculator .calculator-content {
+  /* border-top: 5px solid #007bff; */ /* Example accent for driver calc */
+}
+
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .calculator-content h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .calculator-section {
+    padding: 40px 15px;
+  }
+  .calculator-content {
+    padding: 25px;
+  }
+  .calculator-content h2 {
+    font-size: 1.8rem;
+  }
+  .calculator-description {
+    font-size: 0.95rem;
+  }
+  .calculate-button {
+    font-size: 1rem;
+  }
+  .results-output h3 {
+    font-size: 1.3rem;
+  }
+  .results-output p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .calculator-content h2 {
+    font-size: 1.6rem;
+  }
+  .calculator-form input[type="number"],
+  .calculator-form select {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+  .calculate-button {
+    padding: 10px 20px;
+  }
+  .results-output {
+    padding: 15px;
+  }
+  .results-output h3 {
+    font-size: 1.2rem;
+  }
+   .results-output p {
+    font-size: 0.9rem;
+  }
+}

@@ -2,26 +2,30 @@ import React, { useState } from 'react';
 import './FAQ.css';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-const faqData = [
+const faqDataNew = [
   {
-    question: "How are earnings distributed?",
-    answer: "Earnings are distributed proportionally based on your co-ownership stake in the vehicle fleet. The more you invest, the greater your share of the profits generated from rides."
+    question: "How does the investment work?",
+    answer: "You invest in a share of a Carfli vehicle or the fleet. As these vehicles generate revenue from rides, you receive a proportional share of the profits after operational costs and Carfli's commission. It's like owning a fraction of a taxi that drives itself (soon!)."
   },
   {
-    question: "How safe are the autonomous vehicles?",
-    answer: "Our autonomous vehicles are equipped with state-of-the-art sensor suites, redundant safety systems, and advanced AI algorithms. They undergo rigorous testing and adhere to the highest industry safety standards to ensure passenger and public safety."
+    question: "When will I receive my profits?",
+    answer: "Profits are typically calculated and distributed on a monthly basis. You'll have access to a dashboard to track your vehicle's performance and your earnings."
   },
   {
-    question: "When will the service be available in my city?",
-    answer: "Carfli is actively working on expanding its services. We prioritize cities with a forward-thinking approach to transportation and a clear regulatory framework. Sign up for our newsletter to receive the latest updates on our expansion and be notified when we launch near you."
+    question: "What happens if a car gets damaged?",
+    answer: "All Carfli vehicles are comprehensively insured. In case of damage, insurance covers the repairs. We also maintain a repair fund from a small percentage of earnings to cover minor incidents or deductibles, minimizing impact on investor returns."
   },
   {
-    question: "What makes Carfli different from other ride-sharing services?",
-    answer: "Carfli uniquely combines autonomous vehicle technology with a co-ownership model. This means not only do you get to experience the future of transport, but you can also invest and earn from it. Our focus is on sustainability, accessibility, and community-driven growth."
+    question: "What commissions does Carfli charge?",
+    answer: "Carfli charges a service commission on ride fares and a management fee on investment returns. For drivers, our commission is significantly lower than traditional ride-sharing. For investors, we retain a percentage of the gross profit for fleet management, technology development, and operational overhead. Specific rates are detailed in your respective agreement."
   },
   {
-    question: "Can I choose the specific car I co-own?",
-    answer: "While you invest in the overall fleet, specific vehicle assignment for co-ownership is managed by Carfli to optimize operational efficiency and earnings distribution. However, all vehicles in the fleet meet our high standards of quality and technology."
+    question: "When will you have fully autonomous driving?",
+    answer: "We are launching with advanced semi-autonomous Tesla vehicles and are actively developing and integrating full Level 4/5 autonomous driving technology. We project to roll out fully autonomous capabilities in phases, city by city, as technology matures and regulations permit. Stay updated via our Roadmap!"
+  },
+  {
+    question: "How is vehicle safety and insurance handled?",
+    answer: "Safety is our top priority. Our vehicles are equipped with cutting-edge safety features. All vehicles are covered by comprehensive commercial auto insurance. For autonomous operations, we will secure specialized AV insurance policies that meet all regulatory requirements."
   }
 ];
 
@@ -46,9 +50,9 @@ const FAQ = () => {
 
   const toggleFAQ = index => {
     if (openFAQIndex === index) {
-      setOpenFAQIndex(null); // Close if already open
+      setOpenFAQIndex(null);
     } else {
-      setOpenFAQIndex(index); // Open the clicked FAQ
+      setOpenFAQIndex(index);
     }
   };
 
@@ -57,7 +61,7 @@ const FAQ = () => {
       <div className="faq-content">
         <h2>Frequently Asked Questions</h2>
         <div className="faq-list">
-          {faqData.map((faq, index) => (
+          {faqDataNew.map((faq, index) => ( // Using faqDataNew
             <FAQItem
               key={index}
               faq={faq}

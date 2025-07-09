@@ -25,12 +25,22 @@
 
 .header-title {
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: 300; /* Kept as 300 for a lighter feel, can be 400 for 'normal' */
   color: #2c2c2c;
-  line-height: 1.1;
+  line-height: 1.2; /* Adjusted for potentially longer title */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   text-align: center;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0; /* Adjusted margin */
+}
+
+.header-subtitle {
+  font-size: 1.3rem; /* New style for subtitle */
+  font-weight: 300;
+  color: #555; /* Slightly lighter than title */
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 0 25px 0; /* Spacing below subtitle */
+  max-width: 600px; /* Limit width for better readability */
 }
 
 .header-description {
@@ -38,40 +48,48 @@
   color: #666;
   line-height: 1.6;
   text-align: center;
-  margin: 0 0 30px 0;
-  max-width: 500px;
+  margin: 0 0 30px 0; /* Spacing below description */
+  max-width: 550px; /* Adjusted max-width */
 }
 
 .cta-button {
-  display: flex;
+  display: inline-flex; /* Changed to inline-flex for better centering with margin auto */
   align-items: center;
-  gap: 10px;
-  color: #333;
+  justify-content: center; /* Center content within button */
+  gap: 12px; /* Increased gap */
+  padding: 12px 28px; /* Adjusted padding for a slightly larger button */
+  background-color: #333; /* Added background color */
+  color: #fff; /* Text color white for contrast */
   text-decoration: none;
-  transition: color 0.3s ease;
+  border-radius: 8px; /* Rounded corners */
+  font-weight: 500; /* Medium font weight for CTA text */
+  transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
-  margin: 0;
+  margin-top: 10px; /* Added margin top for spacing */
+  border: 2px solid #333; /* Added border */
 }
 
 .cta-button:hover {
-  color: #000;
+  background-color: #000; /* Darker background on hover */
+  border-color: #000;
+  color: #fff;
 }
 
 .cta-button:hover .cta-icon {
-  stroke: #000;
+  stroke: #fff; /* Icon stroke color on hover */
 }
 
 .cta-icon {
-  width: 24px;
-  height: 24px;
-  stroke: #333;
+  width: 22px; /* Slightly smaller icon */
+  height: 22px;
+  stroke: #fff; /* Icon stroke color */
   transition: stroke 0.3s ease;
 }
 
 .cta-text {
-  font-size: 1.2rem;
-  color: inherit;
-  font-weight: 400;
+  font-size: 1.15rem; /* Slightly adjusted font size */
+  color: inherit; /* Inherits color from .cta-button (white) */
+  font-weight: 500; /* Ensure font weight is applied */
 }
 
 .banner {
@@ -95,13 +113,22 @@
   .header-title {
     font-size: 3rem;
   }
-
+  .header-subtitle {
+    font-size: 1.2rem;
+    max-width: 550px;
+  }
   .text-content {
     padding: 30px;
   }
-
   .header-description {
     font-size: 0.95rem;
+    max-width: 500px;
+  }
+  .cta-button {
+    padding: 10px 25px;
+  }
+  .cta-text {
+    font-size: 1.1rem;
   }
 }
 
@@ -111,36 +138,35 @@
     flex-direction: column;
     min-height: 100vh;
   }
-
   .text-content {
     padding: 30px 20px;
     min-height: 100vh;
-    width: 100%; /* Ensure text content takes full width on mobile */
-    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%;
+    box-sizing: border-box;
   }
-
   .image-content {
     display: none;
   }
-
   .header-title {
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
-
+  .header-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
   .header-description {
     font-size: 0.9rem;
     margin-bottom: 25px;
     max-width: 100%;
   }
-
   .cta-text {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Adjusted for mobile */
   }
-
   .cta-icon {
-    width: 20px;
-    height: 20px;
+    width: 18px; /* Adjusted for mobile */
+    height: 18px;
   }
 }
 
@@ -149,38 +175,40 @@
   .text-content {
     padding: 20px 15px;
   }
-
   .header-title {
-    font-size: 2rem;
+    font-size: 2.2rem; /* Adjusted */
     line-height: 1.2;
   }
-
+  .header-subtitle {
+    font-size: 1rem;
+  }
   .header-description {
     font-size: 0.85rem;
     line-height: 1.5;
   }
-
   .cta-text {
-    font-size: 1rem;
-  }
-
-  .cta-icon {
-    width: 18px;
-    height: 18px;
+    font-size: 0.95rem; /* Adjusted */
   }
 }
 
 /* Extra small screens */
 @media (max-width: 320px) {
   .header-title {
-    font-size: 1.8rem;
+    font-size: 1.9rem; /* Adjusted */
   }
-
+  .header-subtitle {
+    font-size: 0.9rem;
+  }
   .header-description {
     font-size: 0.8rem;
   }
-
   .text-content {
     padding: 15px 10px;
+  }
+  .cta-button {
+    padding: 8px 18px;
+  }
+  .cta-text {
+    font-size: 0.9rem;
   }
 }
