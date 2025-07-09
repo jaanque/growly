@@ -1,0 +1,182 @@
+.next-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.next-content {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.next-content h2 {
+  font-size: 2.5rem;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 300;
+}
+
+.explanation-text {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+  filter: grayscale(0.3);
+  transition: all 0.3s ease;
+}
+
+.feature-title {
+  font-size: 1.4rem;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  max-width: 250px;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .next-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .explanation-text {
+    font-size: 1.1rem;
+  }
+
+  .features-grid {
+    gap: 30px;
+  }
+
+  .feature-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .next-content {
+    padding: 30px 20px; /* Consistent padding for mobile */
+  }
+
+  .next-content h2 {
+    font-size: 2rem;
+  }
+
+  .explanation-text {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* Stack features on mobile */
+    gap: 30px;
+  }
+
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #333; /* Ensure icon color is set */
+  }
+
+  .feature-title {
+    font-size: 1.2rem;
+  }
+
+  .feature-description {
+    font-size: 0.9rem;
+    max-width: 300px; /* Adjust max-width for better readability */
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .next-content {
+    padding: 20px 15px;
+  }
+
+  .next-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .explanation-text {
+    font-size: 0.9rem;
+    margin-bottom: 35px;
+  }
+
+  .feature-icon {
+    font-size: 2.2rem;
+    color: #333; /* Ensure icon color is set */
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+  }
+
+  .feature-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+  .next-content {
+    padding: 15px 10px;
+  }
+
+  .next-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .explanation-text {
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    color: #333; /* Ensure icon color is set */
+  }
+
+  .feature-title {
+    font-size: 1rem;
+  }
+
+  .feature-description {
+    font-size: 0.8rem;
+  }
+}
