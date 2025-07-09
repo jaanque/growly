@@ -17,7 +17,7 @@ const WhatIsCarfli = () => {
               <FaCar />
             </div>
             <h3 className="feature-title">Self-Driving Cars</h3>
-            <p className="feature-description">Experience fully autonomous vehicles designed for the future of transportation</p>
+            <p className="feature-description">Experience fully autonomous vehicles designed for the future of transportation.</p>
           </div>
 
           <div className="feature-item">
@@ -25,7 +25,7 @@ const WhatIsCarfli = () => {
               <FaLightbulb />
             </div>
             <h3 className="feature-title">Invest in the Fleet</h3>
-            <p className="feature-description">Become a co-owner and help build the autonomous vehicle network</p>
+            <p className="feature-description">Become a co-owner and help build the autonomous vehicle network.</p>
           </div>
 
           <div className="feature-item">
@@ -33,7 +33,7 @@ const WhatIsCarfli = () => {
               <FaChartLine />
             </div>
             <h3 className="feature-title">Earn as the Fleet Moves</h3>
-            <p className="feature-description">Generate passive income as vehicles operate throughout the city</p>
+            <p className="feature-description">Generate passive income as vehicles operate throughout the city.</p>
           </div>
         </div>
       </div>

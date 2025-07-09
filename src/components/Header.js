@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { FaCar, FaLightbulb, FaChartLine, FaCoins, FaDollarSign, FaRoute, FaRocket, FaUsers, FaLeaf } from 'react-icons/fa'; // Import icons if needed, adjust as per actual usage in Header
+// Icons are not directly used for text in this component, so no changes to imports needed for translation.
 
 const Header = () => {
   const handleScrollToNext = (e) => {

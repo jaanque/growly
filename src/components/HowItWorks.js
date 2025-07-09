@@ -8,7 +8,7 @@ const HowItWorks = () => {
       <div className="how-it-works-content">
         <h2>How It Works?</h2>
         <p className="explanation-text">
-          Join the autonomous transport revolution in three simple steps
+          Join the autonomous transport revolution in three simple steps.
         </p>
 
         <div className="steps-grid">
@@ -18,7 +18,7 @@ const HowItWorks = () => {
             </div>
             <h3 className="step-title">Invest</h3>
             <p className="step-description">
-              Invest and gain co-ownership of cutting-edge autonomous vehicles
+              Invest and gain co-ownership of cutting-edge autonomous vehicles.
             </p>
             <a href="#" className="step-cta">
               <span className="step-cta-text">Start Investing</span>
@@ -31,7 +31,7 @@ const HowItWorks = () => {
             </div>
             <h3 className="step-title">Earn</h3>
             <p className="step-description">
-              Receive passive income while vehicles operate throughout the city
+              Receive passive income while vehicles operate throughout the city.
             </p>
             <a href="#" className="step-cta">
               <span className="step-cta-text">Be Part of the Future</span>
@@ -44,10 +44,10 @@ const HowItWorks = () => {
             </div>
             <h3 className="step-title">Ride</h3>
             <p className="step-description">
-              Enjoy driverless rides, cheaper and commission-free
+              Enjoy driverless rides, cheaper and commission-free.
             </p>
             <a href="#" className="step-cta">
-              <span className="step-cta-text">Start your journey</span>
+              <span className="step-cta-text">Start Your Journey</span>
             </a>
           </div>
         </div>

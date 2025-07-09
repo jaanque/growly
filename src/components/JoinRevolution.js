@@ -5,9 +5,9 @@ const JoinRevolution = () => {
   return (
     <div className="join-revolution-section">
       <div className="join-revolution-content">
-        <h2>Únete a la Revolución</h2>
+        <h2>Join the Revolution</h2>
         <p className="explanation-text">
-          Regístrate ahora y sé parte del futuro de la movilidad urbana
+          Register now and be part of the future of urban mobility.
         </p>
 
         <form className="registration-form">

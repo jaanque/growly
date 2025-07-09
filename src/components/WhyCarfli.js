@@ -6,9 +6,9 @@ const WhyCarfli = () => {
   return (
     <div className="why-carfli-section">
       <div className="why-carfli-content">
-        <h2>Por Qué Carfli</h2>
+        <h2>Why Carfli?</h2>
         <p className="explanation-text">
-          Principales beneficios que nos distinguen en el futuro de la movilidad
+          Key benefits that set us apart in the future of mobility.
         </p>
 
         <div className="features-grid">
@@ -17,7 +17,7 @@ const WhyCarfli = () => {
               <FaRocket />
             </div>
             <h3 className="feature-title">Innovative</h3>
-            <p className="feature-description">Conducirás el futuro de la movilidad con coches autónomos</p>
+            <p className="feature-description">You will drive the future of mobility with autonomous cars.</p>
           </div>
 
           <div className="feature-item">
@@ -25,7 +25,7 @@ const WhyCarfli = () => {
               <FaUsers />
             </div>
             <h3 className="feature-title">Accessible</h3>
-            <p className="feature-description">Inversión participativa sin comisiones ni intermediarios</p>
+            <p className="feature-description">Participatory investment without commissions or intermediaries.</p>
           </div>
 
           <div className="feature-item">
@@ -33,7 +33,7 @@ const WhyCarfli = () => {
               <FaLeaf />
             </div>
             <h3 className="feature-title">Sustainable</h3>
-            <p className="feature-description">Contribuye a un futuro más verde y eficiente con vehículos eléctricos autónomos</p>
+            <p className="feature-description">Contribute to a greener and more efficient future with autonomous electric vehicles.</p>
           </div>
         </div>
       </div>
