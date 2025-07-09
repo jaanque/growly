@@ -1,5 +1,5 @@
 import './App.css';
-import { FaCar, FaLightbulb, FaChartLine } from 'react-icons/fa';
+import { FaCar, FaLightbulb, FaChartLine, FaCoins, FaDollarSign, FaRoute } from 'react-icons/fa';
 
 function App() {
   const handleScrollToNext = (e) => {
@@ -74,6 +74,60 @@ function App() {
               </div>
               <h3 className="feature-title">Earn as the Fleet Moves</h3>
               <p className="feature-description">Generate passive income as vehicles operate throughout the city</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* How It Works section */}
+      <div className="how-it-works-section">
+        <div className="how-it-works-content">
+          <h2>How It Works?</h2>
+          <p className="explanation-text">
+            Join the autonomous transport revolution in three simple steps
+          </p>
+          
+          <div className="steps-grid">
+            <div className="step-item">
+              <div className="step-number">01</div>
+              <div className="step-icon">
+                <FaCoins />
+              </div>
+              <h3 className="step-title">Invest</h3>
+              <p className="step-description">
+                Invest and gain co-ownership of cutting-edge autonomous vehicles
+              </p>
+              <a href="#" className="step-cta">
+                <span className="step-cta-text">Start Investing</span>
+              </a>
+            </div>
+            
+            <div className="step-item">
+              <div className="step-number">02</div>
+              <div className="step-icon">
+                <FaDollarSign />
+              </div>
+              <h3 className="step-title">Earn</h3>
+              <p className="step-description">
+                Receive passive income while vehicles operate throughout the city
+              </p>
+              <a href="#" className="step-cta">
+                <span className="step-cta-text">Be Part of the Future</span>
+              </a>
+            </div>
+            
+            <div className="step-item">
+              <div className="step-number">03</div>
+              <div className="step-icon">
+                <FaRoute />
+              </div>
+              <h3 className="step-title">Ride</h3>
+              <p className="step-description">
+                Enjoy driverless rides, cheaper and commission-free
+              </p>
+              <a href="#" className="step-cta">
+                <span className="step-cta-text">Start your journey</span>
+              </a>
             </div>
           </div>
         </div>
