@@ -1,5 +1,5 @@
 import './App.css';
-import { FaCar, FaLightbulb, FaChartLine, FaCoins, FaDollarSign, FaRoute } from 'react-icons/fa';
+import { FaCar, FaLightbulb, FaChartLine, FaCoins, FaDollarSign, FaRoute, FaRocket, FaUsers, FaLeaf } from 'react-icons/fa';
 
 function App() {
   const handleScrollToNext = (e) => {
@@ -127,6 +127,85 @@ function App() {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      
+      {/* Por Qué Carfli section */}
+      <div className="why-carfli-section">
+        <div className="why-carfli-content">
+          <h2>Por Qué Carfli</h2>
+          <p className="explanation-text">
+            Principales beneficios que nos distinguen en el futuro de la movilidad
+          </p>
+          
+          <div className="features-grid">
+            <div className="feature-item">
+              <div className="feature-icon">
+                <FaRocket />
+              </div>
+              <h3 className="feature-title">Innovative</h3>
+              <p className="feature-description">Conducirás el futuro de la movilidad con coches autónomos</p>
+            </div>
+            
+            <div className="feature-item">
+              <div className="feature-icon">
+                <FaUsers />
+              </div>
+              <h3 className="feature-title">Accessible</h3>
+              <p className="feature-description">Inversión participativa sin comisiones ni intermediarios</p>
+            </div>
+            
+            <div className="feature-item">
+              <div className="feature-icon">
+                <FaLeaf />
+              </div>
+              <h3 className="feature-title">Sustainable</h3>
+              <p className="feature-description">Contribuye a un futuro más verde y eficiente con vehículos eléctricos autónomos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Únete a la Revolución section */}
+      <div className="join-revolution-section">
+        <div className="join-revolution-content">
+          <h2>Únete a la Revolución</h2>
+          <p className="explanation-text">
+            Regístrate ahora y sé parte del futuro de la movilidad urbana
+          </p>
+          
+          <form className="registration-form">
+            <div className="form-group">
+              <input 
+                type="text" 
+                placeholder="Name"
+                className="form-input"
+                required
+              />
+            </div>
+            
+            <div className="form-group">
+              <input 
+                type="email" 
+                placeholder="Email"
+                className="form-input"
+                required
+              />
+            </div>
+            
+            <div className="form-group checkbox-group">
+              <label className="checkbox-label">
+                <input type="checkbox" className="checkbox-input" />
+                <span className="checkbox-text">I'm interested in co-owning a car</span>
+              </label>
+            </div>
+            
+            <button type="submit" className="join-cta-button">
+              Join the Future Now
+            </button>
+          </form>
+          
+          <a href="#" className="learn-more-link">Learn More</a>
         </div>
       </div>
     </div>
