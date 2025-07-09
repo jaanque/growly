@@ -130,6 +130,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   margin-top: 40px;
+  align-items: stretch;
 }
 
 .step-item {
@@ -138,33 +139,12 @@ body {
   align-items: center;
   text-align: center;
   padding: 30px 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
   position: relative;
-}
-
-.step-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.step-number {
-  position: absolute;
-  top: -15px;
-  right: 20px;
-  background: #333;
-  color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 0.9rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  height: 100%;
+  justify-content: flex-start;
 }
 
 .step-icon {
@@ -173,6 +153,10 @@ body {
   color: #333;
   filter: grayscale(0.3);
   transition: all 0.3s ease;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .step-title {
@@ -181,6 +165,10 @@ body {
   margin-bottom: 15px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 400;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .step-description {
@@ -189,27 +177,40 @@ body {
   line-height: 1.5;
   max-width: 250px;
   margin-bottom: 25px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .step-cta {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  color: #333;
+  padding: 12px 24px;
+  background-color: #333;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
   cursor: pointer;
-  margin: 0;
+  margin-top: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .step-cta:hover {
-  color: #000;
+  background-color: #000;
+  color: white;
 }
 
 .step-cta-text {
   font-size: 1.1rem;
-  color: inherit;
-  font-weight: 400;
+  color: white;
+  font-weight: 500;
 }
 
 .next-section {
@@ -406,19 +407,34 @@ body {
   
   .step-icon {
     font-size: 2.5rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .step-title {
     font-size: 1.2rem;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .step-description {
     font-size: 0.9rem;
     max-width: 300px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
   .step-cta-text {
     font-size: 1rem;
+    color: white;
+    font-weight: 500;
   }
 }
 
@@ -479,18 +495,33 @@ body {
   
   .step-icon {
     font-size: 2.2rem;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .step-title {
     font-size: 1.1rem;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .step-description {
     font-size: 0.85rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
   .step-cta-text {
     font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
   }
 }
 
@@ -540,17 +571,32 @@ body {
   
   .step-icon {
     font-size: 2rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .step-title {
     font-size: 1rem;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .step-description {
     font-size: 0.8rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
   .step-cta-text {
     font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
   }
 }

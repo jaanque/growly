@@ -89,7 +89,6 @@ function App() {
           
           <div className="steps-grid">
             <div className="step-item">
-              <div className="step-number">01</div>
               <div className="step-icon">
                 <FaCoins />
               </div>
@@ -103,7 +102,6 @@ function App() {
             </div>
             
             <div className="step-item">
-              <div className="step-number">02</div>
               <div className="step-icon">
                 <FaDollarSign />
               </div>
@@ -117,7 +115,6 @@ function App() {
             </div>
             
             <div className="step-item">
-              <div className="step-number">03</div>
               <div className="step-icon">
                 <FaRoute />
               </div>
