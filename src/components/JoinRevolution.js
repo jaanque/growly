@@ -3,9 +3,9 @@ import './JoinRevolution.css';
 
 const JoinRevolution = () => {
   return (
-    <div className="join-revolution-section">
+    <div className="join-revolution-section" id="get-early-access-section"> {/* Added ID here */}
       <div className="join-revolution-content">
-        <h2>Join the Revolution</h2>
+        <h2>Get Early Access</h2> {/* Changed title */}
         <p className="explanation-text">
           Register now and be part of the future of urban mobility.
         </p>

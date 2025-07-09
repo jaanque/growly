@@ -1,13 +1,13 @@
 import React from 'react';
 import './Header.css';
-// Icons are not directly used for text in this component, so no changes to imports needed for translation.
 
 const Header = () => {
-  const handleScrollToNext = (e) => {
+  const handleScrollToForm = (e) => {
     e.preventDefault();
-    const nextSection = document.getElementById('next-section');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+    // Assuming the target section (JoinRevolution) will have the ID "get-early-access-section"
+    const formSection = document.getElementById('get-early-access-section');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -25,11 +25,11 @@ const Header = () => {
         <br></br>
         <br></br>
 
-        <a href="#next-section" className="cta-button" onClick={handleScrollToNext}>
+        <a href="#get-early-access-section" className="cta-button" onClick={handleScrollToForm}>
           <svg className="cta-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 12H19M19 12L12 5M19 12L12 19" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          <span className="cta-text">Start your journey</span>
+          <span className="cta-text">Get Early Access</span>
         </a>
       </div>
       <div className="image-content">
