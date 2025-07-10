@@ -21,7 +21,7 @@ function App() {
         
         <div className="App-right">
           <img 
-            src="https://i.postimg.cc/dV6fxygD/20250710-1750-Parkings-Privados-de-Plastilina-simple-compose-01jztgc42qem6r9np9enjx5gc7.png" 
+            src="https://i.postimg.cc/R0DGfQn5/20250710-1816-Estacionamiento-Reservado-Digital-remix-01jzthv8thft18ty0h4e2kmp9v.png"
             alt="Imagen de la aplicación" 
             className="App-image"
           />
