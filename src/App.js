@@ -5,6 +5,11 @@ function App() {
     <div className="App">
       <div className="App-content">
         <div className="App-left">
+          <img 
+            src="https://i.postimg.cc/287qgkGV/image-1.webp" 
+            alt="Logo de la aplicación" 
+            className="App-logo"
+          />
           <h1 className="App-title">Mi Aplicación</h1>
           <p className="App-subtitle">
             Descubre una nueva forma de gestionar tus tareas diarias
