@@ -13,8 +13,9 @@ const HeroSection = () => {
           Ahorra tiempo y dinero con ParkFast.
         </p>
         <div className="hero-buttons">
+          {/* Asumimos que "Buscar Parking Ahora" podría llevar a otra página/app state */}
           <button className="hero-button primary">Buscar Parking Ahora</button>
-          <button className="hero-button secondary">Ver Planes</button>
+          <a href="#pricing" className="hero-button secondary">Ver Planes</a>
         </div>
       </div>
       {/* Podríamos añadir aquí los iconos flotantes como en la imagen de referencia */}

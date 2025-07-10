@@ -3,103 +3,123 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5%; /* Usar porcentaje para padding lateral para responsiveness */
-  background-color: #1a1a1a; /* Un poco más claro que el fondo del body para destacar */
-  color: white;
+  padding: 0.8rem 5%; /* Ajustar padding vertical */
+  background-color: #ffffff; /* Fondo blanco */
+  color: #333; /* Color de texto oscuro */
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra muy sutil para profesionalismo */
+  height: 70px; /* Altura fija para la navbar */
 }
 
 .navbar-logo a {
-  color: white;
+  color: #212529; /* Color de texto principal oscuro */
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.7rem; /* Ligeramente más pequeño */
+  font-weight: 700; /* Más peso para el logo */
+}
+
+.navbar-search { /* Si se decide añadir la búsqueda */
+  flex-grow: 0.5; /* Permitir que ocupe espacio pero no demasiado */
+  margin: 0 2rem;
 }
 
 .navbar-search input {
-  padding: 0.5rem 1rem;
-  border: 1px solid #333;
-  border-radius: 20px; /* Bordes redondeados como en la imagen */
-  background-color: #2c2c2c; /* Fondo oscuro para el input */
-  color: white;
-  width: 300px; /* Ancho fijo, podría necesitar ajustes */
+  padding: 0.6rem 1rem;
+  border: 1px solid #ced4da; /* Borde gris claro (Bootstrap-like) */
+  border-radius: 6px; /* Bordes más sutiles */
+  background-color: #f8f9fa; /* Fondo ligeramente gris para el input */
+  color: #495057;
+  width: 100%; /* Ocupar el espacio asignado por flex-grow */
+  max-width: 400px; /* Limitar el ancho máximo */
+  font-size: 0.95rem;
+}
+
+.navbar-links {
+  display: flex; /* Asegurar que los links estén en línea */
+  align-items: center; /* Alinear verticalmente los items */
 }
 
 .navbar-links a {
-  color: #ccc; /* Color más suave para los links no activos */
+  color: #343a40; /* Color de texto oscuro para links */
   text-decoration: none;
-  margin-left: 1.5rem;
+  margin-left: 1.8rem; /* Espacio entre links */
   font-size: 1rem;
-  transition: color 0.3s ease;
+  font-weight: 500; /* Peso medio para los links */
+  transition: color 0.2s ease;
 }
 
 .navbar-links a:hover {
-  color: white;
+  color: #007bff; /* Color de acento azul al hacer hover */
+  text-decoration: none; /* Evitar subrayado si no se desea */
 }
 
 .navbar-button {
-  margin-left: 1rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px; /* Bordes redondeados */
-  font-weight: 600;
+  margin-left: 1.2rem;
+  padding: 0.5rem 1.3rem; /* Padding ajustado para botones */
+  border-radius: 6px; /* Consistente con otros border-radius */
+  font-weight: 500;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  text-transform: capitalize; /* No necesariamente mayúsculas */
 }
 
 .login-button {
   background-color: transparent;
-  color: white;
-  border: 1px solid white; /* Botón de login como en la imagen (solo borde) */
+  color: #007bff; /* Color de acento azul */
+  border: 1px solid #007bff;
 }
 
 .login-button:hover {
-  background-color: white;
-  color: #1a1a1a;
+  background-color: #007bff;
+  color: white;
 }
 
 .signup-button {
-  background-color: #007bff; /* Azul como color de acento, similar a la imagen */
+  background-color: #007bff; /* Color de acento azul */
   color: white;
   border: 1px solid #007bff;
 }
 
 .signup-button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Azul más oscuro */
   border-color: #0056b3;
 }
 
 .navbar-menu-icon {
-  display: none; /* Oculto en desktop */
+  display: none;
   font-size: 1.8rem;
   cursor: pointer;
+  color: #343a40; /* Color oscuro para el icono */
 }
 
-/* Responsive: para pantallas más pequeñas */
-@media (max-width: 992px) { /* Ajustar este breakpoint según sea necesario */
+/* Responsive */
+@media (max-width: 992px) {
   .navbar-search {
-    display: none; /* Ocultar la búsqueda en pantallas medianas/pequeñas */
+    display: none;
   }
+  /* Para un menú hamburguesa funcional, los links se moverían a un contenedor desplegable */
   .navbar-links {
-    display: none; /* Ocultar los links en desktop */
-    /* Aquí se implementaría la lógica para mostrar el menú desplegable */
+    /* Por ahora, los ocultamos. Una implementación real los movería. */
+    display: none;
   }
   .navbar-menu-icon {
-    display: block; /* Mostrar el icono de hamburguesa */
+    display: block;
   }
 }
 
 @media (max-width: 576px) {
-    .navbar-logo a {
-        font-size: 1.5rem;
-    }
-    .navbar-button {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
-    .navbar-links a {
-        margin-left: 1rem; /* Reducir margen para botones en pantallas muy pequeñas si se muestran fuera del menú */
-    }
+  .navbar {
+    padding: 0.8rem 3%; /* Menos padding en móviles */
+  }
+  .navbar-logo a {
+    font-size: 1.5rem;
+  }
+  /* Si los botones se muestran fuera del menú hamburguesa en móvil, ajustar aquí */
+  /* .navbar-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  } */
 }

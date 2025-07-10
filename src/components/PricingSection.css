@@ -1,0 +1,193 @@
+/* src/components/PricingSection.css */
+.pricing-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa; /* Fondo gris claro, alternando con blanco */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #5a6268;
+  margin-bottom: 3.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: stretch; /* Asegura que las tarjetas tengan la misma altura si el contenido varía */
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Para alinear el botón al final */
+  position: relative; /* Para el badge "Más Popular" */
+  overflow: hidden; /* Para el badge */
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured {
+  border-color: #007bff;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.15);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #007bff;
+  color: white;
+  padding: 6px 25px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transform: rotate(45deg) translate(28%, -10px); /* Posicionamiento diagonal */
+  transform-origin: center;
+  width: 120px; /* Ancho del badge */
+}
+
+
+.pricing-card h3 {
+  font-size: 1.6rem;
+  color: #007bff; /* Color de acento para el nombre del plan */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.pricing-card.featured h3 {
+  color: #0056b3; /* Un azul más oscuro para el plan destacado */
+}
+
+.price {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c757d;
+  margin-left: 5px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  flex-grow: 1; /* Hace que esta sección ocupe el espacio y empuje el botón hacia abajo */
+}
+
+.features-list li {
+  font-size: 0.95rem;
+  color: #5a6268;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  /* Se podría añadir un icono de check antes de cada feature */
+  /* padding-left: 25px; */
+  /* position: relative; */
+}
+
+/* Para un icono de check (ejemplo)
+.features-list li::before {
+  content: '✓';
+  color: #28a745;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+*/
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  width: 100%; /* Botón ocupa todo el ancho de la tarjeta */
+  margin-top: auto; /* Asegura que el botón esté al final si la lista de features no es suficiente */
+}
+
+.standard-button {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.standard-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.featured-button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.featured-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .pricing-card {
+    padding: 2rem 1.5rem;
+  }
+  .price {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-grid {
+    grid-template-columns: 1fr; /* Apilar tarjetas en móvil */
+  }
+  .pricing-section {
+    padding: 40px 15px;
+  }
+  .featured-badge { /* Ajustar badge para que no se corte tanto */
+    padding: 5px 20px;
+    font-size: 0.75rem;
+    transform: rotate(45deg) translate(25%, -12px);
+  }
+}
