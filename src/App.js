@@ -51,7 +51,7 @@ function App() {
           <div className="About-left">
             <img
               draggable="false"
-              src="https://i.postimg.cc/R0DGfQn5/20250710-1816-Estacionamiento-Reservado-Digital-remix-01jzthv8thft18ty0h4e2kmp9v.png" 
+              src="https://i.postimg.cc/vmMGHzTh/20250711-0129-Estilo-Plastilina-Colorido-remix-01jzvaksa7fz7t26gscae0c4ac.png" 
               alt="Ilustración de ParkMi con personajes y coches" 
               className="About-image"
             />
