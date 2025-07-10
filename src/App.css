@@ -1,92 +1,38 @@
-/* src/App.css */
-/* Estilos Globales para el tema claro */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #ffffff; /* Fondo blanco */
-  color: #212529; /* Texto negro/gris oscuro principal (Bootstrap-like) */
-  line-height: 1.6;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-  color: #d63384; /* Color para el código, similar a Bootstrap */
-}
-
-a {
-  color: #007bff; /* Color de enlace azul estándar */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #0056b3; /* Azul más oscuro para hover */
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.75rem; /* Aumentar un poco el margen inferior para headings */
-  font-weight: 600; /* Un poco más de peso para los encabezados */
-  color: #343a40; /* Color de encabezado ligeramente más suave que el texto principal */
-}
-
-/* Contenedor principal de la aplicación */
 .App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Estilos para botones genéricos - se ajustarán más en los componentes */
-button {
-  padding: 10px 20px;
-  border: 1px solid transparent; /* Borde base transparente */
-  border-radius: 6px; /* Radio de borde más sutil y profesional */
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-button:hover {
-  transform: translateY(-1px); /* Efecto hover más sutil */
-  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); Sombra más sutil, se puede activar si se desea */
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  width: 90%;
-  max-width: 1140px; /* Ancho máximo común para contenedores (Bootstrap-like) */
-  margin: 0 auto;
-  padding: 30px 0; /* Más padding vertical para las secciones */
+  text-align: center;
 }
 
 .App-logo {
-  display: none;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-  padding: 20px;
-  /* color: white; Ya no es tema oscuro */
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
-  /* color: #61dafb; Ya definido globalmente para <a> */
+  color: #61dafb;
 }
 
-main {
-  flex-grow: 1;
-  background-color: #ffffff; /* Asegurar que el main también sea blanco */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
