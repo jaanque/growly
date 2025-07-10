@@ -1,6 +1,91 @@
-::-webkit-validation-bubble-arrow-clipper {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
+/* src/App.css */
+/* Estilos Globales y reseteo básico */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212; /* Fondo oscuro principal como en la imagen */
+  color: #ffffff; /* Texto blanco por defecto */
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  /* color: #61dafb;  Podemos definir colores de enlace más específicos por componente */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500; /* Un peso base, se puede ajustar por componente */
+}
+
+/* Contenedor principal de la aplicación */
+.App {
+  /* text-align: center; Lo quitamos para que no centre todo por defecto */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos para botones genéricos, inspirados en la imagen */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px; /* Un radio de borde base */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra sutil al hacer hover */
+}
+
+/* Estilos para hacer el diseño más cohesivo y moderno */
+* {
+  box-sizing: border-box;
+}
+
+/* Clases de utilidad */
+.container { /* Esta clase puede usarse dentro de secciones si se necesita un ancho máximo */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Escondemos el logo SVG por defecto de Create React App si no lo vamos a usar directamente */
+.App-logo {
+  display: none;
+}
+
+/* Si hay un App-header por defecto, lo ajustamos o eliminamos si no es necesario */
+.App-header {
+  /* background-color: #282c34; */ /* Eliminamos el fondo por defecto si no se usa */
+  padding: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb; /* Color por defecto de CRA, podemos no usarlo */
+}
+
+/* Para asegurar que el contenido principal empuje el footer hacia abajo */
+main {
+  flex-grow: 1;
 }

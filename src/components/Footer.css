@@ -1,0 +1,110 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #0d0d0d; /* Fondo aún más oscuro para el footer */
+  color: #aaa; /* Color de texto base para el footer */
+  padding: 40px 5%; /* Padding lateral en porcentaje */
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Grid responsive */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem auto; /* Centrar y añadir margen inferior */
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #333; /* Línea divisoria sutil */
+}
+
+.footer-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.footer h4 {
+  color: white; /* Títulos de las secciones del footer en blanco */
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #007bff; /* Color de acento al hacer hover */
+}
+
+.footer-social a {
+  color: #aaa;
+  margin-right: 1rem;
+  font-size: 1.2rem; /* Tamaño de los "iconos" de texto */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #007bff;
+}
+
+.footer-contact p {
+  margin-bottom: 0.3rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  .footer h4 {
+    font-size: 1rem;
+  }
+  .footer-logo a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* Apilar todo en una columna en móviles */
+    text-align: center; /* Centrar texto en móvil */
+  }
+  .footer-social a {
+    margin: 0 0.5rem; /* Ajustar margen de iconos sociales */
+  }
+  .footer-logo, .footer-links, .footer-social, .footer-contact {
+    margin-bottom: 1.5rem;
+  }
+  .footer-logo p, .footer-contact p {
+    font-size: 0.9rem;
+  }
+}

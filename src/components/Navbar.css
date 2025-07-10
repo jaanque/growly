@@ -1,0 +1,105 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%; /* Usar porcentaje para padding lateral para responsiveness */
+  background-color: #1a1a1a; /* Un poco más claro que el fondo del body para destacar */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-search input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 20px; /* Bordes redondeados como en la imagen */
+  background-color: #2c2c2c; /* Fondo oscuro para el input */
+  color: white;
+  width: 300px; /* Ancho fijo, podría necesitar ajustes */
+}
+
+.navbar-links a {
+  color: #ccc; /* Color más suave para los links no activos */
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: white;
+}
+
+.navbar-button {
+  margin-left: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px; /* Bordes redondeados */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white; /* Botón de login como en la imagen (solo borde) */
+}
+
+.login-button:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.signup-button {
+  background-color: #007bff; /* Azul como color de acento, similar a la imagen */
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.navbar-menu-icon {
+  display: none; /* Oculto en desktop */
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Responsive: para pantallas más pequeñas */
+@media (max-width: 992px) { /* Ajustar este breakpoint según sea necesario */
+  .navbar-search {
+    display: none; /* Ocultar la búsqueda en pantallas medianas/pequeñas */
+  }
+  .navbar-links {
+    display: none; /* Ocultar los links en desktop */
+    /* Aquí se implementaría la lógica para mostrar el menú desplegable */
+  }
+  .navbar-menu-icon {
+    display: block; /* Mostrar el icono de hamburguesa */
+  }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo a {
+        font-size: 1.5rem;
+    }
+    .navbar-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    .navbar-links a {
+        margin-left: 1rem; /* Reducir margen para botones en pantallas muy pequeñas si se muestran fuera del menú */
+    }
+}
