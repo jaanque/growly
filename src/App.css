@@ -1,56 +1,6 @@
-/* App.css */
-/* The .App container itself. Its background will be the #F2F2F2 from body (index.css) */
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure App takes at least full viewport height */
-  width: 100%; /* Ensure App takes full width */
-  overflow-x: hidden; /* Prevent horizontal scroll if any component slightly overflows */
+::-webkit-validation-bubble-arrow-clipper {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
-
-/*
-  General Section Structure (Optional Utility Classes)
-  These can be applied to the root div of each section component for consistent padding and max-width.
-  Individual components will define their own specific background colors (e.g., #FFFFFF for content areas).
-*/
-
-/*
-  Example: If a section component's root div is <div className="some-section section-container">
-  .section-container {
-    padding: 50px 20px; // Standard vertical and horizontal padding
-    width: 100%;
-  }
-
-  .section-content { // An inner wrapper for content within that section
-    max-width: 1100px; // Standard max-width for content
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #FFFFFF; // White background for the content area itself
-    padding: 30px; // Padding inside the white content box
-    border-radius: 8px; // Optional rounded corners for content boxes
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); // Subtle shadow for content boxes
-  }
-*/
-
-/*
-  The philosophy here is that App.css provides minimal global layout for .App.
-  index.css handles global element styling (body, h1-h6, a, p, form elements).
-  Each component's CSS file handles:
-  1. Its own root element's specific background color (e.g., #FFFFFF or transparent if it should blend with #F2F2F2).
-  2. The layout and styling of its direct children.
-  3. Padding and max-width for its content area, or it can use utility classes defined here if preferred.
-  This keeps component styles encapsulated.
-*/
-
-/* Default styling for sections if they don't override (most will) */
-/* This is a generic placeholder, actual section styling will be in component CSS */
-/*
-div[class*="-section"] { // Targets divs with class names containing "-section"
-  width: 100%;
-  padding: 40px 20px; // Default padding, components can override
-}
-div[class*="-content"] { // Targets divs with class names containing "-content"
-  max-width: 1100px;
-  margin: 0 auto;
-}
-*/
