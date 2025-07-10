@@ -37,14 +37,15 @@
 }
 
 .App-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #333;
 }
 
 .App-subtitle {
-  font-size: 1.5rem;
+  text-align: justify;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
   color: #333;
   opacity: 0.9;
@@ -67,8 +68,8 @@
 
 .App-cta:hover {
   transition: 1s;
-  background-color: #21a9c7;
-  box-shadow: 0 4px 12px rgba(97, 218, 251, 0.4);
+  background-color: #35798D;
+  color: #ffffff;
 }
 
 .App-image {
