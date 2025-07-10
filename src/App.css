@@ -51,6 +51,54 @@
   opacity: 0.9;
 }
 
+.App-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.App-store-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: flex-start;
+  margin-top: 1.2rem;
+}
+
+.App-store-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.App-store-btn {
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.App-store-btn:hover {
+  transform: scale(1.05);
+}
+
+.App-store-btn img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.App-store-text {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+  text-align: center;
+}
+
 .App-cta {
   transition: 1s;
   background-color: #61dafb;
@@ -103,5 +151,14 @@
   
   .App-subtitle {
     font-size: 1.2rem;
+  }
+  
+  .App-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .App-store-buttons {
+    justify-content: center;
   }
 }
