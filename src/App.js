@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-content">
+        <div className="App-left">
+          <h1 className="App-title">Mi Aplicación</h1>
+          <p className="App-subtitle">
+            Descubre una nueva forma de gestionar tus tareas diarias
+          </p>
+          <button className="App-cta">
+            Comenzar Ahora
+          </button>
+        </div>
+        
+        <div className="App-right">
+          <img 
+            src="https://i.postimg.cc/dV6fxygD/20250710-1750-Parkings-Privados-de-Plastilina-simple-compose-01jztgc42qem6r9np9enjx5gc7.png" 
+            alt="Imagen de la aplicación" 
+            className="App-image"
+          />
+        </div>
+      </div>
     </div>
   );
 }
