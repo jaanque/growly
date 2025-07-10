@@ -1,0 +1,20 @@
+.for-drivers-section {
+    padding: 2rem 1rem;
+    background-color: #fff; /* Fondo ligeramente diferente para alternar */
+}
+
+.for-drivers-section h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.for-drivers-section p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+    text-align: center;
+}
