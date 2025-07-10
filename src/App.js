@@ -3,6 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      {/* Sección Hero */}
       <div className="App-content">
         <div className="App-left">
           <img 
@@ -41,6 +42,33 @@ function App() {
             alt="Imagen de la aplicación" 
             className="App-image"
           />
+        </div>
+      </div>
+
+      {/* Sección ¿Qué es? */}
+      <div className="About-section">
+        <div className="About-content">
+          <div className="About-left">
+            <img
+              draggable="false"
+              src="https://i.postimg.cc/vmMGHzTh/20250711-0129-Estilo-Plastilina-Colorido-remix-01jzvaksa7fz7t26gscae0c4ac.png" 
+              alt="ParkMi Logo" 
+              className="About-image"
+            />
+          </div>
+          
+          <div className="About-right">
+            <h2 className="About-title">¿Qué es ParkMi?</h2>
+            <p className="About-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p className="About-text">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+            <p className="About-text">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+            </p>
+          </div>
         </div>
       </div>
     </div>
