@@ -1,5 +1,6 @@
 import './App.css';
-import HowItWorks from './components/HowItWorks'; // Importar el nuevo componente
+import HowItWorks from './components/HowItWorks';
+import EarningsCalculator from './components/EarningsCalculator'; // Importar la calculadora
 
 function App() {
   return (
@@ -171,6 +172,9 @@ function App() {
 
       {/* Sección Cómo Funciona */}
       <HowItWorks />
+
+      {/* Sección Calculadora de Ganancias */}
+      <EarningsCalculator />
     </div>
   );
 }

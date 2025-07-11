@@ -1,0 +1,176 @@
+.earnings-calculator-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa; /* Un fondo ligeramente diferente para distinguir la sección */
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.earnings-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.earnings-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+.calculator-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.control-group {
+  width: 100%;
+  text-align: left;
+}
+
+.control-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.control-group input[type="number"],
+.control-group select,
+.control-group input[type="range"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.control-group input[type="number"]:focus,
+.control-group select:focus,
+.control-group input[type="range"]:focus {
+  border-color: #61dafb; /* Color primario de la app */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.2);
+}
+
+.control-group input[type="range"] {
+  padding: 0; /* Los range inputs se estilizan diferente */
+  cursor: pointer;
+}
+
+/* Estilos específicos para el range input para mejor apariencia */
+.control-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #61dafb;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px; /* Ajuste para centrar el thumb */
+}
+
+.control-group input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #61dafb;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.results-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.price-range-info {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #eee;
+}
+
+.price-range-info span {
+  font-weight: bold;
+  color: #007bff; /* Un color destacado para los precios */
+}
+
+.earnings-display h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.earning-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.earning-item:last-child {
+  border-bottom: none;
+}
+
+.earning-item p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+}
+
+.earning-item span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745; /* Color verde para las ganancias */
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .earnings-calculator-section {
+    padding: 3rem 1rem;
+  }
+  .earnings-title {
+    font-size: 2rem;
+  }
+  .earnings-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .calculator-controls {
+    gap: 1.5rem;
+  }
+  .results-section {
+    padding: 1.5rem;
+  }
+  .earning-item p {
+    font-size: 1rem;
+  }
+  .earning-item span {
+    font-size: 1.1rem;
+  }
+}
