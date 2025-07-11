@@ -10,9 +10,8 @@ const HowItWorks = () => {
         {/* Paso 1 */}
         <div className="step step-on-timeline">
           <div className="step-icon-container">
-            {/* Icono SVG temporal - reemplazar con el real */}
-            <svg className="step-icon" viewBox="0 0 24 24">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            <svg className="step-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
             </svg>
           </div>
           <span className="step-number">Paso 1</span>
@@ -25,9 +24,9 @@ const HowItWorks = () => {
         {/* Paso 2 */}
         <div className="step step-on-timeline">
           <div className="step-icon-container">
-            {/* Icono SVG temporal - reemplazar con el real */}
-            <svg className="step-icon" viewBox="0 0 24 24">
-              <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+            <svg className="step-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM12 18.5c-2.49 0-4.5-2.01-4.5-4.5S9.51 9.5 12 9.5s4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zm0-7c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z"/>
+              <path d="M17 13h-2.5v-2.5H12v2.5H9.5v2h2.5v2.5H12v-2.5h2.5z" opacity=".3"/> {/* Efecto de selección */}
             </svg>
           </div>
           <span className="step-number">Paso 2</span>
@@ -40,9 +39,8 @@ const HowItWorks = () => {
         {/* Paso 3 */}
         <div className="step step-on-timeline">
           <div className="step-icon-container">
-            {/* Icono SVG temporal - reemplazar con el real */}
-            <svg className="step-icon" viewBox="0 0 24 24">
-               <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6zm0 4h8v2H6zm10-4h2v2h-2zm-4 0h2v2h-2z"/>
+            <svg className="step-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11C5.84 5 5.28 5.42 5.08 6.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
             </svg>
           </div>
           <span className="step-number">Paso 3</span>
