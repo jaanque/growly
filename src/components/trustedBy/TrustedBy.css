@@ -1,5 +1,5 @@
 .TrustedBy-section {
-  padding: 60px 20px;
+  padding: 2rem 20px; /* Standardized vertical padding */
   background-color: #ffffff; /* Or a very light grey if needed for separation */
   text-align: center;
   overflow: hidden; /* Important for the carousel to not show scrollbars if track is wider */
@@ -57,11 +57,11 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* This breakpoint might be different from others, consider standardizing later if needed */
   .TrustedBy-text {
     font-size: 1.5rem;
   }
   .TrustedBy-section {
-    padding: 40px 15px;
+    padding: 2rem 15px; /* Standardized vertical padding for mobile */
   }
 }

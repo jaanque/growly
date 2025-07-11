@@ -1,5 +1,5 @@
 .HowToUse-section {
-  padding: 60px 20px; /* Standard padding, can be adjusted */
+  padding: 2rem 20px; /* Standardized vertical padding */
   text-align: center; /* Center the title */
   background-color: #f9f9f9; /* Slightly different background to distinguish the section */
   /* min-height: auto; /* Unlike other 100vh sections, this might not need full height */
@@ -79,6 +79,6 @@
     /* flex-basis: 100%; /* Ensure full width if not already happening */
   }
   .HowToUse-section {
-    padding: 40px 15px; /* Keep section padding adjustment for mobile */
+    padding: 2rem 15px; /* Standardized vertical padding for mobile */
   }
 }
