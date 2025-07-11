@@ -1,11 +1,13 @@
 .WhyGrowly-section {
+  /* display: flex; /* This should be inherited from .App-content in App.css */
+  align-items: stretch; /* Ensure child containers (App-left, App-right) stretch to the height of the tallest */
   padding: 60px 20px; /* Increased padding for more breathing room */
   text-align: left; /* Align text to the left for readability */
 }
 
 .WhyGrowly-text-container {
   max-width: 700px; /* Limit width for better readability on wider screens */
-  margin: 0 auto; /* Center the text container if it's narrower than the section */
+  /* margin: 0 auto; /* Center the text container if it's narrower than the section */
 }
 
 /* Assuming App-title is a global class, we can add specific overrides if needed,
@@ -50,14 +52,6 @@
   font-size: 1.2rem;
   margin-right: 15px; /* Space between icon and text */
   line-height: 1; /* Ensure it aligns well */
-}
-
-.WhyGrowly-section-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px; /* Rounded corners for the image */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for the image */
-  margin-top: 20px; /* Space above the image if text is on top, or adjust based on layout */
 }
 
 /* Responsive adjustments if needed */
