@@ -231,6 +231,8 @@
   transition: all 0.3s ease;
   border: 1px solid #f0f0f0;
   position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .Feature-card:hover {
