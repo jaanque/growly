@@ -51,8 +51,6 @@ const Footer = () => {
         <div className="footer-column contact-column">
           <h4>Contacte</h4>
           <p>
-            Carrer Fictici 123<br />
-            08000 Barcelona, Espanya<br />
             <a href="tel:+34000000000">+34 000 000 000</a><br />
             <a href="mailto:info@growly.app">info@growly.app</a>
           </p>
