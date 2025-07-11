@@ -1,7 +1,6 @@
 .HowToUse-section {
   padding: 2rem 20px; /* Standardized vertical padding */
   text-align: center; /* Center the title */
-  background-color: #f9f9f9; /* Slightly different background to distinguish the section */
   /* min-height: auto; /* Unlike other 100vh sections, this might not need full height */
 }
 
