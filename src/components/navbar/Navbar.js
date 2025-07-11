@@ -38,6 +38,9 @@ const Navbar = ({ isLogoInNavbar }) => {
           <li><a href="#how-to-use">Com Utilitzar</a></li>
           <li><a href="#trusted-by">Confien en Nosaltres</a></li>
         </ul>
+        <div className="navbar-cta-container">
+          <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>
+        </div>
       </div>
     </nav>
   );
