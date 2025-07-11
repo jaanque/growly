@@ -25,8 +25,8 @@ const HowItWorks = () => {
         <div className="step step-on-timeline">
           <div className="step-icon-container">
             <svg className="step-icon" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM12 18.5c-2.49 0-4.5-2.01-4.5-4.5S9.51 9.5 12 9.5s4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zm0-7c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z"/>
-              <path d="M17 13h-2.5v-2.5H12v2.5H9.5v2h2.5v2.5H12v-2.5h2.5z" opacity=".3"/> {/* Efecto de selección */}
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1z"/>
+              <path d="M17.99 9l-1.41-1.42L10 14.17l-2.59-2.58L6 13l4 4 7.99-7.99z"/>
             </svg>
           </div>
           <span className="step-number">Paso 2</span>
