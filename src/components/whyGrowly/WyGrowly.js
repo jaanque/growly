@@ -3,7 +3,7 @@ import './WhyGrowly.css';
 
 function WhyGrowly() {
   return (
-    <div className="App-content WhyGrowly-section">
+    <div id="why-growly" className="App-content WhyGrowly-section">
       <div className="App-left">
         <div className="WhyGrowly-text-container">
           <h1 className="App-title">Per què Growly?</h1>

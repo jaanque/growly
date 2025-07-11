@@ -26,7 +26,7 @@ function TrustedBy() {
 
 
   return (
-    <div className="TrustedBy-section">
+    <div id="trusted-by" className="TrustedBy-section">
       <div className="TrustedBy-container">
         <h1 className="App-title TrustedBy-title TrustedBy-text">
           Uneix-te als 100+ agricultors que confien en nosaltres
