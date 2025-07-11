@@ -163,10 +163,8 @@
 .About-image {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-  border-radius: 12px;
-  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 20px 0 0 0;
 }
 
 .About-title {
@@ -181,6 +179,96 @@
   line-height: 1.7;
   color: #555;
   margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Estilos para la sección de Características */
+.Features-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: #fafafa;
+}
+
+.Features-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.Features-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.Features-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.Features-subtitle {
+  font-size: 1.3rem;
+  color: #333;
+  opacity: 0.9;
+}
+
+.Features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.Feature-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.Feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #61dafb;
+}
+
+.Feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background-color: #61dafb;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.Feature-card:hover .Feature-icon {
+  background-color: #35798D;
+  transform: scale(1.1);
+}
+
+.Feature-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.Feature-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
   text-align: justify;
 }
 
@@ -246,6 +334,49 @@
   }
   
   .About-text {
+    font-size: 1rem;
+  }
+  
+  .Features-section {
+    padding: 3rem 0;
+  }
+  
+  .Features-content {
+    padding: 1rem;
+  }
+  
+  .Features-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .Features-title {
+    font-size: 2rem;
+  }
+  
+  .Features-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .Features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .Feature-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .Feature-icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .Feature-title {
+    font-size: 1.3rem;
+  }
+  
+  .Feature-description {
     font-size: 1rem;
   }
 }

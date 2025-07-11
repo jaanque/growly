@@ -71,6 +71,102 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Sección Características */}
+      <div className="Features-section">
+        <div className="Features-content">
+          <div className="Features-header">
+            <h2 className="Features-title">Características Principales</h2>
+            <p className="Features-subtitle">
+              Descubre todo lo que ParkMi puede hacer por ti
+            </p>
+          </div>
+          
+          <div className="Features-grid">
+            <div className="Feature-card">
+              <div className="Feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.35-4.35"/>
+                  <circle cx="11" cy="11" r="3"/>
+                </svg>
+              </div>
+              <h3 className="Feature-title">Búsqueda Inteligente</h3>
+              <p className="Feature-description">
+                Encuentra plazas disponibles en tiempo real cerca de tu destino usando nuestra tecnología de búsqueda avanzada.
+              </p>
+            </div>
+            
+            <div className="Feature-card">
+              <div className="Feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="3" y="11" width="18" height="10" rx="2"/>
+                  <circle cx="12" cy="16" r="1"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+              </div>
+              <h3 className="Feature-title">Reserva Garantizada</h3>
+              <p className="Feature-description">
+                Tu plaza estará asegurada hasta tu llegada. Pago seguro y confirmación instantánea para tu tranquilidad.
+              </p>
+            </div>
+            
+            <div className="Feature-card">
+              <div className="Feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <h3 className="Feature-title">Navegación Precisa</h3>
+              <p className="Feature-description">
+                Te guiamos paso a paso hasta tu plaza exacta con indicaciones precisas y actualizadas en tiempo real.
+              </p>
+            </div>
+            
+            <div className="Feature-card">
+              <div className="Feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M12 1v22"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <h3 className="Feature-title">Precios Justos</h3>
+              <p className="Feature-description">
+                Transparencia total en los costos. Compara precios y elige la opción que mejor se adapte a tu presupuesto.
+              </p>
+            </div>
+            
+            <div className="Feature-card">
+              <div className="Feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12,6 12,12 16,14"/>
+                </svg>
+              </div>
+              <h3 className="Feature-title">Disponible Siempre</h3>
+              <p className="Feature-description">
+                Servicio 24/7 con soporte continuo. Encuentra parking a cualquier hora del día o de la noche.
+              </p>
+            </div>
+            
+            <div className="Feature-card">
+              <div className="Feature-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                  <path d="M21 3v5h-5"/>
+                  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                  <path d="M8 16H3v5"/>
+                </svg>
+              </div>
+              <h3 className="Feature-title">Extensión Fácil</h3>
+              <p className="Feature-description">
+                Extiende tu tiempo de parking desde la app sin moverte del sitio. Flexibilidad total para tus planes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
