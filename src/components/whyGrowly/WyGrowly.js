@@ -7,6 +7,7 @@ function WhyGrowly() {
       <div className="App-left">
         <div className="WhyGrowly-text-container">
           <h1 className="App-title">Per què Growly?</h1>
+          <br />
           <ul className="App-list">
             <li>Facilita el seguiment de tasques i projectes.</li>
             <li>Millora la col·laboració en equip.</li>

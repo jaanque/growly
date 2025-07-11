@@ -1,7 +1,7 @@
 .WhyGrowly-section {
   /* display: flex; /* This should be inherited from .App-content in App.css */
   align-items: stretch; /* Ensure child containers (App-left, App-right) stretch to the height of the tallest */
-  padding: 60px 20px; /* Increased padding for more breathing room */
+  padding: 0 20px; /* Remove vertical padding, rely on App-left's padding. Keep horizontal for content. */
   text-align: left; /* Align text to the left for readability */
 }
 
@@ -54,10 +54,16 @@
   line-height: 1; /* Ensure it aligns well */
 }
 
+/* Style for the image within the WhyGrowly section */
+.WhyGrowly-section .App-image {
+  border-radius: 20px 0 0 0; /* Round top-left corner only */
+}
+
 /* Responsive adjustments if needed */
 @media (max-width: 768px) {
   .WhyGrowly-section {
-    padding: 40px 15px;
+    /* Adjust horizontal padding for mobile, no vertical padding from the section itself. */
+    padding: 0 15px; 
   }
 
   /* .WhyGrowly-section .App-title {
