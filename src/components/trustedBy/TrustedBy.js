@@ -27,9 +27,9 @@ function TrustedBy() {
   return (
     <div className="TrustedBy-section">
       <div className="TrustedBy-container">
-        <p className="TrustedBy-text">
+        <h1 className="App-title TrustedBy-title TrustedBy-text">
           Uneix-te als 100+ agricultors que confien en nosaltres
-        </p>
+        </h1>
         <div className="TrustedBy-carousel-container">
           <div className="TrustedBy-carousel-track">
             {displayNames.map((name, index) => (

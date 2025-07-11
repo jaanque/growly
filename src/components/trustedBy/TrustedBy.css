@@ -11,10 +11,10 @@
 }
 
 .TrustedBy-text {
-  font-size: 1.8rem; /* Prominent text */
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 40px; /* Space between text and carousel */
+  /* font-size will be inherited from App-title */
+  /* font-weight will be inherited from App-title */
+  /* color is the same as App-title, so no need to repeat */
+  margin-bottom: 40px; /* Space between text and carousel - keep this specific margin */
 }
 
 /* Basic styles for carousel - animation and detailed styling will come later */
@@ -58,9 +58,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) { /* This breakpoint might be different from others, consider standardizing later if needed */
-  .TrustedBy-text {
-    font-size: 1.5rem;
-  }
+  /* .TrustedBy-text font-size adjustment removed as App-title handles responsive font size */
   .TrustedBy-section {
     padding: 2rem 15px; /* Standardized vertical padding for mobile */
   }
