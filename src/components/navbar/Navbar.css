@@ -18,7 +18,7 @@
   max-width: 1200px; /* Optional: constrain width like other sections */
   margin: 0 auto; /* Center container if max-width is used */
   display: flex;
-  justify-content: space-between; /* Space between logo and links */
+  justify-content: flex-start; /* Align items to the start */
   align-items: center;
 }
 
@@ -92,7 +92,7 @@
 
 .nav-links {
   list-style: none;
-  margin: 0;
+  margin: 0 auto; /* Auto margins to center in available space */
   padding: 0;
   display: flex;
   gap: 20px; /* Space between links */
