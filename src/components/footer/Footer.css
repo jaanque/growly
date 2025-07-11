@@ -1,0 +1,104 @@
+/* Base styles for the footer */
+.site-footer {
+  background-color: #f8f9fa; /* Light grey background, adjust as needed */
+  color: #333; /* Dark text color for contrast */
+  padding: 40px 20px; /* Vertical and horizontal padding */
+  border-top: 1px solid #e0e0e0; /* Subtle top border */
+  font-size: 0.9rem;
+}
+
+/* Styles for footer content will be added as structure is built */
+.footer-container {
+  max-width: 1200px; /* Max width for footer content */
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute columns */
+  gap: 20px; /* Space between columns */
+}
+
+.footer-column {
+  flex: 1; /* Allow columns to grow */
+  min-width: 200px; /* Minimum width for columns before wrapping */
+  margin-bottom: 20px; /* Space below columns on mobile */
+}
+
+.footer-column p {
+  line-height: 1.6;
+  margin-bottom: 10px; /* Default margin for paragraphs in columns */
+}
+
+.footer-column.about-column p {
+  margin-bottom: 15px; /* More space after the description */
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #555; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #628B00; /* Link hover color - using a site green */
+  text-decoration: underline;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+  margin-top: 10px; /* Add some space above social icons if they follow text */
+}
+
+.footer-social-icons a {
+  color: #555;
+  font-size: 1.5rem; /* Size of icons */
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #628B00; /* Icon hover color */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0; /* Separator for copyright */
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center; /* Center columns on mobile */
+    text-align: center;
+  }
+
+  .footer-column {
+    min-width: 100%; /* Full width for columns on mobile */
+    margin-bottom: 30px;
+  }
+
+  .footer-social-icons {
+    justify-content: center; /* Center social icons on mobile */
+  }
+}
