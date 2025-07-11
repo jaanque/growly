@@ -102,7 +102,7 @@
 
 .App-cta {
   transition: 1s;
-  background-color: #628A00;
+  background-color: #628B00;
   color: #fff;
   padding: 1rem 2rem;
   border: none;
@@ -117,7 +117,7 @@
 
 .App-cta:hover {
   transition: 1s;
-  background-color: #35798D;
+  background-color: #3b5301;
   color: #ffffff;
 }
 
