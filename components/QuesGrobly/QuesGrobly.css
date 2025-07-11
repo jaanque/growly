@@ -1,0 +1,50 @@
+/* Styles specific to QuesGrobly (About) section */
+
+/* .About-section is a class applied to the root div in QuesGrobly.js */
+/* .App-content { ... } general styles are in App.css */
+
+/* .App-right and .App-left are general layout classes, already in App.css */
+
+/* .App-image is general, .About-section-image provides specific border-radius */
+.About-section-image {
+  border-radius: 0 20px 0 0; /* Mantenim el mateix estil de border-radius que .App-image */
+}
+
+/* .About-text-container and its specific styling for .App-title and .App-subtitle */
+.About-text-container {
+  align-items: flex-start;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.About-text-container .App-title {
+  text-align: left;
+}
+
+.About-text-container .App-subtitle {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments for QuesGrobly (About) section */
+@media (max-width: 768px) {
+  .About-section {
+    flex-direction: column-reverse;
+  }
+
+  .About-text-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+  }
+
+  .About-text-container .App-title,
+  .About-text-container .App-subtitle {
+    text-align: center;
+  }
+
+  /* Example for image adjustment if needed in this section specifically for mobile */
+  /* .About-section .App-image { max-height: 40vh; } */
+}
