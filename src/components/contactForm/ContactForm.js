@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <section className="contact-form-section">
       <div className="contact-form-container">
-        <h2>Contact Us</h2>
+        <h2>Vols formar part del futur?</h2>
         <form>
         <div className="form-group">
           <label htmlFor="name">Name</label>

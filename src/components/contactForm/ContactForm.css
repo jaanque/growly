@@ -1,25 +1,22 @@
 /* ContactForm.css */
 .contact-form-section {
   padding: 2rem 20px; /* Consistent with other sections like HowToUse */
-  background-color: #ffffff; /* Or #f8f9fa if a slight contrast is desired */
   text-align: center; /* Center the title */
 }
 
 .contact-form-container {
   max-width: 700px; /* Limiting width for better readability, similar to WhyGrowly */
   margin: 0 auto; /* Center the form container */
-  background-color: #ffffff; /* White background for the form card itself */
   padding: 2rem;
   border-radius: 8px; /* Consistent rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow, similar to App-list li:hover */
-  border: 1px solid #e0e0e0; /* Light border, similar to HowToUse-step */
 }
 
 .contact-form-container h2 {
   font-size: 2rem; /* Slightly smaller than main section titles if needed, or use App-title class */
   color: #333; /* Standard title color */
-  margin-bottom: 1.5rem; /* Space below title */
+  margin-bottom: 2.5rem; /* Space below title */
   text-align: center;
+  font-weight: bold;
 }
 
 .contact-form-container form {
@@ -55,7 +52,6 @@
 .form-group select:focus {
   border-color: #628B00; /* Use main green for focus highlight */
   outline: none;
-  box-shadow: 0 0 0 2px rgba(98, 139, 0, 0.25); /* Subtle focus shadow */
 }
 
 button[type="submit"] {
