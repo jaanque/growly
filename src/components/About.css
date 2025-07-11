@@ -1,0 +1,88 @@
+/* Estilos para el componente About */
+.App-content.About-section { /* Estilo específico para la sección About dentro de App-content */
+  display: flex;
+  width: 100%;
+  min-height: 100vh; /* Ajustar si About no ocupa toda la altura */
+}
+
+/* Reutilizamos .App-right y .App-left del Hero o App.css si son generales.
+   Si necesitan estilos específicos para About, los definimos aquí o modificamos los existentes.
+*/
+
+.App-right { /* Estilos para el contenedor de la imagen en About */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.App-left.About-text-container { /* Estilos para el contenedor de texto en About */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alineamos el contenido a l'inici (esquerra) */
+  justify-content: center;
+  padding: 2rem;
+  padding-left: 4rem; /* Afegim més padding a l'esquerra per separar del marge */
+  padding-right: 4rem; /* Afegim padding a la dreta */
+  color: #333;
+}
+
+.App-image.About-section-image { /* Estilos para la imagen específica de la sección About */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0 20px 0 0;
+}
+
+.About-text-container .App-title { /* Estilos para el título dentro de About */
+  font-size: 2.5rem; /* Heredado o específico */
+  font-weight: bold; /* Heredado o específico */
+  margin-bottom: 1rem; /* Heredado o específico */
+  color: #333; /* Heredado o específico */
+  text-align: left; /* Títol alineat a l'esquerra */
+}
+
+.About-text-container .App-subtitle { /* Estilos para el subtítulo/párrafos dentro de About */
+  text-align: left; /* Paràgrafs alineats a l'esquerra */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333; /* Heredado o específico */
+  opacity: 0.9; /* Heredado o específico */
+}
+
+
+/* Ajustos responsive per a la secció About */
+@media (max-width: 768px) {
+  .App-content.About-section {
+    flex-direction: column-reverse; /* Imatge a sota, text a sobre */
+  }
+
+  .App-left.About-text-container, .App-right { /* Ambos ocupan el 100% del ancho en móvil */
+    width: 100%;
+  }
+
+  .App-right { /* Contenedor de la imagen en About en móvil */
+    min-height: 50vh; /* O la altura deseada para la imagen en móvil */
+  }
+
+  .App-left.About-text-container {
+    padding-left: 2rem; /* Reduïm padding en mòbil */
+    padding-right: 2rem;
+    align-items: center; /* Centrem el text en mòbil */
+  }
+
+  .About-text-container .App-title,
+  .About-text-container .App-subtitle {
+    text-align: center; /* Text centrat en mòbil */
+  }
+
+  /* La imagen dentro de .About-section (que utilitza .App-right i .App-image.About-section-image)
+     ja té estils responsive de la secció Hero, no calen ajustos addicionals específics aquí
+     tret que vulguem un comportament diferent per a la imatge EN AQUESTA SECCIÓ en particular.
+     Per exemple, si la imatge de la secció "About" ha de ser més petita en mòbils:
+     .App-image.About-section-image { max-height: 40vh; }
+  */
+}
