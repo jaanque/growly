@@ -29,7 +29,7 @@ function TrustedBy() {
     <div id="trusted-by" className="TrustedBy-section">
       <div className="TrustedBy-container">
         <h1 className="App-title TrustedBy-title TrustedBy-text">
-          Uneix-te als més de 100.548 agricultors que confien en nosaltres
+          Uneix-te als més de 548 agricultors que confien en nosaltres
         </h1>
         <div className="TrustedBy-carousel-container">
           <div className="TrustedBy-carousel-track">
