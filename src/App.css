@@ -6,216 +6,24 @@
   flex-direction: column;
 }
 
-.App-content {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-}
-
-.App-left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  color: #333;
-}
-
-.App-right {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.App-logo {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 0.5rem;
-  object-fit: contain;
-}
-
-.App-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.App-subtitle {
-  text-align: center;
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-  color: #333;
-  opacity: 0.9;
-}
-
-.App-buttons {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.App-store-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-  align-self: flex-start;
-  margin-top: 1.2rem;
-}
-
-.App-store-buttons {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.App-store-btn {
-  display: inline-block;
-  transition: all 0.3s ease;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.App-store-btn:hover {
-  transform: scale(1.05);
-}
-
-.App-store-btn img {
-  height: 40px;
-  width: auto;
-  display: block;
-}
-
-.App-store-text {
-  font-size: 0.8rem;
-  color: #666;
-  margin: 0;
-  font-style: italic;
-  text-align: center;
-}
-
-.App-cta {
-  transition: 1s;
-  background-color: #628A00;
-  color: #fff;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.App-cta:hover {
-  transition: 1s;
-  background-color: #35798D;
-  color: #ffffff;
-}
-
-.App-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 0 0 0 20px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .App-content {
-    flex-direction: column;
-  }
-  
-  .App-left, .App-right {
-    width: 100%;
-  }
-  
-  .App-right {
-    min-height: 50vh;
-  }
-  
-  .App-logo {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .App-title {
-    font-size: 2rem;
-  }
-  
-  .App-subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .App-buttons {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .App-store-buttons {
-    justify-content: center;
-  }
-}
-
-/* Estils per a la nova secció "About" */
-
-
 /* 
-  Ja no necessitem .About-left, .About-right, .About-image perquè
-  reutilitzem .App-left, .App-right, i .App-image directament.
-  Podem afegir estils específics per al contenidor de text de la secció "About" si és necessari.
+  Els estils específics de les seccions Hero i About s'han mogut
+  a src/components/Hero.css i src/components/About.css respectivament.
+
+  Aquí només queden els estils globals de l'aplicació si n'hi ha,
+  o estils que afectin el layout general de App.js si no s'han mogut.
+
+  Si .App-content, .App-left, .App-right, etc., eren utilitzats de forma
+  genèrica per ambdós components i tenien exactament els mateixos estils
+  base, podrien quedar aquí o ser duplicats/ajustats en els CSS dels components.
+  Per aquest exercici, s'ha optat per moure'ls als components per major encapsulament,
+  assumint que podrien divergir en el futur.
+
+  Si hi ha estils globals que apliquen a elements comuns (ex: body, html, links genèrics)
+  o a la pròpia classe .App, es mantenen aquí.
 */
 
-.About-text-container { /* Nova classe per al contenidor de text de la secció "About" */
-  align-items: flex-start; /* Alineem el contingut a l'inici (esquerra) */
-  padding-left: 4rem; /* Afegim més padding a l'esquerra per separar del marge */
-  padding-right: 4rem; /* Afegim padding a la dreta */
-}
-
-.About-text-container .App-title {
-  text-align: left; /* Títol alineat a l'esquerra */
-}
-
-.About-text-container .App-subtitle {
-  text-align: left; /* Paràgrafs alineats a l'esquerra */
-  font-size: 1.1rem; 
-  line-height: 1.6; 
-  margin-bottom: 1rem; 
-}
-
-/* Ajustos responsive per a la secció About */
-@media (max-width: 768px) {
-  .About-section { /* En mòbil, la secció "About" també serà flex-direction: column per defecte per .App-content */
-    flex-direction: column-reverse; /* Imatge a sota, text a sobre */
-  }
-
-  .About-text-container {
-    padding-left: 2rem; /* Reduïm padding en mòbil */
-    padding-right: 2rem;
-    align-items: center; /* Centrem el text en mòbil */
-  }
-
-  .About-text-container .App-title,
-  .About-text-container .App-subtitle {
-    text-align: center; /* Text centrat en mòbil */
-  }
-  
-  /* La imatge dins de .About-section (que utilitza .App-right i .App-image) 
-     ja té estils responsive de la secció Hero, no calen ajustos addicionals específics aquí
-     tret que vulguem un comportament diferent per a la imatge EN AQUESTA SECCIÓ en particular.
-     Per exemple, si la imatge de la secció "About" ha de ser més petita en mòbils:
-     .About-section .App-image { max-height: 40vh; } 
-  */
-}
-
-.About-section-image {
-  border-radius: 0 20px 0 0; /* Mantenim el mateix estil de border-radius que .App-image */
-}
+/* Responsive design global (si n'hi ha) */
+/* @media (max-width: 768px) { */
+  /* Estils responsive globals */
+/* } */
