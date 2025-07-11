@@ -3,12 +3,12 @@ import './ContactForm.css';
 
 const ContactForm = () => {
   return (
-    <section className="contact-form-section">
+    <section id='contacto-form' className="contact-form-section">
       <div className="contact-form-wrapper">
         <div className="contact-form-image-container">
           <img
             draggable="false"
-            src="https://i.postimg.cc/L5GkPckf/20250711-0803-Carga-de-Productos-Frescos-remix-01jzw177xpf7js09fhjznvrsph.png"
+            src="https://i.postimg.cc/c4KdX882/20250711-1245-Campo-y-Reparto-remix-01jzwhanghfgg8bk2tnvzdbqhe.png"
             alt="Growly Contact Form"
             className="contact-form-image"
           />
