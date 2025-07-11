@@ -1,4 +1,5 @@
 import './App.css';
+import HowItWorks from './components/HowItWorks'; // Importar el nuevo componente
 
 function App() {
   return (
@@ -167,6 +168,9 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Sección Cómo Funciona */}
+      <HowItWorks />
     </div>
   );
 }
