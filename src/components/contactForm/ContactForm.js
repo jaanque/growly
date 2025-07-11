@@ -3,9 +3,10 @@ import './ContactForm.css';
 
 const ContactForm = () => {
   return (
-    <div className="contact-form-container">
-      <h2>Contact Us</h2>
-      <form>
+    <section className="contact-form-section">
+      <div className="contact-form-container">
+        <h2>Contact Us</h2>
+        <form>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" required />
@@ -26,9 +27,10 @@ const ContactForm = () => {
             <option value="seller">Seller</option>
           </select>
         </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
   );
 };
 
