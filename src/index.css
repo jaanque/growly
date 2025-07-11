@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 60px; /* Default navbar height */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 50px; /* Navbar height on smaller screens */
+  }
 }
 
 code {

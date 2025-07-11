@@ -1,4 +1,5 @@
 import './App.css';
+import Navbar from './components/navbar/Navbar'; // Import the Navbar component
 import Hero from './components/hero/Hero';
 import About from './components/about/About';
 import WhyGrowly from './components/whyGrowly/WyGrowly';
@@ -9,6 +10,7 @@ import Footer from './components/footer/Footer'; // Import the Footer component
 function App() {
   return (
     <div className="App">
+      <Navbar /> {/* Add the Navbar component here */}
       <Hero />
       <About />
       <WhyGrowly />

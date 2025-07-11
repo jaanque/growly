@@ -26,7 +26,7 @@ function HowToUse() {
   ];
 
   return (
-    <div className="HowToUse-section"> {/* Removed App-content class */}
+    <div id="how-to-use" className="HowToUse-section"> {/* Removed App-content class */}
       <div className="HowToUse-container">
         <h1 className="App-title HowToUse-title">Com Utilitzar l'App?</h1>
         <div className="HowToUse-steps-container">

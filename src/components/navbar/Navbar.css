@@ -1,0 +1,80 @@
+/* Navbar base styles */
+.site-navbar {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Slim navbar height */
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  padding: 0 20px; /* Horizontal padding */
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px; /* Optional: constrain width like other sections */
+  margin: 0 auto; /* Center container if max-width is used */
+  display: flex;
+  justify-content: center; /* Center navigation links if no logo/title */
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.nav-links li a {
+  color: #333; /* Standard link color */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px; /* Padding for clickable area */
+  border-radius: 4px; /* Subtle rounding */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect matching the footer */
+.nav-links li a:hover,
+.nav-links li a.active { /* Style for active link (optional) */
+  color: #628B00; /* Site's green color */
+  text-decoration: underline; /* Underline like footer */
+  /* background-color: #f0f0f0; /* Optional: slight background on hover */
+}
+
+/* Responsive adjustments (basic for now) */
+@media (max-width: 768px) {
+  .site-navbar {
+    height: 50px; /* Slightly smaller on mobile */
+    padding: 0 15px;
+  }
+
+  .nav-links {
+    gap: 10px; /* Reduced gap */
+  }
+
+  .nav-links li a {
+    padding: 8px 10px;
+    font-size: 0.9rem; /* Slightly smaller font on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+    /* On very small screens, links might need to be icons or a hamburger menu.
+       For now, let them wrap or reduce further if needed.
+       This example just reduces padding further. */
+  .nav-links li a {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+  .nav-links {
+    /* Enable wrapping if links don't fit */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

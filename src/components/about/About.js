@@ -3,7 +3,7 @@ import './About.css';
 
 function About() {
   return (
-    <div className="App-content About-section">
+    <div id="about" className="App-content About-section">
       {/* Canviem l'ordre aquí: Primer el contenidor de la imatge, després el del text */}
       <div className="App-right"> {/* Contenidor per la imatge, reutilitzant la classe original per l'estil */}
         <img

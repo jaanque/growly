@@ -3,7 +3,7 @@ import './Hero.css';
 
 function Hero() {
   return (
-    <div className="App-content">
+    <div id="hero" className="App-content">
       <div className="App-left">
         <img
           draggable="false"
