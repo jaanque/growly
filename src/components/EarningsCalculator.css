@@ -21,34 +21,36 @@
 }
 
 .calculator-controls {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.8rem;
+  display: grid; /* Usar grid para mejor control horizontal */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+  gap: 1.5rem 2rem; /* Espacio entre filas y columnas */
+  align-items: end; /* Alinea los items al final para que los labels y inputs queden bien si tienen alturas diferentes */
   margin-bottom: 2.5rem;
-  max-width: 600px;
+  max-width: 900px; /* Ajustar el ancho máximo si es necesario */
   margin-left: auto;
   margin-right: auto;
 }
 
 .control-group {
-  width: 100%;
+  display: flex; /* Para que label e input estén en la misma línea si se desea O controlarlos mejor */
+  flex-direction: column; /* Mantiene label encima del input por defecto */
   text-align: left;
+  width: 100%; /* Asegura que el grupo ocupe la celda del grid */
 }
 
 .control-group label {
   display: block;
-  font-size: 1rem;
+  font-size: 0.95rem; /* Ligeramente más pequeño para diseño compacto */
   font-weight: 500;
   color: #333;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .control-group input[type="number"],
 .control-group select,
 .control-group input[type="range"] {
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.7rem; /* Ligeramente más pequeño */
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
@@ -149,7 +151,37 @@
   font-style: italic;
 }
 
+.cta-calculator-button {
+  background-color: #61dafb; /* Color primario de la app */
+  color: #282c34;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1.5rem; /* Espacio sobre el botón */
+}
+
+.cta-calculator-button:hover {
+  background-color: #35798D; /* Un tono más oscuro al pasar el mouse */
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
 /* Responsive */
+@media (max-width: 992px) { /* Ajuste para cuando el grid puede tener menos de 3 columnas */
+  .calculator-controls {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 700px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .earnings-calculator-section {
     padding: 3rem 1rem;
@@ -162,15 +194,27 @@
     margin-bottom: 2rem;
   }
   .calculator-controls {
-    gap: 1.5rem;
+    grid-template-columns: 1fr; /* Una columna en móviles */
+    gap: 1.2rem; /* Reducir el gap */
+    max-width: 100%;
   }
   .results-section {
     padding: 1.5rem;
+  }
+  .earning-item {
+    flex-direction: column; /* Apilar texto y valor en móviles */
+    align-items: flex-start;
+    gap: 0.3rem;
   }
   .earning-item p {
     font-size: 1rem;
   }
   .earning-item span {
     font-size: 1.1rem;
+  }
+  .cta-calculator-button {
+    width: 100%; /* Botón ocupa todo el ancho */
+    font-size: 1rem;
+    padding: 0.9rem;
   }
 }

@@ -11,8 +11,8 @@ const EarningsCalculator = () => {
 
   const [gananciaDiariaMin, setGananciaDiariaMin] = useState(0);
   const [gananciaDiariaMax, setGananciaDiariaMax] = useState(0);
-  const [gananciaMensualMin, setGananciaMensualMin] = useState(0);
-  const [gananciaMensualMax, setGananciaMensualMax] = useState(0);
+  const [gananciaMensualMin, setGananciaMensualMin] = useState("0,00€");
+  const [gananciaMensualMax, setGananciaMensualMax] = useState("0,00€");
 
   const precios = {
     centro: { min: 0.90, max: 2.00 },
@@ -22,20 +22,24 @@ const EarningsCalculator = () => {
 
   useEffect(() => {
     const { min, max } = precios[ubicacion];
-    setPrecioPorHoraMin(min);
+    setPrecioPorHoraMin(min); // Estos pueden seguir siendo números si no se muestran directamente o se formatean en el JSX
     setPrecioPorHoraMax(max);
 
     const plazas = Number(numPlazas) || 0;
     const horas = Number(horasAlquiler) || 0;
 
-    const diariaMin = plazas * horas * min;
-    const diariaMax = plazas * horas * max;
-    setGananciaDiariaMin(diariaMin);
-    setGananciaDiariaMax(diariaMax);
+    const formatCurrency = (value) => {
+      return value.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' });
+    };
+
+    const diariaMinNum = plazas * horas * min;
+    const diariaMaxNum = plazas * horas * max;
+    setGananciaDiariaMin(formatCurrency(diariaMinNum));
+    setGananciaDiariaMax(formatCurrency(diariaMaxNum));
 
     // Asumiendo 30 días por mes para la estimación mensual
-    setGananciaMensualMin(diariaMin * 30);
-    setGananciaMensualMax(diariaMax * 30);
+    setGananciaMensualMin(formatCurrency(diariaMinNum * 30));
+    setGananciaMensualMax(formatCurrency(diariaMaxNum * 30));
 
   }, [numPlazas, ubicacion, horasAlquiler]);
 
@@ -101,7 +105,7 @@ const EarningsCalculator = () => {
         <div className="price-range-info">
           <p>
             Precio estimado por hora en <strong>{ubicacion.charAt(0).toUpperCase() + ubicacion.slice(1)}</strong>:
-            <span> {precioPorHoraMin.toFixed(2)}€ - {precioPorHoraMax.toFixed(2)}€</span>
+            <span> {precioPorHoraMin.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' })} - {precioPorHoraMax.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' })}</span>
           </p>
         </div>
 
@@ -109,16 +113,19 @@ const EarningsCalculator = () => {
           <h3>Ganancias Estimadas:</h3>
           <div className="earning-item">
             <p>Diarias:</p>
-            <span>{gananciaDiariaMin.toFixed(2)}€ - {gananciaDiariaMax.toFixed(2)}€</span>
+            <span>{gananciaDiariaMin} - {gananciaDiariaMax}</span>
           </div>
           <div className="earning-item">
             <p>Mensuales (aprox.):</p>
-            <span>{gananciaMensualMin.toFixed(2)}€ - {gananciaMensualMax.toFixed(2)}€</span>
+            <span>{gananciaMensualMin} - {gananciaMensualMax}</span>
           </div>
         </div>
         <p className="disclaimer">
           *Estos cálculos son una estimación y pueden variar según la demanda, temporada y características específicas de tus plazas.
         </p>
+        <button className="cta-calculator-button" onClick={() => alert('Redirigiendo para publicar plaza...')}>
+          ¡Empieza a Alquilar tu Plaza!
+        </button>
       </div>
     </div>
   );

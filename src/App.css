@@ -45,7 +45,7 @@
 }
 
 .App-subtitle {
-  text-align: justify;
+  text-align: center;
   font-size: 1.3rem;
   margin-bottom: 2rem;
   color: #333;
@@ -102,8 +102,8 @@
 
 .App-cta {
   transition: 1s;
-  background-color: #61dafb;
-  color: #282c34;
+  background-color: #628A00;
+  color: #fff;
   padding: 1rem 2rem;
   border: none;
   border-radius: 8px;

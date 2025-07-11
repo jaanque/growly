@@ -10,13 +10,13 @@ function App() {
         <div className="App-left">
           <img 
             draggable="false"
-            src="https://i.postimg.cc/287qgkGV/image-1.webp" 
+            src="https://i.postimg.cc/KYKQVY1B/image-2.webp" 
             alt="Logo de la aplicación" 
             className="App-logo"
           />
-          <h1 className="App-title">ParkMi - Encuentra tu plaza</h1>
+          <h1 className="App-title">Grobly - Menjar responsable</h1>
           <p className="App-subtitle">
-            Parkmi te ayuda a encontrar parking rápido, sin complicaciones. Solo tienes que buscar y aparcar donde lo necesites. ¡Así de fácil!
+            Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible i econòmic.
           </p>
           <br />
           <div className="App-buttons">
@@ -40,7 +40,7 @@ function App() {
         <div className="App-right">
           <img
             draggable="false"
-            src="https://i.postimg.cc/R0DGfQn5/20250710-1816-Estacionamiento-Reservado-Digital-remix-01jzthv8thft18ty0h4e2kmp9v.png"
+            src="https://i.postimg.cc/2jqmwdjS/20250711-0642-Agricultor-en-Colina-remix-01jzvwm9b9ebp88vkwvtj3m4th.png"
             alt="Imagen de la aplicación" 
             className="App-image"
           />
