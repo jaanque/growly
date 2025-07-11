@@ -230,3 +230,20 @@ html {
 .About-section-image {
   border-radius: 0 20px 0 0; /* Mantenim el mateix estil de border-radius que .App-image */
 }
+
+.App-button {
+  background-color: #628B00; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 1rem; /* Add some space above the button */
+}
+
+.App-button:hover {
+  background-color: #3b5301; /* Darker green on hover */
+}
