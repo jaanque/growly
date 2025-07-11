@@ -68,8 +68,16 @@
 
 .footer-social-icons a {
   color: #555;
-  font-size: 1.5rem; /* Size of icons */
   transition: color 0.3s ease;
+  display: inline-flex; /* Helps with alignment and sizing */
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icons a svg {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  fill: currentColor; /* Inherits color from <a> tag */
 }
 
 .footer-social-icons a:hover {
@@ -96,6 +104,7 @@
   .footer-column {
     min-width: 100%; /* Full width for columns on mobile */
     margin-bottom: 30px;
+    align-items: center; /* Center content of columns on mobile */
   }
 
   .footer-social-icons {

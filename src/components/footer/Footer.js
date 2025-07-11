@@ -1,7 +1,9 @@
 import React from 'react';
 import './Footer.css';
-// For a real project, you might use an icon library like react-icons
-// import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { ReactComponent as FacebookIcon } from '../../resources/icons/facebook.svg';
+import { ReactComponent as TwitterIcon } from '../../resources/icons/twitter.svg';
+import { ReactComponent as InstagramIcon } from '../../resources/icons/instagram.svg';
+import { ReactComponent as LinkedinIcon } from '../../resources/icons/linkedin.svg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -55,11 +57,10 @@ const Footer = () => {
             <a href="mailto:info@growly.app">info@growly.app</a>
           </p>
           <div className="footer-social-icons">
-            {/* Replace text with actual icons later */}
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="Twitter">TW</a>
-            <a href="#" aria-label="Instagram">IG</a>
-            <a href="#" aria-label="LinkedIn">LI</a>
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
+            <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><TwitterIcon /></a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><LinkedinIcon /></a>
           </div>
         </div>
       </div>
