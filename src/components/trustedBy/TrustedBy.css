@@ -1,6 +1,5 @@
 .TrustedBy-section {
   padding: 2rem 20px; /* Standardized vertical padding */
-  background-color: #ffffff; /* Or a very light grey if needed for separation */
   text-align: center;
   overflow: hidden; /* Important for the carousel to not show scrollbars if track is wider */
 }
@@ -47,11 +46,11 @@
 }
 
 .TrustedBy-carousel-item {
+  font-weight: bold;
   padding: 10px 20px;
   margin-right: 30px; /* Space between names */
   font-size: 1.1rem;
-  color: #555;
-  background-color: #f0f0f0; /* Slight background for each name */
+  color: #628A00;
   border-radius: 6px;
   display: inline-block; /* Ensure items stay in line */
 }
