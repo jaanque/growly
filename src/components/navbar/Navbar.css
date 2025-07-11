@@ -1,7 +1,8 @@
 /* Navbar base styles */
 .site-navbar {
-  background-color: #ffffff; /* White background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #f8f9fa; /* Match footer background */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */ /* Remove box-shadow */
+  border-bottom: 1px solid #e0e0e0; /* Match footer separation style */
   position: fixed;
   top: 0;
   left: 0;
