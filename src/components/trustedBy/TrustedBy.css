@@ -1,0 +1,67 @@
+.TrustedBy-section {
+  padding: 60px 20px;
+  background-color: #ffffff; /* Or a very light grey if needed for separation */
+  text-align: center;
+  overflow: hidden; /* Important for the carousel to not show scrollbars if track is wider */
+}
+
+.TrustedBy-container {
+  max-width: 900px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.TrustedBy-text {
+  font-size: 1.8rem; /* Prominent text */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px; /* Space between text and carousel */
+}
+
+/* Basic styles for carousel - animation and detailed styling will come later */
+.TrustedBy-carousel-container {
+  width: 100%;
+  overflow: hidden; /* Hide parts of the track that are outside */
+  position: relative; /* For potential pseudo-elements like fades */
+}
+
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    /* Move by 50% of the track's width, assuming the track is twice the content width due to duplication */
+    transform: translateX(-50%);
+  }
+}
+
+.TrustedBy-carousel-track {
+  display: flex; /* Names will be in a row */
+  white-space: nowrap; /* Prevent names from wrapping */
+  /* The animation will effectively scroll one full set of original items */
+  animation: scrollHorizontal 20s linear infinite;
+  /* Adjust duration (20s) as needed for speed. More items or slower speed = longer duration. */
+}
+
+.TrustedBy-carousel-track:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+.TrustedBy-carousel-item {
+  padding: 10px 20px;
+  margin-right: 30px; /* Space between names */
+  font-size: 1.1rem;
+  color: #555;
+  background-color: #f0f0f0; /* Slight background for each name */
+  border-radius: 6px;
+  display: inline-block; /* Ensure items stay in line */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .TrustedBy-text {
+    font-size: 1.5rem;
+  }
+  .TrustedBy-section {
+    padding: 40px 15px;
+  }
+}

@@ -63,7 +63,7 @@
 @media (max-width: 768px) {
   .WhyGrowly-section {
     /* Adjust horizontal padding for mobile, no vertical padding from the section itself. */
-    padding: 0 15px; 
+    padding: 0 15px;
   }
 
   /* .WhyGrowly-section .App-title {
