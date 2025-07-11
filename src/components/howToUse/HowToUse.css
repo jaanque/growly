@@ -1,0 +1,84 @@
+.HowToUse-section {
+  padding: 60px 20px; /* Standard padding, can be adjusted */
+  text-align: center; /* Center the title */
+  background-color: #f9f9f9; /* Slightly different background to distinguish the section */
+  /* min-height: auto; /* Unlike other 100vh sections, this might not need full height */
+}
+
+.HowToUse-container {
+  max-width: 1200px; /* Max width for the content */
+  margin: 0 auto; /* Center the container */
+}
+
+.HowToUse-title {
+  margin-bottom: 40px; /* Space below the title */
+  color: #333; /* Standard title color */
+}
+
+.HowToUse-steps-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  justify-content: space-between; /* Distribute items evenly, first and last at edges */
+  gap: 20px; /* Space between flex items */
+}
+
+.HowToUse-step {
+  padding: 25px; /* Slightly more padding */
+  border: 1px solid #e0e0e0; /* Lighter border */
+  border-radius: 10px; /* Slightly more rounded corners */
+  background-color: #ffffff;
+  /* Each step aims for roughly 1/4th of the width, accounting for the gap.
+     Using flex-basis and flex-grow for better flexibility. */
+  flex-basis: calc(25% - (3 * 20px / 4)); /* (100% - total_gap_width) / num_items. 3 gaps for 4 items. */
+  flex-grow: 1; /* Allow items to grow if there's extra space (e.g. if one item wraps and others don't) */
+  min-width: 220px; /* Minimum width before wrapping or becoming too small */
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.HowToUse-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.HowToUse-step-title {
+  font-size: 1.5rem;
+  color: #628A00; /* Using the app's primary green color */
+  margin-bottom: 10px;
+}
+
+.HowToUse-step-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+/* The flexbox properties (flex-wrap, flex-basis, min-width)
+   on .HowToUse-steps-container and .HowToUse-step
+   will naturally handle responsiveness by wrapping items.
+   Explicit width changes in media queries are often not needed
+   unless a different number of columns is strictly desired
+   at specific breakpoints, overriding the natural flow.
+   For now, we'll rely on the natural wrapping.
+*/
+
+@media (max-width: 992px) { /* Example: screens smaller than typical 4-column desktop view */
+  .HowToUse-step {
+    /* Could adjust flex-basis if we want to force 2 columns, e.g. */
+    /* flex-basis: calc(50% - 10px); /* (100% - 1*gap) / 2 items */
+    /* For now, allow natural wrapping based on min-width */
+  }
+}
+
+@media (max-width: 576px) { /* Example: smaller screens, likely 1 column */
+  .HowToUse-step {
+    /* On very small screens, items will likely take full width due to min-width and wrapping */
+    /* flex-basis: 100%; /* Ensure full width if not already happening */
+  }
+  .HowToUse-section {
+    padding: 40px 15px; /* Keep section padding adjustment for mobile */
+  }
+}
