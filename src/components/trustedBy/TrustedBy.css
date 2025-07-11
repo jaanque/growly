@@ -38,7 +38,7 @@
   display: flex; /* Names will be in a row */
   white-space: nowrap; /* Prevent names from wrapping */
   /* The animation will effectively scroll one full set of original items */
-  animation: scrollHorizontal 20s linear infinite;
+  animation: scrollHorizontal 15s linear infinite;
   /* Adjust duration (20s) as needed for speed. More items or slower speed = longer duration. */
 }
 
