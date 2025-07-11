@@ -1,49 +1,6 @@
 import './App.css';
-import { useEffect } from 'react';
 
 function App() {
-  useEffect(() => {
-    const cards = document.querySelectorAll('.Feature-card');
-    const handlers = new Map();
-    
-    cards.forEach(card => {
-      const handleMouseMove = (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        
-        const rotateX = (y - centerY) / centerY * -10;
-        const rotateY = (x - centerX) / centerX * 10;
-        
-        card.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-      };
-      
-      const handleMouseLeave = () => {
-        card.style.transform = 'translateY(-8px) rotateX(0deg) rotateY(0deg)';
-      };
-      
-      // Guardamos las referencias de los handlers
-      handlers.set(card, { handleMouseMove, handleMouseLeave });
-      
-      card.addEventListener('mousemove', handleMouseMove);
-      card.addEventListener('mouseleave', handleMouseLeave);
-    });
-    
-    // Cleanup
-    return () => {
-      cards.forEach(card => {
-        const cardHandlers = handlers.get(card);
-        if (cardHandlers) {
-          card.removeEventListener('mousemove', cardHandlers.handleMouseMove);
-          card.removeEventListener('mouseleave', cardHandlers.handleMouseLeave);
-        }
-      });
-    };
-  }, []);
-
   return (
     <div className="App">
       {/* Sección Hero */}
