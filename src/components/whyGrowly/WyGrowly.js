@@ -19,7 +19,7 @@ function WhyGrowly() {
       <div className="App-right">
         <img
           draggable="false"
-          src="https://i.postimg.cc/5N8AwncT/DALL-E-2024-03-15-11-06-01-A-vibrant-and-dynamic-image-showcasing-teamwork-and-productivity-The-ima.png"
+          src='https://i.postimg.cc/t4My9hNh/20250711-0956-Logo-Impreso-en-Bolsa-remix-01jzw7ndtyej5s6n3ez80rghjr.png'
           alt="Descripció de la imatge per a Per què Growly"
           className="App-image"
         />

@@ -27,7 +27,7 @@
 }
 
 .App-list li {
-    border: 1px solid #628A00; /* Light border for separation */
+  border: 1px solid #628A00; /* Light border for separation */
   background-color: #ffffff; /* White background for list items */
   padding: 15px 20px;
   margin-bottom: 15px; /* Space between list items */
