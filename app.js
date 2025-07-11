@@ -1,12 +1,12 @@
 import './App.css';
 import Hero from './components/Hero/Hero';
-import QuesGrobly from './components/QuesGrobly/QuesGrobly';
+import QuesGrowly from './components/QuesGrowly/QuesGrowly';
 
 function App() {
   return (
     <div className="App">
       <Hero />
-      <QuesGrobly />
+      <QuesGrowly />
     </div>
   );
 }

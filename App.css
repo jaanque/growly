@@ -6,14 +6,14 @@
   flex-direction: column;
 }
 
-/* .App-content is used by both Hero and QuesGrobly components */
+/* .App-content is used by both Hero and QuesGrowly components */
 .App-content {
   display: flex;
   width: 100%;
   min-height: 100vh;
 }
 
-/* .App-left is used by both Hero and QuesGrobly (as part of About-text-container) */
+/* .App-left is used by both Hero and QuesGrowly (as part of About-text-container) */
 .App-left {
   width: 50%;
   display: flex;
@@ -24,7 +24,7 @@
   color: #333;
 }
 
-/* .App-right is used by both Hero and QuesGrobly */
+/* .App-right is used by both Hero and QuesGrowly */
 .App-right {
   width: 50%;
   display: flex;
@@ -33,7 +33,7 @@
   overflow: hidden;
 }
 
-/* .App-title is used by both Hero and QuesGrobly */
+/* .App-title is used by both Hero and QuesGrowly */
 .App-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -41,7 +41,7 @@
   color: #333;
 }
 
-/* .App-subtitle is used by both Hero and QuesGrobly */
+/* .App-subtitle is used by both Hero and QuesGrowly */
 .App-subtitle {
   text-align: center;
   font-size: 1.3rem;
@@ -50,7 +50,7 @@
   opacity: 0.9;
 }
 
-/* .App-image is used by both Hero and QuesGrobly (QuesGrobly uses .About-section-image for override) */
+/* .App-image is used by both Hero and QuesGrowly (QuesGrowly uses .About-section-image for override) */
 .App-image {
   max-width: 100%;
   max-height: 100%;
@@ -93,7 +93,7 @@
 - .App-cta and its :hover
 */
 
-/* Styles moved to components/QuesGrobly/QuesGrobly.css:
+/* Styles moved to components/QuesGrowly/QuesGrowly.css:
 - .About-text-container and its specific .App-title, .App-subtitle
 - .About-section-image
 - Responsive styles for .About-section and .About-text-container

@@ -9,12 +9,12 @@ function About() {
         <img
           draggable="false"
           src="https://i.postimg.cc/L5GkPckf/20250711-0803-Carga-de-Productos-Frescos-remix-01jzw177xpf7js09fhjznvrsph.png"
-          alt="Descripció de la imatge per a Què es Grobly"
+          alt="Descripció de la imatge per a Què es Growly"
           className="App-image About-section-image" /* Combinem les classes */
         />
       </div>
       <div className="App-left About-text-container"> {/* Contenidor pel text, amb una nova classe per estils específics si cal */}
-        <h1 className="App-title">Què es Grobly?</h1>
+        <h1 className="App-title">Què es Growly?</h1>
         <p className="App-subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

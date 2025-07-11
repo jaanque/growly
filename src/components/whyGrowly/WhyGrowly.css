@@ -1,0 +1,82 @@
+.WhyGrowly-section {
+  padding: 60px 20px; /* Increased padding for more breathing room */
+  text-align: left; /* Align text to the left for readability */
+}
+
+.WhyGrowly-text-container {
+  max-width: 700px; /* Limit width for better readability on wider screens */
+  margin: 0 auto; /* Center the text container if it's narrower than the section */
+}
+
+/* Assuming App-title is a global class, we can add specific overrides if needed,
+   but for now, let's assume it's styled appropriately elsewhere.
+   If not, uncomment and style:
+.WhyGrowly-section .App-title {
+  color: #2c3e50; 
+  margin-bottom: 30px; 
+  font-size: 2.5rem;
+  text-align: center; 
+}
+*/
+
+.App-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+.App-list li {
+    border: 1px solid #628A00; /* Light border for separation */
+  background-color: #ffffff; /* White background for list items */
+  padding: 15px 20px;
+  margin-bottom: 15px; /* Space between list items */
+  border-radius: 8px; /* Rounded corners */
+  display: flex; /* Align icon and text */
+  align-items: center; /* Vertically align icon and text */
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: #34495e; /* Darker text color for contrast */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.App-list li:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Adding a custom bullet point using ::before pseudo-element */
+.App-list li::before {
+  content: '✓'; /* Checkmark icon */
+  color: #27ae60; /* Green color for the checkmark */
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 15px; /* Space between icon and text */
+  line-height: 1; /* Ensure it aligns well */
+}
+
+.WhyGrowly-section-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for the image */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for the image */
+  margin-top: 20px; /* Space above the image if text is on top, or adjust based on layout */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+  .WhyGrowly-section {
+    padding: 40px 15px;
+  }
+
+  /* .WhyGrowly-section .App-title {
+    font-size: 2rem;
+  } */
+
+  .App-list li {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .App-list li::before {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+}

@@ -11,14 +11,14 @@ function Hero() {
           alt="Logo de la aplicación"
           className="App-logo"
         />
-        <h1 className="App-title">Grobly - Menjar responsable</h1>
+        <h1 className="App-title">Growly - Menjar responsable</h1>
         <p className="App-subtitle">
           Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible i econòmic.
         </p>
         <br />
         <div className="App-buttons">
           <button className="App-cta">
-            Comenzar Ahora
+            Comença Ara
           </button>
           <div className="App-store-section">
             <div className="App-store-buttons">
@@ -29,7 +29,7 @@ function Hero() {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" />
               </a>
             </div>
-            <p className="App-store-text">(próximamente)</p>
+            <p className="App-store-text">(Pròximament)</p>
           </div>
         </div>
       </div>
