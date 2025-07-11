@@ -21,7 +21,8 @@ function TrustedBy() {
   ];
 
   // For a smooth infinite scroll, we duplicate the content for the animation.
-  const displayNames = [...farmerNames, ...farmerNames];
+  // Using three copies can sometimes help smooth transitions.
+  const displayNames = [...farmerNames, ...farmerNames, ...farmerNames];
 
 
   return (

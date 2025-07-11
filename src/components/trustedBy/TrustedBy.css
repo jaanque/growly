@@ -29,8 +29,8 @@
     transform: translateX(0%);
   }
   100% {
-    /* Move by 50% of the track's width, assuming the track is twice the content width due to duplication */
-    transform: translateX(-50%);
+    /* Move by 1/3 of the track's width, as the track is now three times the content width due to triplication */
+    transform: translateX(-33.333333%);
   }
 }
 
