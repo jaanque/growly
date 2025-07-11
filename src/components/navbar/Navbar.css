@@ -1,8 +1,7 @@
 /* Navbar base styles */
 .site-navbar {
-  background-color: #f8f9fa; /* Match footer background */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */ /* Remove box-shadow */
-  border-bottom: 1px solid #e0e0e0; /* Match footer separation style */
+  background-color: rgba(248, 249, 250, 0.85); /* Semi-transparent version of footer background */
+  border-bottom: 1px solid rgba(224, 224, 224, 0.5); /* Lighter, semi-transparent border */
   position: fixed;
   top: 0;
   left: 0;
@@ -12,6 +11,10 @@
   display: flex;
   align-items: center; /* Vertically center content */
   padding: 0 20px; /* Horizontal padding */
+
+  /* Transparency and Blur Effect */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
 }
 
 .navbar-container {
@@ -41,49 +44,6 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
   /* Add a delay if needed to sync with Hero logo fade out, e.g., transition-delay: 0.1s; */
 }
-
-/* This class would be added by JS when isLogoInNavbar is true,
-   but since Navbar.js directly renders the img when true,
-   we can just style .navbar-logo to be visible when it's in the DOM.
-   The conditional rendering in JS and this CSS handles the appear effect.
-   So, if isLogoInNavbar is true, the img is rendered, and its default state is opacity 0,
-   then we need a class to make it visible, or change the logic.
-
-   Let's adjust: The logo is IN the DOM when isLogoInNavbar is true.
-   Its initial styles are opacity 0. We want it to transition to opacity 1.
-   This can be done by triggering a style change shortly after it's mounted,
-   or by having an "active" class.
-
-   A simpler way for now: The transition will play when it's inserted.
-   We need to ensure its final state (opacity 1, scale 1) is defined
-   when it *should* be visible.
-   The conditional rendering in Navbar.js already handles its presence.
-   The animation will occur when it's added to the DOM if its target state
-   is opacity 1 / scale 1 and initial state is opacity 0 / scale 0.8.
-
-   Let's refine the Navbar.js to toggle a class for the animation instead.
-   No, the current React conditional rendering is fine.
-   The issue is that the transition applies on first render.
-   We need to ensure the *target* styles are what we want, and the *initial* styles are set up for transition.
-   The current .navbar-logo defines the "animated-in" state.
-   Let's re-think.
-*/
-
-/* Simpler: When the logo is rendered by React, it will have these styles.
-   If we want it to animate in, its "base" style should be visible,
-   and a class is added to trigger the animation, or its initial state is "out"
-   and it transitions to "in".
-   Let's assume the transition on .navbar-logo will play when it's added to the DOM
-   if its "final" (styled) state is different from its "initial" (from-nothing) state.
-   This is often tricky with just CSS and conditional rendering.
-
-   Alternative: Two logos, one in Hero, one in Navbar.
-   Hero logo: .App-logo. When scrolled: .App-logo-scrolled (opacity 0, scale 0.5)
-   Navbar logo: .navbar-logo. Initially hidden. When scrolled: .navbar-logo-visible (opacity 1, scale 1)
-
-   Let's stick to the current structure and assume the transition on .navbar-logo
-   will make it appear smoothly. We need to ensure it transitions *to* opacity 1 and scale 1.
-*/
 
 .navbar-logo.visible { /* We'll add this class in Navbar.js */
   opacity: 1;
