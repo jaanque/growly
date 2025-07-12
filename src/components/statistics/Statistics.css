@@ -1,69 +1,73 @@
 .Statistics-section {
-    padding: 2rem 20px;
+    padding: 2rem 0; /* Section padding, horizontal removed as items will have their own */
     text-align: center;
     background-color: #f8f8f8;
   }
 
-  .Statistics-container {
-    max-width: 1200px; /* This container still limits overall width on very large screens */
+  /* This container will now be full width for this section */
+  .Statistics-section .Statistics-container {
+    max-width: none;
+    width: 100%;
+    padding: 0; /* Remove padding if items will handle it */
     margin: 0 auto;
   }
 
   .Statistics-title {
     margin-bottom: 40px;
     color: #333;
-    font-size: 2.2rem; /* Slightly larger title */
+    font-size: 2.8rem; /* Even larger title */
+    padding: 0 20px; /* Add padding back to title if container lost it */
   }
 
   .Statistics-data-container {
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Make items take full width */
-    gap: 20px; /* Increased gap for larger text */
+    align-items: stretch;
+    gap: 15px; /* Gap between items */
   }
 
   .Statistics-text-item {
-    font-size: 1.8rem; /* Increased base font size */
+    font-size: 2.5rem; /* Significantly increased base font size */
     color: #333;
-    text-align: center; /* Text alignment for each item */
-    width: 100%; /* Item takes full width of the container */
-    padding: 10px 0; /* Add some vertical padding */
+    text-align: center;
+    width: 100%;
+    padding: 15px 20px; /* Padding for each item, includes horizontal for screen edges */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
   }
 
   .Statistics-period {
-    /* Specific styles for period if needed, e.g., color */
+    /* Specific styles for period if needed */
   }
 
   .Statistics-quantity-bold {
     font-weight: bold;
     color: #628A00;
-    font-size: 1.9rem; /* Increased font size for quantity */
-    margin-left: 10px; /* Add a small space if period and quantity are on the same line visually */
+    font-size: 2.6rem; /* Significantly increased font size for quantity */
+    margin-left: 15px;
   }
 
   @media (max-width: 768px) {
     .Statistics-title {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
     .Statistics-text-item {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      padding: 10px 15px;
     }
     .Statistics-quantity-bold {
-      font-size: 1.6rem;
+      font-size: 2.1rem;
     }
   }
 
   @media (max-width: 576px) {
-    .Statistics-section {
-      padding: 2rem 15px;
-    }
     .Statistics-title {
       font-size: 1.8rem;
     }
     .Statistics-text-item {
-      font-size: 1.3rem;
+      font-size: 1.6rem; /* Adjusted for smaller screens */
+      padding: 10px 10px;
     }
     .Statistics-quantity-bold {
-      font-size: 1.4rem;
+      font-size: 1.7rem; /* Adjusted for smaller screens */
     }
   }
