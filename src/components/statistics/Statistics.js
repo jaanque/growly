@@ -28,7 +28,7 @@ function Statistics() {
   return (
     <div id="statistics" className="Statistics-section">
       <div className="Statistics-container">
-        <h1 className="App-title Statistics-title">📊 Quantitats estimades de material agrícola desaprofitat</h1>
+        <h1 className="App-title Statistics-title">Quantitats estimades de material agrícola desaprofitat</h1>
         <div className="Statistics-data-container">
           {data.map(item => (
             <div key={item.id} className="Statistics-text-item">
