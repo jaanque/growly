@@ -1,48 +1,50 @@
 .Statistics-section {
-    padding: 2rem 0; /* Section padding, horizontal removed as items will have their own */
+    padding: 2rem 0;
     text-align: center;
+    background-color: #f8f8f8;
   }
 
-  /* This container will now be full width for this section */
   .Statistics-section .Statistics-container {
     max-width: none;
     width: 100%;
-    padding: 0; /* Remove padding if items will handle it */
+    padding: 0;
     margin: 0 auto;
   }
 
   .Statistics-title {
     margin-bottom: 40px;
     color: #333;
-    font-size: 2.8rem; /* Even larger title */
-    padding: 0 20px; /* Add padding back to title if container lost it */
+    font-size: 2.8rem;
+    padding: 0 20px;
   }
 
   .Statistics-data-container {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 15px; /* Gap between items */
+    gap: 15px;
   }
 
   .Statistics-text-item {
-    font-size: 2.5rem; /* Significantly increased base font size */
+    display: flex; /* Use flexbox to position children */
+    justify-content: space-between; /* Push children to opposite ends */
+    align-items: center; /* Align items vertically */
+    font-size: 2.5rem;
     color: #333;
-    text-align: center;
     width: 100%;
-    padding: 15px 20px; /* Padding for each item, includes horizontal for screen edges */
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    padding: 15px 20px;
+    box-sizing: border-box;
   }
 
   .Statistics-period {
-    /* Specific styles for period if needed */
+    /* No specific styles needed now beyond what text-item provides */
   }
 
   .Statistics-quantity-bold {
     font-weight: bold;
     color: #628A00;
-    font-size: 2.6rem; /* Significantly increased font size for quantity */
-    margin-left: 15px;
+    font-size: 2.6rem;
+    /* margin-left: 15px; Removed as space-between handles it */
   }
 
   @media (max-width: 768px) {
@@ -63,10 +65,13 @@
       font-size: 1.8rem;
     }
     .Statistics-text-item {
-      font-size: 1.6rem; /* Adjusted for smaller screens */
+      font-size: 1.6rem;
       padding: 10px 10px;
     }
     .Statistics-quantity-bold {
-      font-size: 1.7rem; /* Adjusted for smaller screens */
+      font-size: 1.7rem;
     }
+    /* For very small screens, space-between might be too much.
+       Could switch to column layout for item's children if needed,
+       but let's see how it behaves first. */
   }
