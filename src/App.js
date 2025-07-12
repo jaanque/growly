@@ -4,6 +4,7 @@ import Hero from './components/hero/Hero';
 import About from './components/about/About';
 import WhyGrowly from './components/whyGrowly/WyGrowly';
 import HowToUse from './components/howToUse/HowToUse';
+import Statistics from './components/statistics/Statistics'; // Import the Statistics component
 import ContactForm from './components/contactForm/ContactForm'; // Import the ContactForm component
 import TrustedBy from './components/trustedBy/TrustedBy'; // Import the new TrustedBy component
 import Footer from './components/footer/Footer'; // Import the Footer component
@@ -39,6 +40,7 @@ function App() {
       <About />
       <WhyGrowly />
       <HowToUse />
+      <Statistics />
       <ContactForm /> {/* Add the ContactForm component here */}
       <TrustedBy /> {/* Add the new TrustedBy component here */}
       <Footer /> {/* Add the Footer component here */}
