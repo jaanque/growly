@@ -1,7 +1,7 @@
 .Statistics-section {
     padding: 2rem 20px;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #f8f8f8; /* Keeping section background for now, can be removed if needed */
   }
 
   .Statistics-container {
@@ -16,49 +16,38 @@
 
   .Statistics-data-container {
     display: flex;
-    flex-direction: column; /* Display items in a column */
-    align-items: center; /* Center items horizontally */
-    gap: 20px;
+    flex-direction: column;
+    align-items: center; /* Or 'flex-start' if left-alignment is preferred */
+    gap: 15px; /* Space between text items */
   }
 
-  .Statistics-item {
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    background-color: #ffffff;
-    width: 80%; /* Item takes up 80% of the container's width */
-    max-width: 600px; /* Max width for larger screens */
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px solid #628A00;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  .Statistics-text-item {
+    font-size: 1.2rem; /* Base font size for the item text */
+    color: #333; /* Text color */
+    text-align: center; /* Or 'left' if preferred */
+    width: 100%; /* Ensure it takes available width for alignment */
+    max-width: 600px; /* Consistent max width */
   }
 
-  .Statistics-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  .Statistics-period {
+    /* Specific styles for period if needed, e.g., color */
   }
 
-  .Statistics-item-period {
-    font-size: 1.5rem;
-    color: #628A00;
-    margin-bottom: 10px;
+  .Statistics-quantity-bold {
+    font-weight: bold;
+    color: #628A00; /* Using the app's primary green color for emphasis */
+    font-size: 1.25rem; /* Slightly larger for emphasis */
   }
 
-  .Statistics-item-quantity {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  @media (max-width: 768px) {
-    .Statistics-item {
-      width: 95%; /* Take more width on smaller screens */
-    }
-  }
-
+  /* Media queries can be adjusted or removed if the simple text flows well */
   @media (max-width: 576px) {
     .Statistics-section {
       padding: 2rem 15px;
+    }
+    .Statistics-text-item {
+      font-size: 1.1rem;
+    }
+    .Statistics-quantity-bold {
+      font-size: 1.15rem;
     }
   }
