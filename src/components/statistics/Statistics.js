@@ -5,30 +5,30 @@ function Statistics() {
   const data = [
     {
       id: 1,
-      period: "Diaria:",
-      quantity: "≈ 2.300.000 kg",
+      period: "Diaria --",
+      quantity: " 2.300.000 kg",
     },
     {
       id: 2,
-      period: "Setmanal:",
-      quantity: "≈ 16.000.000 kg",
+      period: "Setmanal --",
+      quantity: " 16.000.000 kg",
     },
     {
       id: 3,
-      period: "Mensual:",
-      quantity: "≈ 70.000.000 kg",
+      period: "Mensual --",
+      quantity: " 70.000.000 kg",
     },
     {
       id: 4,
-      period: "Anual:",
-      quantity: "≈ 850.000.000 kg",
+      period: "Anual --",
+      quantity: " 850.000.000 kg",
     }
   ];
 
   return (
     <div id="statistics" className="Statistics-section">
       <div className="Statistics-container">
-        <h1 className="App-title Statistics-title">📊 Quantitats estimades de material agrícola desaprofitat</h1>
+        <h1 className="App-title Statistics-title">Quantitats de material agrícola desaprofitat</h1>
         <div className="Statistics-data-container">
           {data.map(item => (
             <div key={item.id} className="Statistics-text-item">
