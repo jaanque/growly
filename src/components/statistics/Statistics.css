@@ -18,6 +18,13 @@
     /* letter-spacing: 2px; Removed */
   }
 
+  .Statistics-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
   .Statistics-data-container {
     display: flex;
     flex-direction: column;

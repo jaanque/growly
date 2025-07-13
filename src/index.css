@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-top: 60px; /* Default navbar height */
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {

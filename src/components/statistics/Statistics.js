@@ -29,6 +29,7 @@ function Statistics() {
     <div id="statistics" className="Statistics-section">
       <div className="Statistics-container">
         <h1 className="App-title Statistics-title">Quantitats de material agrícola desaprofitat</h1>
+        <p className="Statistics-subtitle">Descobreix l'impacte real de les pèrdues agrícoles i la nostra missió per canviar-ho.</p>
         <div className="Statistics-data-container">
           {data.map(item => (
             <div key={item.id} className="Statistics-text-item">
