@@ -2,7 +2,7 @@
   padding: 2rem 20px; /* Standardized vertical padding */
   background-color: #ffffff; /* Or a very light grey if needed for separation */
   text-align: center;
-  overflow: hidden; /* Important for the carousel to not show scrollbars if track is wider */
+  overflow-x: hidden; /* Important for the carousel to not show scrollbars if track is wider */
 }
 
 .TrustedBy-container {
