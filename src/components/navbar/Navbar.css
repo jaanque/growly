@@ -140,7 +140,7 @@
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
     flex-direction: column;
-    width: calc(100% - 40px);
+    width: 100%;
     position: absolute;
     top: 60px;
     left: 50%;
