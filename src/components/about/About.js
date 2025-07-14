@@ -16,14 +16,14 @@ function About() {
       <div className="App-left About-text-container"> {/* Contenidor pel text, amb una nova classe per estils específics si cal */}
         <h1 className="App-title">Què es Growly?</h1>
         <p className="App-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          En la actualidad, la agricultura enfrenta serios desafíos que amenazan su viabilidad. Debido a la competencia del mercado internacional, los productos agrícolas importados suelen ser más económicos, lo que pone en jaque a nuestros agricultores locales. Sin embargo, existe una solución innovadora para mitigar esta problemática: una  plataforma que permite la venta de excedentes agrícolas.
         </p>
         <p className="App-subtitle">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Esta ofrecerá un espacio donde los agricultores puedan vender lo que no logran comercializar, evitando así el desperdicio de alimentos. Al conectar directamente a los productores con consumidores interesados en adquirir frescura y calidad a precios accesibles, fomentamos el apoyo a nuestra economía local y reducimos el impacto medioambiental del desperdicio alimentario.
         </p>
-        <br />
+        <p className="App-subtitle">
+          Con este enfoque, no solo contribuimos a la sostenibilidad del sector agrícola, sino que también generamos conciencia sobre la importancia de consumir productos locales. La unión entre tecnología y agricultura puede ser la clave para revitalizar este noble negocio.
+        </p>
         <button className="App-button">Descobreix Growly</button>
       </div>
     </div>

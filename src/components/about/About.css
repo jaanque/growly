@@ -47,7 +47,7 @@
 .About-text-container .App-subtitle { /* Estilos para el subtítulo/párrafos dentro de About */
   text-align: left; /* Paràgrafs alineats a l'esquerra */
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 1rem;
   color: #333; /* Heredado o específico */
   opacity: 0.9; /* Heredado o específico */
