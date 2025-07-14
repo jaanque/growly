@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 
 // Accept isLogoInNavbar as a prop
-function Hero({ isLogoInNavbar, onLogoAnimationFinish }) {
+function Hero({ isLogoInNavbar }) {
   return (
     <div id="hero" className="App-content hero-section">
       <div className="App-left">
@@ -12,7 +12,6 @@ function Hero({ isLogoInNavbar, onLogoAnimationFinish }) {
           alt="Logo de la aplicación"
           // Add a class based on the prop for styling the transition
           className={`App-logo ${isLogoInNavbar ? 'App-logo-scrolled' : ''}`}
-          onTransitionEnd={onLogoAnimationFinish}
         />
         <h1 className="App-title">Growly - Menjar responsable</h1>
         <p className="App-subtitle">

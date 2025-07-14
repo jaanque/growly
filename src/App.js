@@ -12,37 +12,28 @@ import React, { useState, useEffect } from 'react'; // Import useState and useEf
 
 function App() {
   const [isLogoInNavbar, setIsLogoInNavbar] = useState(false);
-  const [logoAnimationFinished, setLogoAnimationFinished] = useState(false);
-
-  const handleLogoAnimationFinish = () => {
-    setLogoAnimationFinished(true);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
-      // Define a scroll threshold (e.g., 100px).
-      // This value might need to be dynamic, e.g., based on Hero section height.
       const scrollThreshold = 100;
       if (window.scrollY > scrollThreshold) {
         setIsLogoInNavbar(true);
       } else {
         setIsLogoInNavbar(false);
-        setLogoAnimationFinished(false); // Reset animation state when scrolling up
       }
     };
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup function to remove the event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
+  }, []);
 
   return (
     <div className="App">
-      <Navbar isLogoInNavbar={isLogoInNavbar} logoAnimationFinished={logoAnimationFinished} /> {/* Pass prop to Navbar */}
-      <Hero isLogoInNavbar={isLogoInNavbar} onLogoAnimationFinish={handleLogoAnimationFinish} /> {/* Pass prop to Hero */}
+      <Navbar isLogoInNavbar={isLogoInNavbar} />
+      <Hero isLogoInNavbar={isLogoInNavbar} />
       <About />
       <WhyGrowly />
       <HowToUse />
