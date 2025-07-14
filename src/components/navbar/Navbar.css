@@ -203,6 +203,18 @@
     text-align: center;
   }
 
+  .nav-links .navbar-cta-container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .nav-links .navbar-cta-button {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
   .nav-links li a {
     padding: 12px 15px; /* Increase padding for better touchability */
     font-size: 1rem; /* Increase font size for better readability */
