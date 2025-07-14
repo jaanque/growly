@@ -4,7 +4,7 @@ import './Hero.css';
 // Accept isLogoInNavbar as a prop
 function Hero({ isLogoInNavbar }) {
   return (
-    <div id="hero" className="App-content">
+    <div id="hero" className="App-content hero-section">
       <div className="App-left">
         <img
           draggable="false"

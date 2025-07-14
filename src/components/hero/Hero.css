@@ -1,16 +1,13 @@
 /* Estilos para el componente Hero */
-.App-content {
+.hero-section {
   position: relative; /* Para posicionar el texto encima */
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
   background-image: url('https://i.postimg.cc/2jqmwdjS/20250711-0642-Agricultor-en-Colina-remix-01jzvwm9b9ebp88vkwvtj3m4th.png');
   background-size: cover;
   background-position: center;
   color: white; /* Color del texto para que sea legible */
 }
 
-.App-content::before {
+.hero-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -124,7 +121,7 @@
 
 /* Responsive design para Hero */
 @media (max-width: 768px) {
-  .App-content {
+  .hero-section {
     flex-direction: column;
   }
 
