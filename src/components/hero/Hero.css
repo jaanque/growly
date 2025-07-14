@@ -139,8 +139,8 @@
   .App-left {
     width: 100%;
     padding: 1.5rem;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
 
   .App-logo {
@@ -150,23 +150,23 @@
 
   .App-title {
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
   }
 
   .App-subtitle {
     font-size: 1.2rem;
     padding: 0 1rem; /* Add some padding to the sides */
-    text-align: left;
+    text-align: center;
   }
 
   .App-buttons {
     flex-direction: column;
     gap: 1rem;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .App-store-buttons {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 
