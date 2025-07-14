@@ -55,7 +55,7 @@
 
 /* Style for the image within the WhyGrowly section */
 .WhyGrowly-section .App-image {
-  border-radius: 20px 0 0 0; /* Round top-left corner only */
+  border-radius: 20px 0 20px 0; /* Round top-left and bottom-right corners */
 }
 
 /* Responsive adjustments if needed */

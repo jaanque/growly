@@ -228,7 +228,7 @@ html {
 }
 
 .About-section-image {
-  border-radius: 0 20px 0 0; /* Mantenim el mateix estil de border-radius que .App-image */
+  border-radius: 0 20px 20px 0; /* Mantenim el mateix estil de border-radius que .App-image */
 }
 
 .App-button {

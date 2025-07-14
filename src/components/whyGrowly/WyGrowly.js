@@ -21,7 +21,7 @@ function WhyGrowly() {
           draggable="false"
           src='https://i.postimg.cc/t4My9hNh/20250711-0956-Logo-Impreso-en-Bolsa-remix-01jzw7ndtyej5s6n3ez80rghjr.png'
           alt="Descripció de la imatge per a Per què Growly"
-          className="App-image"
+          className="App-image why-growly-image"
         />
       </div>
     </div>
