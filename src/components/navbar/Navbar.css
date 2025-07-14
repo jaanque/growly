@@ -107,6 +107,11 @@
   text-decoration: none; /* Ensure no underline on hover for buttons */
 }
 
+.site-navbar.floating .navbar-cta-button {
+  border-radius: 50px;
+  transition: border-radius 0.4s ease-in-out;
+}
+
 
 /* Responsive adjustments (basic for now) */
 @media (max-width: 768px) {
