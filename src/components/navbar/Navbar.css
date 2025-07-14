@@ -94,6 +94,7 @@
 .navbar-logo-placeholder {
   display: flex;
   justify-content: flex-start;
+  flex-grow: 1;
 }
 
 .navbar-cta-container {
@@ -137,6 +138,11 @@
 @media (max-width: 768px) {
   .navbar-container {
     justify-content: space-between; /* Ensure logo and CTA are spaced out */
+    gap: 15px;
+  }
+
+  .navbar-logo-placeholder {
+    flex-grow: 1;
   }
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
@@ -180,14 +186,12 @@
   }
 
   .navbar-cta-container {
-    margin-left: 0; /* Reset margin for centering or positioning */
-    order: 2;
+    order: 3;
   }
 
   .menu-icon {
     display: block;
-    order: 3;
-    margin-left: 15px;
+    order: 2;
   }
   .site-navbar {
     height: 50px; /* Slightly smaller on mobile */

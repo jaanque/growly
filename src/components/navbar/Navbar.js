@@ -43,6 +43,9 @@ const Navbar = ({ isLogoInNavbar }) => {
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
+        <div className="navbar-cta-container">
+          <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>
+        </div>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <li><a href="#hero" onClick={() => setIsMenuOpen(false)}>Inici</a></li>
           <li><a href="#about" onClick={() => setIsMenuOpen(false)}>Sobre Nosaltres</a></li>
@@ -55,9 +58,6 @@ const Navbar = ({ isLogoInNavbar }) => {
           <li><a href="#trusted-by">Confien en Nosaltres</a></li>
           */ }
         </ul>
-        <div className="navbar-cta-container">
-          <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>
-        </div>
       </div>
     </nav>
   );
