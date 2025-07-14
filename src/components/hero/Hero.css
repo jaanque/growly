@@ -76,7 +76,7 @@
 .App-store-btn {
   display: inline-block;
   transition: all 0.3s ease;
-  border-radius: 8px;
+  border-radius: 50px;
   overflow: hidden;
 }
 
