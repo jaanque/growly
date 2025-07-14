@@ -90,12 +90,12 @@
   .App-left.About-text-container {
     padding-left: 2rem; /* Reduïm padding en mòbil */
     padding-right: 2rem;
-    align-items: center; /* Centrem el text en mòbil */
+    align-items: flex-start; /* Alineamos a la izquierda */
   }
 
   .About-text-container .App-title,
   .About-text-container .App-subtitle {
-    text-align: center; /* Text centrat en mòbil */
+    text-align: left; /* Alineamos a la izquierda */
   }
 
   .About-text-container .App-title {

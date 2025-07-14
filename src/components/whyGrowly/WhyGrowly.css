@@ -69,21 +69,22 @@
   .WhyGrowly-section {
     /* Adjust horizontal padding for mobile, no vertical padding from the section itself. */
     padding: 0 15px;
-    text-align: center;
+    text-align: left;
   }
 
   .WhyGrowly-section .App-title {
     font-size: 2rem;
+    text-align: left;
   }
 
   .App-list {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .App-list li {
     font-size: 1rem;
     padding: 12px 15px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .App-list li::before {
