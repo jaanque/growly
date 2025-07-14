@@ -20,7 +20,7 @@ function Hero({ isLogoInNavbar }) {
         <br />
         <div className="App-buttons">
           <button className="App-cta">
-            Comença Ara
+            Comença ara
           </button>
           <div className="App-store-section">
             <div className="App-store-buttons">

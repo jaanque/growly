@@ -17,26 +17,26 @@ const ContactForm = () => {
           <h2>Vols formar part del futur?</h2>
           <form>
             <div className="form-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Nom</label>
               <input type="text" id="name" name="name" required />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Correu Electrònic</label>
               <input type="email" id="email" name="email" required />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">Phone (Optional)</label>
+              <label htmlFor="phone">Telèfon (Opcional)</label>
               <input type="tel" id="phone" name="phone" />
             </div>
             <div className="form-group">
-              <label htmlFor="userType">I am a...</label>
+              <label htmlFor="userType">Sóc...</label>
               <select id="userType" name="userType" required>
-                <option value="">Select type</option>
-                <option value="buyer">Buyer</option>
-                <option value="seller">Seller</option>
+                <option value="">Selecciona un tipus</option>
+                <option value="buyer">Comprador</option>
+                <option value="seller">Venedor</option>
               </select>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Enviar</button>
           </form>
         </div>
       </div>

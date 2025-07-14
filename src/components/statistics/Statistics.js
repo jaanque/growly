@@ -5,7 +5,7 @@ function Statistics() {
   const data = [
     {
       id: 1,
-      period: "Diaria --",
+      period: "Diària --",
       quantity: " 2.300.000 kg",
     },
     {
@@ -28,7 +28,7 @@ function Statistics() {
   return (
     <div id="statistics" className="Statistics-section">
       <div className="Statistics-container">
-        <h1 className="App-title Statistics-title">Quantitats de material agrícola desaprofitat</h1>
+        <h1 className="App-title Statistics-title">Quantitat de material agrícola desaprofitat</h1>
         <p className="Statistics-subtitle">Descobreix l'impacte real de les pèrdues agrícoles i la nostra missió per canviar-ho.</p>
         <div className="Statistics-data-container">
           {data.map(item => (

@@ -14,15 +14,15 @@ function About() {
         />
       </div>
       <div className="App-left About-text-container"> {/* Contenidor pel text, amb una nova classe per estils específics si cal */}
-        <h1 className="App-title">Què es Growly?</h1>
+        <h1 className="App-title">Què és Growly?</h1>
         <p className="App-subtitle">
-          En la actualidad, la agricultura enfrenta serios desafíos que amenazan su viabilidad. Debido a la competencia del mercado internacional, los productos agrícolas importados suelen ser más económicos, lo que pone en jaque a nuestros agricultores locales. Sin embargo, existe una solución innovadora para mitigar esta problemática: una  plataforma que permite la venta de excedentes agrícolas.
+          En l'actualitat, l'agricultura enfronta seriosos desafiaments que amenacen la seva viabilitat. A causa de la competència del mercat internacional, els productes agrícoles importats solen ser més econòmics, la qual cosa posa en perill els nostres agricultors locals. No obstant això, existeix una solució innovadora per mitigar aquesta problemàtica: una plataforma que permet la venda d'excedents agrícoles.
         </p>
         <p className="App-subtitle">
-          Esta ofrecerá un espacio donde los agricultores puedan vender lo que no logran comercializar, evitando así el desperdicio de alimentos. Al conectar directamente a los productores con consumidores interesados en adquirir frescura y calidad a precios accesibles, fomentamos el apoyo a nuestra economía local y reducimos el impacto medioambiental del desperdicio alimentario.
+          Aquesta oferirà un espai on els agricultors puguin vendre el que no aconsegueixen comercialitzar, evitant així el malbaratament d'aliments. En connectar directament els productors amb consumidors interessats a adquirir frescor i qualitat a preus accessibles, fomentem el suport a la nostra economia local i reduïm l'impacte mediambiental del malbaratament alimentari.
         </p>
         <p className="App-subtitle">
-          Con este enfoque, no solo contribuimos a la sostenibilidad del sector agrícola, sino que también generamos conciencia sobre la importancia de consumir productos locales. La unión entre tecnología y agricultura puede ser la clave para revitalizar este noble negocio.
+          Amb aquest enfocament, no només contribuïm a la sostenibilitat del sector agrícola, sinó que també generem consciència sobre la importància de consumir productes locals. La unió entre tecnologia i agricultura pot ser la clau per revitalitzar aquest noble negoci.
         </p>
         <br />
         <button className="App-button">Descobreix Growly</button>

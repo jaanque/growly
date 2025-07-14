@@ -8,12 +8,12 @@ function WhyGrowly() {
         <div className="WhyGrowly-text-container">
           <h1 className="App-title">Per què Growly?</h1>
           <ul className="App-list">
-            <li>Porque detrás de cada cosecha hay esfuerzo, y no debería perderse.</li>
-            <li>Porque si es de aquí, ¿para qué buscarlo fuera?</li>
-            <li>Porque comer bien debería ser fácil, justo y posible.</li>
-            <li>Porque hay otra forma de hacer las cosas.</li>
-            <li>Porque lo que se cultiva con cariño, merece su destino.</li>
-            <li>Porque esto va de personas, no de desperdicio.</li>
+            <li>Perquè darrere de cada collita hi ha esforç, i no s'hauria de perdre.</li>
+            <li>Perquè si és d'aquí, per què buscar-ho fora?</li>
+            <li>Perquè menjar bé hauria de ser fàcil, just i possible.</li>
+            <li>Perquè hi ha una altra manera de fer les coses.</li>
+            <li>Perquè el que es cultiva amb afecte, mereix el seu destí.</li>
+            <li>Perquè això va de persones, no de malbaratament.</li>
           </ul>
         </div>
       </div>
