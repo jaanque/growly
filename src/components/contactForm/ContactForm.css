@@ -102,15 +102,19 @@ button[type="submit"]:hover {
 }
 
 /* Responsive adjustments */
+@media (max-width: 992px) {
+  .contact-form-wrapper {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-form-wrapper {
     flex-direction: column; /* Stack image and form vertically */
   }
 
   .contact-form-image-container {
-    max-height: 300px; /* Limit image height on mobile */
-    flex: none; /* Reset flex property */
-    width: 100%;
+    display: none; /* Hide the image on small screens to avoid overflow issues */
   }
 
   .contact-form-container {
