@@ -36,14 +36,6 @@ function Hero({ isLogoInNavbar }) {
         </div>
       </div>
 
-      <div className="App-right">
-        <img
-          draggable="false"
-          src="https://i.postimg.cc/2jqmwdjS/20250711-0642-Agricultor-en-Colina-remix-01jzvwm9b9ebp88vkwvtj3m4th.png"
-          alt="Imagen de la aplicación"
-          className="App-image"
-        />
-      </div>
     </div>
   );
 }

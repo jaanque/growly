@@ -1,26 +1,35 @@
 /* Estilos para el componente Hero */
-.App-content { /* Mantener si es un layout general del componente, sino mover a App.css */
+.App-content {
+  position: relative; /* Para posicionar el texto encima */
   display: flex;
   width: 100%;
-  min-height: 100vh; /* Ajustar si el Hero no ocupa toda la altura */
+  min-height: 100vh;
+  background-image: url('https://i.postimg.cc/2jqmwdjS/20250711-0642-Agricultor-en-Colina-remix-01jzvwm9b9ebp88vkwvtj3m4th.png');
+  background-size: cover;
+  background-position: center;
+  color: white; /* Color del texto para que sea legible */
+}
+
+.App-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Superposición oscura para la legibilidad del texto */
+  z-index: 1;
 }
 
 .App-left {
-  width: 50%;
+  width: 100%; /* Ocupar todo el ancho */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  color: #333;
-}
-
-.App-right {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  z-index: 2; /* Para que el contenido esté por encima de la superposición */
+  color: #fff; /* Asegurar que el texto sea blanco */
 }
 
 .App-logo {
@@ -34,14 +43,14 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #333;
+  color: #fff;
 }
 
 .App-subtitle {
   text-align: center;
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: #fff;
   opacity: 0.9;
 }
 
@@ -113,25 +122,14 @@
   color: #ffffff;
 }
 
-.App-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 0 0 0 20px;
-}
-
 /* Responsive design para Hero */
 @media (max-width: 768px) {
-  .App-content { /* Aplicar a la clase específica del Hero si se renombra */
+  .App-content {
     flex-direction: column;
   }
 
-  .App-left, .App-right {
+  .App-left {
     width: 100%;
-  }
-
-  .App-right { /* Ajustar si el Hero tiene una imagen que necesita altura específica en móvil */
-    min-height: 50vh;
   }
 
   .App-logo {
