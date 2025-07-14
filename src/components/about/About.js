@@ -24,6 +24,7 @@ function About() {
         <p className="App-subtitle">
           Con este enfoque, no solo contribuimos a la sostenibilidad del sector agrícola, sino que también generamos conciencia sobre la importancia de consumir productos locales. La unión entre tecnología y agricultura puede ser la clave para revitalizar este noble negocio.
         </p>
+        <br />
         <button className="App-button">Descobreix Growly</button>
       </div>
     </div>
