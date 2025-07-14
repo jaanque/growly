@@ -134,6 +134,7 @@
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
+    padding-top: 70px !important;
   }
 
   .App-left {
@@ -146,6 +147,7 @@
   .App-logo {
     width: 80px; /* Increase logo size for better visibility */
     height: 80px;
+    margin-top: 20px;
   }
 
   .App-title {
