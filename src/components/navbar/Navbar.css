@@ -156,8 +156,7 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     padding: 1rem 0;
-    align-items: flex-start; /* Align items to the left */
-    padding-left: 20px; /* Add some padding to the left */
+    align-items: center; /* Center items */
     box-sizing: border-box; /* Ensure padding is included in the width */
   }
 
@@ -181,10 +180,14 @@
     gap: 10px; /* Reduced gap */
   }
 
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
   .nav-links li a {
     padding: 12px 15px; /* Increase padding for better touchability */
     font-size: 1rem; /* Increase font size for better readability */
-    width: 100%; /* Make the links take up the full width */
     display: block; /* Make the links take up the full width */
   }
 }
