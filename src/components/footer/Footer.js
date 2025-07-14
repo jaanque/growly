@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="footer-column links-column">
           <h4>Recursos</h4>
           <ul>
-            <li><a href="#">Contacta'ns</a></li>
+            <li><a href="#contacto-form">Contacta'ns</a></li>
             <li><a href="#">Mapa del Lloc</a></li>
           </ul>
         </div>

@@ -38,7 +38,7 @@ const Navbar = ({ isLogoInNavbar }) => {
           <li><a href="#about">Sobre Nosaltres</a></li>
           <li><a href="#why-growly">Per què Growly</a></li>
           <li><a href="#statistics">Estadístiques</a></li>
-          <li><a href="#contact-form-section">Contacte</a></li>
+          <li><a href="#contacto-form">Contacte</a></li>
           { /*
           <li><a href="#how-to-use">Com Utilitzar</a></li>
           <li><a href="#blog">Blog</a></li>

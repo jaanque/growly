@@ -33,8 +33,9 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .navbar-logo-placeholder {
@@ -87,8 +88,18 @@
   /* background-color: #f0f0f0; /* Optional: slight background on hover */
 }
 
+.navbar-logo-placeholder, .navbar-cta-container {
+  flex: 1;
+}
+
+.navbar-logo-placeholder {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .navbar-cta-container {
-  margin-left: auto; /* Pushes the CTA to the far right */
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar-cta-button {
