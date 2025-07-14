@@ -143,25 +143,6 @@ html {
 }
 
 /* Responsive design */
-@media (max-width: 1024px) {
-  .App-left, .App-right {
-    width: 100%;
-    padding: 1.5rem;
-  }
-
-  .App-content {
-    flex-direction: column;
-  }
-
-  .App-title {
-    font-size: 2.2rem;
-  }
-
-  .App-subtitle {
-    font-size: 1.1rem;
-  }
-}
-
 @media (max-width: 768px) {
   .App-content {
     flex-direction: column;
@@ -195,29 +176,6 @@ html {
   
   .App-store-buttons {
     justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .App-left {
-    padding: 1rem;
-  }
-
-  .App-title {
-    font-size: 1.8rem;
-  }
-
-  .App-subtitle {
-    font-size: 1rem;
-  }
-
-  .App-cta {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-  }
-
-  .App-store-btn img {
-    height: 35px;
   }
 }
 
