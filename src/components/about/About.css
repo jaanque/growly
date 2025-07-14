@@ -88,14 +88,13 @@
   }
 
   .App-left.About-text-container {
-    padding-left: 2rem; /* Reduïm padding en mòbil */
-    padding-right: 2rem;
-    align-items: flex-start; /* Alineamos a la izquierda */
+    padding: 2rem; /* Reduïm padding en mòbil */
+    align-items: center; /* Alineamos al centro */
   }
 
   .About-text-container .App-title,
   .About-text-container .App-subtitle {
-    text-align: left; /* Alineamos a la izquierda */
+    text-align: center; /* Alineamos al centro */
   }
 
   .About-text-container .App-title {
