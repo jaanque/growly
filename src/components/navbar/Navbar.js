@@ -29,6 +29,11 @@ const Navbar = ({ isLogoInNavbar }) => {
   return (
     <nav className={navClassName}>
       <div className="navbar-container">
+        <div className="menu-icon" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
         <div className="navbar-logo-placeholder">
           {isLogoInNavbar && (
             <img
@@ -37,11 +42,6 @@ const Navbar = ({ isLogoInNavbar }) => {
               className={`navbar-logo ${logoVisibleClass}`} // Apply visible class
             />
           )}
-        </div>
-        <div className="menu-icon" onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
         </div>
         <div className="navbar-cta-container">
           <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>

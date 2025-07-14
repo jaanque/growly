@@ -106,10 +106,10 @@
   background-color: #628B00; /* Main green color */
   color: #fff;
   padding: 7px 15px; /* Padding similar to nav links but can be adjusted */
-  border-radius: 50px; /* Consistent rounded corners */
+  border-radius: 8px; /* Consistent rounded corners */
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease, border-radius 0.4s ease-in-out;
+  transition: background-color 0.3s ease;
   font-size: 0.9rem; /* Slightly smaller than main CTA buttons if needed */
 }
 
@@ -117,6 +117,11 @@
   background-color: #3b5301; /* Darker green on hover */
   color: #fff; /* Ensure text color remains white on hover */
   text-decoration: none; /* Ensure no underline on hover for buttons */
+}
+
+.site-navbar.floating .navbar-cta-button {
+  border-radius: 50px;
+  transition: border-radius 0.4s ease-in-out;
 }
 
 
@@ -143,6 +148,7 @@
 
   .navbar-logo-placeholder {
     flex-grow: 1;
+    justify-content: center;
   }
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
@@ -170,7 +176,6 @@
 
   .menu-icon {
     display: block;
-    order: 3;
   }
 
   .site-navbar.menu-open .bar:nth-child(1) {
@@ -183,15 +188,6 @@
 
   .site-navbar.menu-open .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
-  }
-
-  .navbar-cta-container {
-    order: 3;
-  }
-
-  .menu-icon {
-    display: block;
-    order: 2;
   }
   .site-navbar {
     height: 50px; /* Slightly smaller on mobile */
