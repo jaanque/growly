@@ -84,7 +84,7 @@
   }
 
   .App-right { /* Contenedor de la imagen en About en móvil */
-    min-height: 50vh; /* O la altura deseada para la imagen en móvil */
+    display: none; /* Ocultar la imagen en móvil */
   }
 
   .App-left.About-text-container {
