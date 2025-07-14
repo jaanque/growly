@@ -12,6 +12,11 @@ import React, { useState, useEffect } from 'react'; // Import useState and useEf
 
 function App() {
   const [isLogoInNavbar, setIsLogoInNavbar] = useState(false);
+  const [logoAnimationFinished, setLogoAnimationFinished] = useState(false);
+
+  const handleLogoAnimationFinish = () => {
+    setLogoAnimationFinished(true);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +27,7 @@ function App() {
         setIsLogoInNavbar(true);
       } else {
         setIsLogoInNavbar(false);
+        setLogoAnimationFinished(false); // Reset animation state when scrolling up
       }
     };
 
@@ -35,8 +41,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar isLogoInNavbar={isLogoInNavbar} /> {/* Pass prop to Navbar */}
-      <Hero isLogoInNavbar={isLogoInNavbar} /> {/* Pass prop to Hero */}
+      <Navbar isLogoInNavbar={isLogoInNavbar} logoAnimationFinished={logoAnimationFinished} /> {/* Pass prop to Navbar */}
+      <Hero isLogoInNavbar={isLogoInNavbar} onLogoAnimationFinish={handleLogoAnimationFinish} /> {/* Pass prop to Hero */}
       <About />
       <WhyGrowly />
       <HowToUse />

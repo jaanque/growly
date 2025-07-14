@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 // Accept isLogoInNavbar as a prop
-const Navbar = ({ isLogoInNavbar }) => {
+const Navbar = ({ isLogoInNavbar, logoAnimationFinished }) => {
   const [logoVisibleClass, setLogoVisibleClass] = useState('');
 
   useEffect(() => {
@@ -18,9 +18,11 @@ const Navbar = ({ isLogoInNavbar }) => {
     }
   }, [isLogoInNavbar]);
 
+  const navClassName = `site-navbar ${isLogoInNavbar && logoAnimationFinished ? 'floating' : ''}`;
+
   // TODO: Implement active link highlighting based on scroll position in a later phase if desired.
   return (
-    <nav className="site-navbar">
+    <nav className={navClassName}>
       <div className="navbar-container">
         <div className="navbar-logo-placeholder">
           {isLogoInNavbar && (
