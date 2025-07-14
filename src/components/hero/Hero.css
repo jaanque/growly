@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   color: white; /* Color del texto para que sea legible */
+  padding-top: 0 !important;
 }
 
 .hero-section::before {
@@ -133,7 +134,6 @@
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
-    padding-top: 0;
   }
 
   .App-left {
