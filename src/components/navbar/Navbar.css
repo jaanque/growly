@@ -21,6 +21,12 @@
   border: 2px solid #628B00;
 }
 
+@media (min-width: 768px) {
+  .site-navbar {
+    top: 40px;
+  }
+}
+
 .navbar-container {
   width: 100%;
   max-width: 1200px;
