@@ -121,7 +121,6 @@
   }
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
-<<<<<<< HEAD
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -133,8 +132,7 @@
     padding: 1rem 0;
     align-items: center; /* Center items */
     box-sizing: border-box; /* Ensure padding is included in the width */
-=======
->>>>>>> parent of 6b23930 (UPDATE // Responsive)
+
   }
   .navbar-cta-container {
     margin-left: 0; /* Reset margin for centering or positioning */
