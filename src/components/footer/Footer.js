@@ -23,18 +23,17 @@ const Footer = () => {
         <div className="footer-column links-column">
           <h4>Empresa</h4>
           <ul>
-            <li><a href="#">Sobre Nosaltres</a></li>
-            <li><a href="#">Carreres</a></li>
-            <li><a href="#">Premsa</a></li>
-            <li><a href="#">Blog</a></li>
+          <li><a href="#hero">Inici</a></li>
+          <li><a href="#about">Sobre Nosaltres</a></li>
+          <li><a href="#why-growly">Per què Growly</a></li>
+          <li><a href="#statistics">Estadístiques</a></li>
+          <li><a href="#contact-form-section">Contacte</a></li>
           </ul>
         </div>
 
         <div className="footer-column links-column">
           <h4>Recursos</h4>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Centre d'Ajuda</a></li>
             <li><a href="#">Contacta'ns</a></li>
             <li><a href="#">Mapa del Lloc</a></li>
           </ul>
