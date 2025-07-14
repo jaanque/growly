@@ -11,17 +11,17 @@ function Statistics() {
     {
       id: 2,
       period: "Setmanal --",
-      quantity: " 16.000.000 kg",
+      quantity: " 16.100.000 kg",
     },
     {
       id: 3,
       period: "Mensual --",
-      quantity: " 70.000.000 kg",
+      quantity: " 64.400.000 kg",
     },
     {
       id: 4,
       period: "Anual --",
-      quantity: " 850.000.000 kg",
+      quantity: " 772.800.000 kg",
     }
   ];
 

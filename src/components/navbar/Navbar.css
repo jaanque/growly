@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px; /* Slim navbar height */
+  height: 40px; /* Slim navbar height */
   z-index: 1000; /* Ensure it's above other content */
   display: flex;
   align-items: center; /* Vertically center content */
@@ -83,7 +83,7 @@
 .navbar-cta-button {
   background-color: #628B00; /* Main green color */
   color: #fff;
-  padding: 10px 20px; /* Padding similar to nav links but can be adjusted */
+  padding: 7px 15px; /* Padding similar to nav links but can be adjusted */
   border-radius: 8px; /* Consistent rounded corners */
   text-decoration: none;
   font-weight: bold;
