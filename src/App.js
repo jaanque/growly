@@ -33,15 +33,15 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar isLogoInNavbar={isLogoInNavbar} />
+      <Navbar isLogoInNavbar={isLogoInNavbar} /> {/* Navbar con logo condicional */}
       <Hero isLogoInNavbar={isLogoInNavbar} />
       <About />
       <WhyGrowly />
-      <HowToUse />
+      { /* <HowToUse /> */ }
       <Statistics />
       <Blog />
       <ContactForm /> {/* Add the ContactForm component here */}
-      <TrustedBy /> {/* Add the new TrustedBy component here */}
+      { /* <TrustedBy /> */ }
       <Footer /> {/* Add the Footer component here */}
     </div>
   );

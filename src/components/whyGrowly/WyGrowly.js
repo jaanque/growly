@@ -8,11 +8,12 @@ function WhyGrowly() {
         <div className="WhyGrowly-text-container">
           <h1 className="App-title">Per què Growly?</h1>
           <ul className="App-list">
-            <li>Facilita el seguiment de tasques i projectes.</li>
-            <li>Millora la col·laboració en equip.</li>
-            <li>Augmenta la productivitat personal i del grup.</li>
-            <li>Ofereix una interfície intuïtiva i fàcil d'usar.</li>
-            <li>Permet personalitzar fluxos de treball segons les teves necessitats.</li>
+            <li>Porque detrás de cada cosecha hay esfuerzo, y no debería perderse.</li>
+            <li>Porque si es de aquí, ¿para qué buscarlo fuera?</li>
+            <li>Porque comer bien debería ser fácil, justo y posible.</li>
+            <li>Porque hay otra forma de hacer las cosas.</li>
+            <li>Porque lo que se cultiva con cariño, merece su destino.</li>
+            <li>Porque esto va de personas, no de desperdicio.</li>
           </ul>
         </div>
       </div>
