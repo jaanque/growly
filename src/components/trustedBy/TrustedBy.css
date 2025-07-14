@@ -13,7 +13,7 @@
 .TrustedBy-text {
   /* font-size will be inherited from App-title */
   /* font-weight will be inherited from App-title */
-  /* color is the same as App-title, so no need to repeat */
+  color: #000000;
   margin-bottom: 40px; /* Space between text and carousel - keep this specific margin */
 }
 
