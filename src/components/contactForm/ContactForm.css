@@ -13,9 +13,7 @@
   max-width: 1200px; /* Max width for the entire wrapper */
   width: 100%;
   margin: 0 auto;
-  background-color: #f9f9f9; /* Light background for the card */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   overflow: hidden; /* Ensures the border radius clips the image */
 }
 
@@ -24,7 +22,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e9e9e9; /* Placeholder background for the image side */
 }
 
 .contact-form-image {

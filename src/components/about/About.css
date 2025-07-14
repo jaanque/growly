@@ -33,7 +33,7 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 0 20px 0 0;
+  border-radius: 0 20px 20px 0;
 }
 
 .About-text-container .App-title { /* Estilos para el título dentro de About */
