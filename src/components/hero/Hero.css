@@ -123,11 +123,11 @@
 /* Responsive design para Hero */
 @media (max-width: 1024px) {
   .App-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .App-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -145,18 +145,18 @@
   }
 
   .App-logo {
-    width: 80px; /* Increase logo size for better visibility */
-    height: 80px;
+    width: 70px; /* Increase logo size for better visibility */
+    height: 70px;
     margin-top: 20px;
   }
 
   .App-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
   .App-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0 1rem; /* Add some padding to the sides */
     text-align: center;
   }
@@ -178,24 +178,24 @@
   }
 
   .App-logo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .App-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .App-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .App-cta {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
   }
 
   .App-store-btn img {
-    height: 35px;
+    height: 30px;
   }
 }
