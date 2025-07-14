@@ -92,7 +92,7 @@
 
 .App-store-text {
   font-size: 0.8rem;
-  color: #666;
+  color: #f2f2f2;
   margin: 0;
   font-style: italic;
   text-align: center;
@@ -115,7 +115,7 @@
 
 .App-cta:hover {
   transition: 1s;
-  background-color: #35798D;
+  background-color: #3b5301; /* Slightly darker green on hover */
   color: #ffffff;
 }
 

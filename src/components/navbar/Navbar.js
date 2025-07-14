@@ -37,9 +37,13 @@ const Navbar = ({ isLogoInNavbar }) => {
           <li><a href="#hero">Inici</a></li>
           <li><a href="#about">Sobre Nosaltres</a></li>
           <li><a href="#why-growly">Per què Growly</a></li>
+          <li><a href="#statistics">Estadístiques</a></li>
+          <li><a href="#contact-form-section">Contacte</a></li>
+          { /*
           <li><a href="#how-to-use">Com Utilitzar</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#trusted-by">Confien en Nosaltres</a></li>
+          */ }
         </ul>
         <div className="navbar-cta-container">
           <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>

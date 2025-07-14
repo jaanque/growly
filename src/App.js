@@ -39,7 +39,7 @@ function App() {
       <WhyGrowly />
       { /* <HowToUse /> */ }
       <Statistics />
-      <Blog />
+      { /* <Blog /> */ }
       <ContactForm /> {/* Add the ContactForm component here */}
       { /* <TrustedBy /> */ }
       <Footer /> {/* Add the Footer component here */}

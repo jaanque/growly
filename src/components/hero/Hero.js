@@ -13,7 +13,7 @@ function Hero({ isLogoInNavbar }) {
           // Add a class based on the prop for styling the transition
           className={`App-logo ${isLogoInNavbar ? 'App-logo-scrolled' : ''}`}
         />
-        <h1 className="App-title">Growly - Menjar responsable</h1>
+        <h1 className="App-title">Grownly - Menjar responsable</h1>
         <p className="App-subtitle">
           Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible i econòmic.
         </p>
