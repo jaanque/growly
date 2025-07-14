@@ -11,6 +11,9 @@ import TrustedBy from './components/trustedBy/TrustedBy'; // Import the new Trus
 import Footer from './components/footer/Footer'; // Import the Footer component
 import React, { useState, useEffect } from 'react'; // Import useState and useEffect
 
+// Importing Vercel Analytics for tracking
+import { Analytics } from "@vercel/analytics/react"
+
 function App() {
   const [isLogoInNavbar, setIsLogoInNavbar] = useState(false);
 
