@@ -150,6 +150,7 @@ html {
   
   .App-left, .App-right {
     width: 100%;
+    align-items: center;
   }
   
   .App-right {
