@@ -20,14 +20,17 @@
 }
 
 .App-left {
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%; /* Ocupar todo el ancho */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 2rem;
   z-index: 2; /* Para que el contenido esté por encima de la superposición */
   color: #fff; /* Asegurar que el texto sea blanco */
+  box-sizing: border-box;
 }
 
 .App-logo {
