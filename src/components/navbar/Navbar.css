@@ -185,6 +185,12 @@
     margin-left: 0; /* Reset margin for centering or positioning */
     order: 2;
   }
+
+  .menu-icon {
+    display: block;
+    order: 3;
+    margin-left: 15px;
+  }
   .site-navbar {
     height: 50px; /* Slightly smaller on mobile */
     padding: 0 15px;
