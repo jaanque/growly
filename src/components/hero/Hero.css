@@ -120,18 +120,30 @@
 }
 
 /* Responsive design para Hero */
+@media (max-width: 1024px) {
+  .App-title {
+    font-size: 2.2rem;
+  }
+
+  .App-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
+    padding-top: 60px; /* Add padding to avoid content being hidden behind the navbar */
   }
 
   .App-left {
     width: 100%;
+    padding: 1.5rem;
   }
 
   .App-logo {
-    width: 60px;
-    height: 60px;
+    width: 80px; /* Increase logo size for better visibility */
+    height: 80px;
   }
 
   .App-title {
@@ -140,6 +152,7 @@
 
   .App-subtitle {
     font-size: 1.2rem;
+    padding: 0 1rem; /* Add some padding to the sides */
   }
 
   .App-buttons {
@@ -149,5 +162,33 @@
 
   .App-store-buttons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-left {
+    padding: 1rem;
+  }
+
+  .App-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .App-title {
+    font-size: 1.8rem;
+  }
+
+  .App-subtitle {
+    font-size: 1rem;
+  }
+
+  .App-cta {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .App-store-btn img {
+    height: 35px;
   }
 }

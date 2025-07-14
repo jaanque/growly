@@ -59,15 +59,21 @@
 }
 
 /* Responsive adjustments if needed */
+@media (max-width: 1024px) {
+  .WhyGrowly-section .App-title {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .WhyGrowly-section {
     /* Adjust horizontal padding for mobile, no vertical padding from the section itself. */
     padding: 0 15px;
   }
 
-  /* .WhyGrowly-section .App-title {
+  .WhyGrowly-section .App-title {
     font-size: 2rem;
-  } */
+  }
 
   .App-list li {
     font-size: 1rem;
@@ -77,5 +83,16 @@
   .App-list li::before {
     font-size: 1rem;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .WhyGrowly-section .App-title {
+    font-size: 1.8rem;
+  }
+
+  .App-list li {
+    font-size: 0.9rem;
+    padding: 10px;
   }
 }

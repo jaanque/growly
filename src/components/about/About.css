@@ -55,6 +55,25 @@
 
 
 /* Ajustos responsive per a la secció About */
+@media (max-width: 1024px) {
+  .App-content.About-section {
+    flex-direction: column-reverse;
+  }
+
+  .App-left.About-text-container, .App-right {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .About-text-container .App-title {
+    font-size: 2.2rem;
+  }
+
+  .About-text-container .App-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .App-content.About-section {
     flex-direction: column-reverse; /* Imatge a sota, text a sobre */
@@ -79,10 +98,32 @@
     text-align: center; /* Text centrat en mòbil */
   }
 
+  .About-text-container .App-title {
+    font-size: 2rem;
+  }
+
+  .About-text-container .App-subtitle {
+    font-size: 1.2rem;
+  }
+
   /* La imagen dentro de .About-section (que utilitza .App-right i .App-image.About-section-image)
      ja té estils responsive de la secció Hero, no calen ajustos addicionals específics aquí
      tret que vulguem un comportament diferent per a la imatge EN AQUESTA SECCIÓ en particular.
      Per exemple, si la imatge de la secció "About" ha de ser més petita en mòbils:
      .App-image.About-section-image { max-height: 40vh; }
   */
+}
+
+@media (max-width: 480px) {
+  .App-left.About-text-container {
+    padding: 1rem;
+  }
+
+  .About-text-container .App-title {
+    font-size: 1.8rem;
+  }
+
+  .About-text-container .App-subtitle {
+    font-size: 1rem;
+  }
 }
