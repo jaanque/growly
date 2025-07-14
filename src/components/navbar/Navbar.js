@@ -4,6 +4,7 @@ import './Navbar.css';
 // Accept isLogoInNavbar as a prop
 const Navbar = ({ isLogoInNavbar }) => {
   const [logoVisibleClass, setLogoVisibleClass] = useState('');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     if (isLogoInNavbar) {
@@ -18,7 +19,11 @@ const Navbar = ({ isLogoInNavbar }) => {
     }
   }, [isLogoInNavbar]);
 
-  const navClassName = `site-navbar ${isLogoInNavbar ? 'floating' : ''}`;
+  const navClassName = `site-navbar ${isLogoInNavbar ? 'floating' : ''} ${isMenuOpen ? 'menu-open' : ''}`;
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   // TODO: Implement active link highlighting based on scroll position in a later phase if desired.
   return (
@@ -33,12 +38,17 @@ const Navbar = ({ isLogoInNavbar }) => {
             />
           )}
         </div>
-        <ul className="nav-links">
-          <li><a href="#hero">Inici</a></li>
-          <li><a href="#about">Sobre Nosaltres</a></li>
-          <li><a href="#why-growly">Per què Growly</a></li>
-          <li><a href="#statistics">Estadístiques</a></li>
-          <li><a href="#contacto-form">Contacte</a></li>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+        <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+          <li><a href="#hero" onClick={() => setIsMenuOpen(false)}>Inici</a></li>
+          <li><a href="#about" onClick={() => setIsMenuOpen(false)}>Sobre Nosaltres</a></li>
+          <li><a href="#why-growly" onClick={() => setIsMenuOpen(false)}>Per què Growly</a></li>
+          <li><a href="#statistics" onClick={() => setIsMenuOpen(false)}>Estadístiques</a></li>
+          <li><a href="#contacto-form" onClick={() => setIsMenuOpen(false)}>Contacte</a></li>
           { /*
           <li><a href="#how-to-use">Com Utilitzar</a></li>
           <li><a href="#blog">Blog</a></li>
