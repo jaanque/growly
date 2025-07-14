@@ -114,6 +114,32 @@
 }
 
 
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon-line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.menu-icon-line.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon-line.open:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Responsive adjustments (basic for now) */
 @media (max-width: 768px) {
   .navbar-container {
@@ -121,12 +147,30 @@
   }
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(248, 249, 250, 0.95);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 1rem 0;
   }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
   .navbar-cta-container {
-    margin-left: 0; /* Reset margin for centering or positioning */
+    display: none; /* Ocultar el botón de contacto en el menú de navegación en móvil */
   }
   .site-navbar {
-    height: 50px; /* Slightly smaller on mobile */
+    height: 60px; /* Ajustar la altura para el menú hamburguesa */
     padding: 0 15px;
   }
 

@@ -4,6 +4,7 @@ import './Navbar.css';
 // Accept isLogoInNavbar as a prop
 const Navbar = ({ isLogoInNavbar }) => {
   const [logoVisibleClass, setLogoVisibleClass] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     if (isLogoInNavbar) {
@@ -33,12 +34,17 @@ const Navbar = ({ isLogoInNavbar }) => {
             />
           )}
         </div>
-        <ul className="nav-links">
-          <li><a href="#hero">Inici</a></li>
-          <li><a href="#about">Sobre Nosaltres</a></li>
-          <li><a href="#why-growly">Per què Growly</a></li>
-          <li><a href="#statistics">Estadístiques</a></li>
-          <li><a href="#contact-form-section">Contacte</a></li>
+        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          <div className={menuOpen ? 'menu-icon-line open' : 'menu-icon-line'}></div>
+          <div className={menuOpen ? 'menu-icon-line open' : 'menu-icon-line'}></div>
+          <div className={menuOpen ? 'menu-icon-line open' : 'menu-icon-line'}></div>
+        </div>
+        <ul className={menuOpen ? "nav-links open" : "nav-links"}>
+          <li><a href="#hero" onClick={() => setMenuOpen(false)}>Inici</a></li>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>Sobre Nosaltres</a></li>
+          <li><a href="#why-growly" onClick={() => setMenuOpen(false)}>Per què Growly</a></li>
+          <li><a href="#statistics" onClick={() => setMenuOpen(false)}>Estadístiques</a></li>
+          <li><a href="#contact-form-section" onClick={() => setMenuOpen(false)}>Contacte</a></li>
           { /*
           <li><a href="#how-to-use">Com Utilitzar</a></li>
           <li><a href="#blog">Blog</a></li>

@@ -34,7 +34,6 @@ const Footer = () => {
         <div className="footer-column links-column">
           <h4>Recursos</h4>
           <ul>
-            <li><a href="#">Contacta'ns</a></li>
             <li><a href="#">Mapa del Lloc</a></li>
           </ul>
         </div>
@@ -52,8 +51,8 @@ const Footer = () => {
         <div className="footer-column contact-column">
           <h4>Contacte</h4>
           <p>
-            <a href="tel:+34000000000">+34 000 000 000</a><br />
-            <a href="mailto:info@growly.app">info@growly.app</a>
+            <a href="tel:+34000000000">+34 621 203 854</a><br />
+            <a href="mailto:info@growly.app">hola@grownly.cat</a>
           </p>
           <div className="footer-social-icons">
             <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
