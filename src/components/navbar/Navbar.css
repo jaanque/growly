@@ -3,7 +3,7 @@
   background-color: rgba(248, 249, 250, 0.85);
   border-bottom: 1px solid rgba(224, 224, 224, 0.5);
   position: fixed;
-  top: 20px;
+  top: 10px;
   left: 50%;
   width: calc(100% - 40px);
   max-width: 1200px;
@@ -23,7 +23,7 @@
 
 @media (min-width: 768px) {
   .site-navbar {
-    top: 40px;
+    top: 20px;
   }
 }
 
