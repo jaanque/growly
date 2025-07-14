@@ -1,98 +1,278 @@
+/* WhyGrowly Section - Responsive Design */
 .WhyGrowly-section {
-  /* display: flex; /* This should be inherited from .App-content in App.css */
-  align-items: stretch; /* Ensure child containers (App-left, App-right) stretch to the height of the tallest */
-  padding: 0 20px; /* Remove vertical padding, rely on App-left's padding. Keep horizontal for content. */
-  text-align: left; /* Align text to the left for readability */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fdf4 0%, #e8f5e0 100%);
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.WhyGrowly-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.WhyGrowly-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Contenido de texto */
+.WhyGrowly-text-content {
+  order: 2;
+  display: flex;
+  justify-content: center;
 }
 
 .WhyGrowly-text-container {
-  max-width: 700px; /* Limit width for better readability on wider screens */
-  /* margin: 0 auto; /* Center the text container if it's narrower than the section */
+  max-width: 600px;
+  width: 100%;
 }
 
-/* Assuming App-title is a global class, we can add specific overrides if needed,
-   but for now, let's assume it's styled appropriately elsewhere.
-   If not, uncomment and style:*/
-.WhyGrowly-section .App-title {
-  color: #000000;
-  margin-bottom: 30px; 
+.WhyGrowly-title {
   font-size: 2.5rem;
-  text-align: center; 
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
-.App-list {
-  list-style-type: none; /* Remove default bullets */
-  padding-left: 0; /* Remove default padding */
+.WhyGrowly-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.App-list li {
-  border: 1px solid #628A00; /* Light border for separation */
-  background-color: #ffffff; /* White background for list items */
-  padding: 15px 20px;
-  margin-bottom: 15px; /* Space between list items */
-  border-radius: 8px; /* Rounded corners */
-  display: flex; /* Align icon and text */
-  align-items: center; /* Vertically align icon and text */
-  font-size: 1.1rem; /* Slightly larger font size */
-  color: #34495e; /* Darker text color for contrast */
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for hover effect */
+.WhyGrowly-list-item {
+  background: white;
+  border: 2px solid #628A00;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.App-list li:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+.WhyGrowly-list-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #4a6600;
 }
 
-/* Adding a custom bullet point using ::before pseudo-element */
-.App-list li::before {
-  content: '✓'; /* Checkmark icon */
-  color: #27ae60; /* Green color for the checkmark */
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-right: 15px; /* Space between icon and text */
-  line-height: 1; /* Ensure it aligns well */
+.WhyGrowly-check-icon {
+  width: 24px;
+  height: 24px;
+  background: #628A00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
 }
 
-/* Style for the image within the WhyGrowly section */
-.WhyGrowly-section .App-image {
-  border-radius: 20px 0 0 20px; /* Round top-left and bottom-right corners */
+.WhyGrowly-check-svg {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: white;
+  stroke-width: 3;
 }
 
-/* Responsive adjustments if needed */
-@media (max-width: 1024px) {
-  .WhyGrowly-section .App-title {
-    font-size: 2.2rem;
-  }
+.WhyGrowly-reason-text {
+  color: #2d3748;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
 }
 
-@media (max-width: 768px) {
+/* Contenido de imagen */
+.WhyGrowly-image-content {
+  order: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.WhyGrowly-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.WhyGrowly-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #e6f7d6 0%, #d1f0c1 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.WhyGrowly-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.WhyGrowly-decoration-1 {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 2rem;
+  height: 2rem;
+  background: #628A00;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.WhyGrowly-decoration-2 {
+  position: absolute;
+  bottom: -1rem;
+  left: -1rem;
+  width: 3rem;
+  height: 3rem;
+  background: #8bc34a;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+/* Tablet Design */
+@media (min-width: 768px) {
   .WhyGrowly-section {
-    /* Adjust horizontal padding for mobile, no vertical padding from the section itself. */
-    padding: 0 15px;
+    padding: 4rem 2rem;
   }
+  
+  .WhyGrowly-title {
+    font-size: 3rem;
+  }
+  
+  .WhyGrowly-list-item {
+    padding: 2rem;
+  }
+  
+  .WhyGrowly-reason-text {
+    font-size: 1.2rem;
+  }
+  
+  .WhyGrowly-image-container {
+    max-width: 500px;
+  }
+}
 
-  .WhyGrowly-section .App-title {
+/* Desktop Design */
+@media (min-width: 1024px) {
+  .WhyGrowly-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  
+  .WhyGrowly-text-content {
+    order: 1;
+    justify-content: flex-start;
+  }
+  
+  .WhyGrowly-image-content {
+    order: 2;
+    justify-content: flex-end;
+  }
+  
+  .WhyGrowly-title {
+    font-size: 3.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  
+  .WhyGrowly-text-container {
+    max-width: 700px;
+  }
+  
+  .WhyGrowly-list {
+    gap: 1.5rem;
+  }
+  
+  .WhyGrowly-image-wrapper {
+    border-radius: 24px 0 0 24px;
+  }
+  
+  .WhyGrowly-image-container {
+    max-width: 600px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+  .WhyGrowly-section {
+    padding: 5rem 2rem;
+  }
+  
+  .WhyGrowly-content {
+    gap: 6rem;
+  }
+  
+  .WhyGrowly-title {
+    font-size: 4rem;
+  }
+  
+  .WhyGrowly-reason-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 480px) {
+  .WhyGrowly-section {
+    padding: 2rem 1rem;
+  }
+  
+  .WhyGrowly-title {
     font-size: 2rem;
   }
-
-  .App-list li {
-    font-size: 1rem;
-    padding: 12px 15px;
+  
+  .WhyGrowly-list-item {
+    padding: 1.2rem;
   }
-
-  .App-list li::before {
+  
+  .WhyGrowly-reason-text {
     font-size: 1rem;
-    margin-right: 10px;
+  }
+  
+  .WhyGrowly-image-container {
+    max-width: 300px;
   }
 }
 
-@media (max-width: 480px) {
-  .WhyGrowly-section .App-title {
-    font-size: 1.8rem;
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .WhyGrowly-list-item {
+    transition: none;
   }
+  
+  .WhyGrowly-list-item:hover {
+    transform: none;
+  }
+}
 
-  .App-list li {
-    font-size: 0.9rem;
-    padding: 10px;
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .WhyGrowly-list-item {
+    border-width: 3px;
+  }
+  
+  .WhyGrowly-reason-text {
+    color: #000;
   }
 }
