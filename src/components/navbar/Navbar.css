@@ -106,7 +106,7 @@
   background-color: #628B00; /* Main green color */
   color: #fff;
   padding: 7px 15px; /* Padding similar to nav links but can be adjusted */
-  border-radius: 8px; /* Consistent rounded corners */
+  border-radius: 50px; /* Consistent rounded corners */
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
