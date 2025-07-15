@@ -1,18 +1,45 @@
 .language-selector {
-  display: flex;
-  gap: 5px;
+  position: relative;
 }
 
-.language-selector button {
+.language-selector-button {
   background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.flag-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.language-selector-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
-  color: #333;
-  cursor: pointer;
-  padding: 5px 10px;
-  transition: background-color 0.3s, color 0.3s;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
 }
 
-.language-selector button:hover {
+.language-selector-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.language-selector-dropdown li:hover {
   background-color: #f0f0f0;
+}
+
+.language-selector-dropdown li .flag-icon {
+  margin-right: 10px;
 }
