@@ -9,6 +9,7 @@ import Blog from './components/blog/Blog'; // Import the Blog component
 import ContactForm from './components/contactForm/ContactForm'; // Import the ContactForm component
 import TrustedBy from './components/trustedBy/TrustedBy'; // Import the new TrustedBy component
 import Footer from './components/footer/Footer'; // Import the Footer component
+import CookieBanner from './components/cookieBanner/CookieBanner';
 import React, { useState, useEffect } from 'react'; // Import useState and useEffect
 import translations from './translations.json'; // Import translations
 
@@ -58,6 +59,7 @@ function App() {
       <ContactForm t={t.contactForm} /> {/* Add the ContactForm component here */}
       { /* <TrustedBy /> */ }
       <Footer t={t.footer} /> {/* Add the Footer component here */}
+      <CookieBanner />
     </div>
   );
 }
