@@ -40,7 +40,7 @@ function Statistics({ t }) {
           ))}
         </div>
         <div style={{ marginTop: '20px' }}>
-          <a href="#" className="App-button">{t.cta}</a>
+          <a href="#contacto-form" className="App-button">{t.cta}</a>
         </div>
       </div>
     </div>

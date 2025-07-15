@@ -6,10 +6,10 @@ const LanguageSelector = ({ changeLanguage }) => {
   const [selectedLanguage, setSelectedLanguage] = useState('ca');
 
   const languages = [
-    { code: 'ca', name: 'CAT', flag: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/1200px-Flag_of_Catalonia.svg.png' },
-    { code: 'es', name: 'ESP', flag: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png' },
-    { code: 'eu', name: 'EUS', flag: 'https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_the_Basque_Country.svg' },
-    { code: 'gl', name: 'GAL', flag: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Galicia.svg/1200px-Flag_of_Galicia.svg.png' },
+    { code: 'ca', name: 'CAT', flag: 'https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@6.6.6/flags/4x3/ad.svg' },
+    { code: 'es', name: 'ESP', flag: 'https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@6.6.6/flags/4x3/es.svg' },
+    { code: 'eu', name: 'EUS', flag: 'https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@6.6.6/flags/4x3/eu.svg' },
+    { code: 'gl', name: 'GAL', flag: 'https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@6.6.6/flags/4x3/ga.svg' },
   ];
 
   const handleLanguageChange = (code) => {
