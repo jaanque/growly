@@ -246,6 +246,7 @@ html {
   font-weight: bold; /* Bold text */
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
   margin-top: 1rem; /* Add some space above the button */
+  text-decoration: none;
 }
 
 .App-button:hover {
