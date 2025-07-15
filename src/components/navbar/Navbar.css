@@ -143,12 +143,11 @@
 @media (max-width: 768px) {
   .navbar-container {
     justify-content: flex-start; /* Ensure logo and CTA are spaced out */
-    padding: 0 15px;
   }
 
-  .navbar-logo-placeholder {
-    flex-grow: 1;
-    justify-content: center;
+  .navbar-logo-placeholder,
+  .navbar-cta-container {
+    display: none;
   }
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
@@ -191,10 +190,10 @@
   }
   .site-navbar {
     height: 50px; /* Slightly smaller on mobile */
-    width: 100%;
+    width: auto;
     left: 0;
     transform: none;
-    padding: 0;
+    padding: 0 15px;
   }
 
   .nav-links {
