@@ -1,16 +1,14 @@
 import React from 'react';
 import './WhyGrowly.css';
-import { useTranslation } from 'react-i18next';
 
 function WhyGrowly() {
-  const { t } = useTranslation();
   const reasons = [
-    t('why_growly.reasons.r1'),
-    t('why_growly.reasons.r2'),
-    t('why_growly.reasons.r3'),
-    t('why_growly.reasons.r4'),
-    t('why_growly.reasons.r5'),
-    t('why_growly.reasons.r6'),
+    "Perquè darrere de cada collita hi ha esforç, i no s'hauria de perdre.",
+    "Perquè si és d'aquí, per què buscar-ho fora?",
+    "Perquè menjar bé hauria de ser fàcil, just i possible.",
+    "Perquè hi ha una altra manera de fer les coses.",
+    "Perquè el que es cultiva amb afecte, mereix el seu destí.",
+    "Perquè això va de persones, no de malbaratament."
   ];
 
   return (
@@ -20,7 +18,7 @@ function WhyGrowly() {
           {/* Contenido de texto */}
           <div className="WhyGrowly-text-content">
             <div className="WhyGrowly-text-container">
-              <h1 className="WhyGrowly-title">{t('why_growly.title')}</h1>
+              <h1 className="WhyGrowly-title">Per què Growly?</h1>
               <ul className="WhyGrowly-list">
                 {reasons.map((reason, index) => (
                   <li key={index} className="WhyGrowly-list-item">

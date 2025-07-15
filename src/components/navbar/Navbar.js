@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import { useTranslation } from 'react-i18next';
 
 // Accept isLogoInNavbar as a prop
 const Navbar = ({ isLogoInNavbar }) => {
-  const { t, i18n } = useTranslation();
   const [logoVisibleClass, setLogoVisibleClass] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,10 +25,6 @@ const Navbar = ({ isLogoInNavbar }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
-
   // TODO: Implement active link highlighting based on scroll position in a later phase if desired.
   return (
     <nav className={navClassName}>
@@ -50,11 +44,11 @@ const Navbar = ({ isLogoInNavbar }) => {
           <div className="bar"></div>
         </div>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <li><a href="#hero" onClick={() => setIsMenuOpen(false)}>{t('navbar.home')}</a></li>
-          <li><a href="#about" onClick={() => setIsMenuOpen(false)}>{t('navbar.about')}</a></li>
-          <li><a href="#why-growly" onClick={() => setIsMenuOpen(false)}>{t('navbar.why')}</a></li>
-          <li><a href="#statistics" onClick={() => setIsMenuOpen(false)}>{t('navbar.statistics')}</a></li>
-          <li><a href="#contacto-form" onClick={() => setIsMenuOpen(false)}>{t('navbar.contact')}</a></li>
+          <li><a href="#hero" onClick={() => setIsMenuOpen(false)}>Inici</a></li>
+          <li><a href="#about" onClick={() => setIsMenuOpen(false)}>Sobre Nosaltres</a></li>
+          <li><a href="#why-growly" onClick={() => setIsMenuOpen(false)}>Per què Growly</a></li>
+          <li><a href="#statistics" onClick={() => setIsMenuOpen(false)}>Estadístiques</a></li>
+          <li><a href="#contacto-form" onClick={() => setIsMenuOpen(false)}>Contacte</a></li>
           { /*
           <li><a href="#how-to-use">Com Utilitzar</a></li>
           <li><a href="#blog">Blog</a></li>
@@ -62,11 +56,7 @@ const Navbar = ({ isLogoInNavbar }) => {
           */ }
         </ul>
         <div className="navbar-cta-container">
-          <a href="#contact-form-section" className="navbar-cta-button">{t('navbar.contact_us')}</a>
-        </div>
-        <div className="language-selector">
-          <button onClick={() => changeLanguage('ca')}>CA</button>
-          <button onClick={() => changeLanguage('es')}>ES</button>
+          <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>
         </div>
       </div>
     </nav>

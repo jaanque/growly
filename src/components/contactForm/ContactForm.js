@@ -1,9 +1,7 @@
 import React from 'react';
 import './ContactForm.css';
-import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
-  const { t } = useTranslation();
   return (
     <section id='contacto-form' className="contact-form-section">
       <div className="contact-form-wrapper">
@@ -16,29 +14,29 @@ const ContactForm = () => {
           />
         </div>
         <div className="contact-form-container">
-          <h2>{t('contact_form.title')}</h2>
+          <h2>Vols formar part del futur?</h2>
           <form action="https://formsubmit.co/hola@grownly.cat" method="POST">
             <div className="form-group">
-              <label htmlFor="name">{t('contact_form.name')}</label>
+              <label htmlFor="name">Nom</label>
               <input type="text" id="name" name="name" required />
             </div>
             <div className="form-group">
-              <label htmlFor="email">{t('contact_form.email')}</label>
+              <label htmlFor="email">Correu Electrònic</label>
               <input type="email" id="email" name="email" required />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">{t('contact_form.phone')}</label>
+              <label htmlFor="phone">Telèfon (Opcional)</label>
               <input type="tel" id="phone" name="phone" />
             </div>
             <div className="form-group">
-              <label htmlFor="userType">{t('contact_form.user_type')}</label>
+              <label htmlFor="userType">Sóc...</label>
               <select id="userType" name="userType" required>
-                <option value="">{t('contact_form.select_type')}</option>
-                <option value="buyer">{t('contact_form.buyer')}</option>
-                <option value="seller">{t('contact_form.seller')}</option>
+                <option value="">Selecciona un tipus</option>
+                <option value="buyer">Comprador</option>
+                <option value="seller">Venedor</option>
               </select>
             </div>
-            <button type="submit">{t('contact_form.submit')}</button>
+            <button type="submit">Enviar</button>
           </form>
         </div>
       </div>
