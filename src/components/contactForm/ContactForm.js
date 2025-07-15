@@ -15,7 +15,7 @@ const ContactForm = () => {
         </div>
         <div className="contact-form-container">
           <h2>Vols formar part del futur?</h2>
-          <form>
+          <form action="https://formsubmit.co/hola@grownly.cat" method="POST">
             <div className="form-group">
               <label htmlFor="name">Nom</label>
               <input type="text" id="name" name="name" required />
