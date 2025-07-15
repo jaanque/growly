@@ -60,6 +60,8 @@ function App() {
       { /* <TrustedBy /> */ }
       <Footer t={t.footer} /> {/* Add the Footer component here */}
       <CookieBanner t={t.cookieBanner} />
+
+      <Analytics /> {/* Add Vercel Analytics component */}
     </div>
   );
 }
