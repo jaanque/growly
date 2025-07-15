@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './CookieBanner.css';
 
-const CookieBanner = () => {
+const CookieBanner = ({ t }) => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -22,8 +22,8 @@ const CookieBanner = () => {
 
   return (
     <div className="cookie-banner">
-      <p>This website uses cookies to ensure you get the best experience on our website.</p>
-      <button onClick={handleAccept}>Accept</button>
+      <p>{t.text}</p>
+      <button onClick={handleAccept}>{t.accept}</button>
     </div>
   );
 };

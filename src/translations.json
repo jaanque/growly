@@ -60,6 +60,10 @@
       "contact": "Contacte",
       "sitemap": "Mapa del Lloc",
       "rights": "Tots els drets reservats."
+    },
+    "cookieBanner": {
+      "text": "Aquest lloc web utilitza cookies per assegurar que obtingueu la millor experiència al nostre lloc web.",
+      "accept": "Acceptar"
     }
   },
   "es": {
@@ -123,6 +127,10 @@
       "contact": "Contacto",
       "sitemap": "Mapa del Sitio",
       "rights": "Todos los derechos reservados."
+    },
+    "cookieBanner": {
+      "text": "Este sitio web utiliza cookies para asegurar que obtengas la mejor experiencia en nuestro sitio web.",
+      "accept": "Aceptar"
     }
   },
   "eu": {
@@ -186,6 +194,10 @@
       "contact": "Kontaktua",
       "sitemap": "Gunearen mapa",
       "rights": "Eskubide guztiak erreserbatuta."
+    },
+    "cookieBanner": {
+      "text": "Webgune honek cookieak erabiltzen ditu gure webgunean esperientzia onena izan dezazun ziurtatzeko.",
+      "accept": "Onartu"
     }
   },
   "gl": {
@@ -249,6 +261,10 @@
       "contact": "Contacto",
       "sitemap": "Mapa do Sitio",
       "rights": "Todos os dereitos reservados."
+    },
+    "cookieBanner": {
+      "text": "Este sitio web utiliza cookies para garantir que obteñas a mellor experiencia na nosa web.",
+      "accept": "Aceptar"
     }
   }
 }

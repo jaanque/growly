@@ -59,7 +59,7 @@ function App() {
       <ContactForm t={t.contactForm} /> {/* Add the ContactForm component here */}
       { /* <TrustedBy /> */ }
       <Footer t={t.footer} /> {/* Add the Footer component here */}
-      <CookieBanner />
+      <CookieBanner t={t.cookieBanner} />
     </div>
   );
 }
