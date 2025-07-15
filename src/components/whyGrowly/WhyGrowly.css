@@ -156,10 +156,6 @@
     padding: 4rem 2rem;
   }
   
-  .WhyGrowly-title {
-    font-size: 3rem;
-  }
-  
   .WhyGrowly-list-item {
     padding: 2rem;
   }
@@ -191,7 +187,6 @@
   }
   
   .WhyGrowly-title {
-    font-size: 3.5rem;
     text-align: left;
     margin-bottom: 3rem;
   }
@@ -221,10 +216,6 @@
   
   .WhyGrowly-content {
     gap: 6rem;
-  }
-  
-  .WhyGrowly-title {
-    font-size: 4rem;
   }
   
   .WhyGrowly-reason-text {
