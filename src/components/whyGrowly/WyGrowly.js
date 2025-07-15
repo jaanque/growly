@@ -42,7 +42,7 @@ function WhyGrowly() {
           {/* Imagen */}
           <div className="WhyGrowly-image-content">
             <div className="WhyGrowly-image-container">
-              <div className="WhyGrowly-image-wrapper">
+              <div className="">
                 <img
                   src="https://i.postimg.cc/t4My9hNh/20250711-0956-Logo-Impreso-en-Bolsa-remix-01jzw7ndtyej5s6n3ez80rghjr.png"
                   alt="Logo de Growly impreso en bolsa"
@@ -50,9 +50,6 @@ function WhyGrowly() {
                   draggable="false"
                 />
               </div>
-              {/* Elementos decorativos */}
-              <div className="WhyGrowly-decoration-1"></div>
-              <div className="WhyGrowly-decoration-2"></div>
             </div>
           </div>
         </div>
