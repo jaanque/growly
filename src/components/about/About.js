@@ -19,7 +19,7 @@ function About({ t }) {
         <p className="App-subtitle">{t.p2}</p>
         <p className="App-subtitle">{t.p3}</p>
         <br />
-        <button className="App-button">{t.cta}</button>
+        <a href="#contacto-form" className="App-button">{t.cta}</a>
       </div>
     </div>
   );

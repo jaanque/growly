@@ -39,6 +39,7 @@ function Statistics({ t }) {
             </div>
           ))}
         </div>
+        <a href="#" className="App-button">{t.cta}</a>
       </div>
     </div>
   );

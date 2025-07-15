@@ -19,7 +19,7 @@
       "p1": "En l'actualitat, l'agricultura enfronta seriosos desafiaments que amenacen la seva viabilitat. A causa de la competència del mercat internacional, els productes agrícoles importats solen ser més econòmics, la qual cosa posa en perill els nostres agricultors locals. No obstant això, existeix una solució innovadora per mitigar aquesta problemàtica: una plataforma que permet la venda d'excedents agrícoles.",
       "p2": "Aquesta oferirà un espai on els agricultors puguin vendre el que no aconsegueixen comercialitzar, evitant així el malbaratament d'aliments. En connectar directament els productors amb consumidors interessats a adquirir frescor i qualitat a preus accessibles, fomentem el suport a la nostra economia local i reduïm l'impacte mediambiental del malbaratament alimentari.",
       "p3": "Amb aquest enfocament, no només contribuïm a la sostenibilitat del sector agrícola, sinó que també generem consciència sobre la importància de consumir productes locals. La unió entre tecnologia i agricultura pot ser la clau per revitalitzar aquest noble negoci.",
-      "cta": "Descobreix Growly"
+      "cta": "Registra't ara"
     },
     "whyGrowly": {
       "title": "Per què Growly?",
@@ -39,7 +39,8 @@
       "daily": "Diària --",
       "weekly": "Setmanal --",
       "monthly": "Mensual --",
-      "yearly": "Anual --"
+      "yearly": "Anual --",
+      "cta": "Veure productes"
     },
     "contactForm": {
       "title": "Vols formar part del futur?",
