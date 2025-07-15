@@ -152,11 +152,11 @@
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 30px);
     position: absolute;
     top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 15px;
+    transform: none;
     background-color: rgba(248, 249, 250, 0.95);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
