@@ -25,7 +25,7 @@ const Footer = ({ t }) => {
           <li><a href="#about">Sobre Nosaltres</a></li>
           <li><a href="#why-growly">Per què Grownly</a></li>
           <li><a href="#statistics">Estadístiques</a></li>
-          <li><a href="#contact-form-section">Contacte</a></li>
+          <li><a href="#contacto-form">Contacte</a></li>
           </ul>
         </div>
 
