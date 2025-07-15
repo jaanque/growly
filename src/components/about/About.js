@@ -19,7 +19,9 @@ function About({ t }) {
         <p className="App-subtitle">{t.p2}</p>
         <p className="App-subtitle">{t.p3}</p>
         <br />
-        <a href="#contacto-form" className="App-button">{t.cta}</a>
+        <div style={{ marginTop: '20px' }}>
+          <a href="#contacto-form" className="App-button">{t.cta}</a>
+        </div>
       </div>
     </div>
   );
