@@ -1,0 +1,18 @@
+.language-selector {
+  display: flex;
+  gap: 5px;
+}
+
+.language-selector button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.language-selector button:hover {
+  background-color: #f0f0f0;
+}

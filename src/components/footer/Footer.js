@@ -5,7 +5,7 @@ import { ReactComponent as TwitterIcon } from '../../resources/icons/twitter.svg
 import { ReactComponent as InstagramIcon } from '../../resources/icons/instagram.svg';
 import { ReactComponent as LinkedinIcon } from '../../resources/icons/linkedin.svg';
 
-const Footer = () => {
+const Footer = ({ t }) => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -13,15 +13,13 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-column about-column">
           <h4>Growly</h4> {/* Or your actual company name/logo */}
-          <p>
-            Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible, econòmic i local.
-          </p>
+          <p>{t.about}</p>
           {/* Optional: Small logo image here */}
           {/* <img src="/path-to-your-logo-small.png" alt="Growly Logo" className="footer-logo" /> */}
         </div>
 
         <div className="footer-column links-column">
-          <h4>Empresa</h4>
+          <h4>{t.company}</h4>
           <ul>
           <li><a href="#hero">Inici</a></li>
           <li><a href="#about">Sobre Nosaltres</a></li>
@@ -32,10 +30,10 @@ const Footer = () => {
         </div>
 
         <div className="footer-column links-column">
-          <h4>Recursos</h4>
+          <h4>{t.resources}</h4>
           <ul>
-            <li><a href="#contacto-form">Contacta'ns</a></li>
-            <li><a href="#">Mapa del Lloc</a></li>
+            <li><a href="#contacto-form">{t.contact}</a></li>
+            <li><a href="#">{t.sitemap}</a></li>
           </ul>
         </div>
 
@@ -52,7 +50,7 @@ const Footer = () => {
         */ }
 
         <div className="footer-column contact-column">
-          <h4>Contacte</h4>
+          <h4>{t.contact}</h4>
           <p>
             <a href="tel:+34000000000">+34 621 203 854</a><br />
             <a href="mailto:info@growly.app">hola@grownly.cat</a>
@@ -67,7 +65,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} Growly. Tots els drets reservats.</p>
+        <p>&copy; {currentYear} Growly. {t.rights}</p>
       </div>
     </footer>
   );

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import LanguageSelector from '../languageSelector/LanguageSelector'; // Import LanguageSelector
 
-// Accept isLogoInNavbar as a prop
-const Navbar = ({ isLogoInNavbar }) => {
+// Accept isLogoInNavbar, t, and changeLanguage as props
+const Navbar = ({ isLogoInNavbar, t, changeLanguage }) => {
   const [logoVisibleClass, setLogoVisibleClass] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -44,11 +45,11 @@ const Navbar = ({ isLogoInNavbar }) => {
           <div className="bar"></div>
         </div>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <li><a href="#hero" onClick={() => setIsMenuOpen(false)}>Inici</a></li>
-          <li><a href="#about" onClick={() => setIsMenuOpen(false)}>Sobre Nosaltres</a></li>
-          <li><a href="#why-growly" onClick={() => setIsMenuOpen(false)}>Per què Growly</a></li>
-          <li><a href="#statistics" onClick={() => setIsMenuOpen(false)}>Estadístiques</a></li>
-          <li><a href="#contacto-form" onClick={() => setIsMenuOpen(false)}>Contacte</a></li>
+          <li><a href="#hero" onClick={() => setIsMenuOpen(false)}>{t.home}</a></li>
+          <li><a href="#about" onClick={() => setIsMenuOpen(false)}>{t.about}</a></li>
+          <li><a href="#why-growly" onClick={() => setIsMenuOpen(false)}>{t.why}</a></li>
+          <li><a href="#statistics" onClick={() => setIsMenuOpen(false)}>{t.stats}</a></li>
+          <li><a href="#contacto-form" onClick={() => setIsMenuOpen(false)}>{t.contact}</a></li>
           { /*
           <li><a href="#how-to-use">Com Utilitzar</a></li>
           <li><a href="#blog">Blog</a></li>
@@ -56,8 +57,9 @@ const Navbar = ({ isLogoInNavbar }) => {
           */ }
         </ul>
         <div className="navbar-cta-container">
-          <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>
+          <a href="#contact-form-section" className="navbar-cta-button">{t.cta}</a>
         </div>
+        <LanguageSelector changeLanguage={changeLanguage} />
       </div>
     </nav>
   );

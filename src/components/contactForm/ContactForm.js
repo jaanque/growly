@@ -1,7 +1,7 @@
 import React from 'react';
 import './ContactForm.css';
 
-const ContactForm = () => {
+const ContactForm = ({ t }) => {
   return (
     <section id='contacto-form' className="contact-form-section">
       <div className="contact-form-wrapper">
@@ -14,29 +14,29 @@ const ContactForm = () => {
           />
         </div>
         <div className="contact-form-container">
-          <h2>Vols formar part del futur?</h2>
+          <h2>{t.title}</h2>
           <form action="https://formsubmit.co/hola@grownly.cat" method="POST">
             <div className="form-group">
-              <label htmlFor="name">Nom</label>
+              <label htmlFor="name">{t.name}</label>
               <input type="text" id="name" name="name" required />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Correu Electrònic</label>
+              <label htmlFor="email">{t.email}</label>
               <input type="email" id="email" name="email" required />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">Telèfon (Opcional)</label>
+              <label htmlFor="phone">{t.phone}</label>
               <input type="tel" id="phone" name="phone" />
             </div>
             <div className="form-group">
-              <label htmlFor="userType">Sóc...</label>
+              <label htmlFor="userType">{t.userType}</label>
               <select id="userType" name="userType" required>
-                <option value="">Selecciona un tipus</option>
-                <option value="buyer">Comprador</option>
-                <option value="seller">Venedor</option>
+                <option value="">{t.selectType}</option>
+                <option value="buyer">{t.buyer}</option>
+                <option value="seller">{t.seller}</option>
               </select>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit">{t.submit}</button>
           </form>
         </div>
       </div>

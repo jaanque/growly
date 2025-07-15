@@ -1,16 +1,7 @@
 import React from 'react';
 import './WhyGrowly.css';
 
-function WhyGrowly() {
-  const reasons = [
-    "Perquè darrere de cada collita hi ha esforç, i no s'hauria de perdre.",
-    "Perquè si és d'aquí, per què buscar-ho fora?",
-    "Perquè menjar bé hauria de ser fàcil, just i possible.",
-    "Perquè hi ha una altra manera de fer les coses.",
-    "Perquè el que es cultiva amb afecte, mereix el seu destí.",
-    "Perquè això va de persones, no de malbaratament."
-  ];
-
+function WhyGrowly({ t }) {
   return (
     <div id="why-growly" className="WhyGrowly-section">
       <div className="WhyGrowly-container">
@@ -18,9 +9,9 @@ function WhyGrowly() {
           {/* Contenido de texto */}
           <div className="WhyGrowly-text-content">
             <div className="WhyGrowly-text-container">
-              <h1 className="WhyGrowly-title">Per què Growly?</h1>
+              <h1 className="WhyGrowly-title">{t.title}</h1>
               <ul className="WhyGrowly-list">
-                {reasons.map((reason, index) => (
+                {t.reasons.map((reason, index) => (
                   <li key={index} className="WhyGrowly-list-item">
                     <div className="WhyGrowly-check-icon">
                       <svg viewBox="0 0 24 24" className="WhyGrowly-check-svg">

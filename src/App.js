@@ -10,12 +10,18 @@ import ContactForm from './components/contactForm/ContactForm'; // Import the Co
 import TrustedBy from './components/trustedBy/TrustedBy'; // Import the new TrustedBy component
 import Footer from './components/footer/Footer'; // Import the Footer component
 import React, { useState, useEffect } from 'react'; // Import useState and useEffect
+import translations from './translations.json'; // Import translations
 
 // Importing Vercel Analytics for tracking
 import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isLogoInNavbar, setIsLogoInNavbar] = useState(false);
+  const [language, setLanguage] = useState('ca'); // Default language is Catalan
+
+  const changeLanguage = (lang) => {
+    setLanguage(lang);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,18 +40,24 @@ function App() {
     };
   }, []);
 
+  const t = translations[language];
+
   return (
     <div className="App">
-      <Navbar isLogoInNavbar={isLogoInNavbar} /> {/* Navbar con logo condicional */}
-      <Hero isLogoInNavbar={isLogoInNavbar} />
-      <About />
-      <WhyGrowly />
+      <Navbar
+        isLogoInNavbar={isLogoInNavbar}
+        t={t.navbar}
+        changeLanguage={changeLanguage}
+      />
+      <Hero isLogoInNavbar={isLogoInNavbar} t={t.hero} />
+      <About t={t.about} />
+      <WhyGrowly t={t.whyGrowly} />
       { /* <HowToUse /> */ }
-      <Statistics />
+      <Statistics t={t.statistics} />
       { /* <Blog /> */ }
-      <ContactForm /> {/* Add the ContactForm component here */}
+      <ContactForm t={t.contactForm} /> {/* Add the ContactForm component here */}
       { /* <TrustedBy /> */ }
-      <Footer /> {/* Add the Footer component here */}
+      <Footer t={t.footer} /> {/* Add the Footer component here */}
     </div>
   );
 }
