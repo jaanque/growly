@@ -146,16 +146,16 @@
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
     flex-direction: column;
-    width: calc(100% - 30px);
+    width: 100%;
     position: absolute;
     top: 60px;
-    left: 15px;
+    left: 0;
     transform: none;
     background-color: rgba(248, 249, 250, 0.95);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     padding: 1rem 0;
-    align-items: center; /* Center items. */
+    align-items: flex-start; /* Center items. */
     box-sizing: border-box; /* Ensure padding is included in the width */
     display: none;
     border-radius: 0;
