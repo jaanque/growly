@@ -3,7 +3,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
   padding: 8px;
   text-align: center;
   z-index: 1000;
@@ -18,7 +18,7 @@
 }
 
 .cookie-banner button {
-  background-color: #00bfa5;
+  background-color: #628A00;
   color: white;
   border: none;
   padding: 8px 16px;
