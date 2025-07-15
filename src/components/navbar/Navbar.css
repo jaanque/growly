@@ -143,6 +143,7 @@
 @media (max-width: 768px) {
   .navbar-container {
     justify-content: flex-start; /* Ensure logo and CTA are spaced out */
+    padding: 0 15px;
   }
 
   .navbar-logo-placeholder {
@@ -190,8 +191,10 @@
   }
   .site-navbar {
     height: 50px; /* Slightly smaller on mobile */
-    padding: 0 15px;
-    width: auto;
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 0;
   }
 
   .nav-links {
