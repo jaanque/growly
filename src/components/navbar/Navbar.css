@@ -194,6 +194,7 @@
     left: 0;
     transform: none;
     padding: 0 15px;
+    margin-left: 15px;
   }
 
   .nav-links {
