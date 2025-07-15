@@ -12,10 +12,10 @@ const Footer = ({ t }) => {
     <footer className="site-footer">
       <div className="footer-container">
         <div className="footer-column about-column">
-          <h4>Growly</h4> {/* Or your actual company name/logo */}
+          <h4>Grownly</h4> {/* Or your actual company name/logo */}
           <p>{t.about}</p>
           {/* Optional: Small logo image here */}
-          {/* <img src="/path-to-your-logo-small.png" alt="Growly Logo" className="footer-logo" /> */}
+          {/* <img src="/path-to-your-logo-small.png" alt="Grownly Logo" className="footer-logo" /> */}
         </div>
 
         <div className="footer-column links-column">
@@ -23,7 +23,7 @@ const Footer = ({ t }) => {
           <ul>
           <li><a href="#hero">Inici</a></li>
           <li><a href="#about">Sobre Nosaltres</a></li>
-          <li><a href="#why-growly">Per què Growly</a></li>
+          <li><a href="#why-growly">Per què Grownly</a></li>
           <li><a href="#statistics">Estadístiques</a></li>
           <li><a href="#contact-form-section">Contacte</a></li>
           </ul>
@@ -52,8 +52,8 @@ const Footer = ({ t }) => {
         <div className="footer-column contact-column">
           <h4>{t.contact}</h4>
           <p>
-            <a href="tel:+34000000000">+34 621 203 854</a><br />
-            <a href="mailto:info@growly.app">hola@grownly.cat</a>
+            <a href="tel:+34621203854">+34 621 203 854</a><br />
+            <a href="mailto:hola@grownly.cat">hola@grownly.cat</a>
           </p>
           <div className="footer-social-icons">
             <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
@@ -65,7 +65,7 @@ const Footer = ({ t }) => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} Growly. {t.rights}</p>
+        <p>&copy; 2025 - {currentYear} Grownly.cat {t.rights}</p>
       </div>
     </footer>
   );

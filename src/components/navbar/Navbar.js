@@ -34,7 +34,7 @@ const Navbar = ({ isLogoInNavbar, t, changeLanguage }) => {
           {isLogoInNavbar && (
             <img
               src="https://i.postimg.cc/KYKQVY1B/image-2.webp" // Same src as Hero logo
-              alt="Growly Logo in Navbar"
+              alt="Grownly Logo in Navbar"
               className={`navbar-logo ${logoVisibleClass}`} // Apply visible class
             />
           )}

@@ -36,7 +36,7 @@ function WhyGrowly({ t }) {
               <div className="">
                 <img
                   src="https://i.postimg.cc/t4My9hNh/20250711-0956-Logo-Impreso-en-Bolsa-remix-01jzw7ndtyej5s6n3ez80rghjr.png"
-                  alt="Logo de Growly impreso en bolsa"
+                  alt="Logo de Grownly impreso en bolsa"
                   className="WhyGrowly-image"
                   draggable="false"
                 />

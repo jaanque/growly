@@ -9,7 +9,7 @@ const ContactForm = ({ t }) => {
           <img
             draggable="false"
             src="https://i.postimg.cc/c4KdX882/20250711-1245-Campo-y-Reparto-remix-01jzwhanghfgg8bk2tnvzdbqhe.png"
-            alt="Growly Contact Form"
+            alt="Grownly Contact Form"
             className="contact-form-image"
           />
         </div>

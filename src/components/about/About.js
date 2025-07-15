@@ -9,7 +9,7 @@ function About({ t }) {
         <img
           draggable="false"
           src="https://i.postimg.cc/L5GkPckf/20250711-0803-Carga-de-Productos-Frescos-remix-01jzw177xpf7js09fhjznvrsph.png"
-          alt="Descripció de la imatge per a Què es Growly"
+          alt="Descripció de la imatge per a Què es Grownly"
           className="App-image About-section-image" /* Combinem les classes */
         />
       </div>

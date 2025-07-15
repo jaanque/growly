@@ -3,7 +3,7 @@
     "navbar": {
       "home": "Inici",
       "about": "Sobre Nosaltres",
-      "why": "Per què Growly",
+      "why": "Per què Grownly",
       "stats": "Estadístiques",
       "contact": "Contacte",
       "cta": "Contacta'ns"
@@ -15,14 +15,14 @@
       "soon": "(Pròximament)"
     },
     "about": {
-      "title": "Què és Growly?",
+      "title": "Què és Grownly?",
       "p1": "En l'actualitat, l'agricultura enfronta seriosos desafiaments que amenacen la seva viabilitat. A causa de la competència del mercat internacional, els productes agrícoles importats solen ser més econòmics, la qual cosa posa en perill els nostres agricultors locals. No obstant això, existeix una solució innovadora per mitigar aquesta problemàtica: una plataforma que permet la venda d'excedents agrícoles.",
       "p2": "Aquesta oferirà un espai on els agricultors puguin vendre el que no aconsegueixen comercialitzar, evitant així el malbaratament d'aliments. En connectar directament els productors amb consumidors interessats a adquirir frescor i qualitat a preus accessibles, fomentem el suport a la nostra economia local i reduïm l'impacte mediambiental del malbaratament alimentari.",
       "p3": "Amb aquest enfocament, no només contribuïm a la sostenibilitat del sector agrícola, sinó que també generem consciència sobre la importància de consumir productes locals. La unió entre tecnologia i agricultura pot ser la clau per revitalitzar aquest noble negoci.",
       "cta": "Registra't ara"
     },
     "whyGrowly": {
-      "title": "Per què Growly?",
+      "title": "Per què Grownly?",
       "reasons": [
         "Perquè darrere de cada collita hi ha esforç, i no s'hauria de perdre.",
         "Perquè si és d'aquí, per què buscar-ho fora?",
@@ -35,7 +35,7 @@
     "statistics": {
       "title": "Quantitat de material agrícola desaprofitat",
       "subtitle1": "Descobreix l'impacte real de les pèrdues agrícoles i la nostra missió per canviar-ho.",
-      "subtitle2": "A Growly, treballem per reduir aquestes pèrdues en continu creixement i promoure un sistema alimentari més sostenible.",
+      "subtitle2": "A Grownly, treballem per reduir aquestes pèrdues en continu creixement i promoure un sistema alimentari més sostenible.",
       "daily": "Diària --",
       "weekly": "Setmanal --",
       "monthly": "Mensual --",
@@ -70,7 +70,7 @@
     "navbar": {
       "home": "Inicio",
       "about": "Sobre Nosotros",
-      "why": "Por qué Growly",
+      "why": "Por qué Grownly",
       "stats": "Estadísticas",
       "contact": "Contacto",
       "cta": "Contáctanos"
@@ -82,14 +82,14 @@
       "soon": "(Próximamente)"
     },
     "about": {
-      "title": "¿Qué es Growly?",
+      "title": "¿Qué es Grownly?",
       "p1": "En la actualidad, la agricultura enfrenta serios desafíos que amenazan su viabilidad. Debido a la competencia del mercado internacional, los productos agrícolas importados suelen ser más económicos, lo que pone en peligro a nuestros agricultores locales. Sin embargo, existe una solución innovadora para mitigar esta problemática: una plataforma que permite la venta de excedentes agrícolas.",
       "p2": "Esta ofrecerá un espacio donde los agricultores puedan vender lo que no consiguen comercializar, evitando así el desperdicio de alimentos. Al conectar directamente a los productores con consumidores interesados en adquirir frescura y calidad a precios accesibles, fomentamos el apoyo a nuestra economía local y reducimos el impacto medioambiental del desperdicio alimentario.",
       "p3": "Con este enfoque, no solo contribuimos a la sostenibilidad del sector agrícola, sino que también generamos conciencia sobre la importancia de consumir productos locales. La unión entre tecnología y agricultura puede ser la clave para revitalizar este noble negocio.",
       "cta": "Regístrate ahora"
     },
     "whyGrowly": {
-      "title": "¿Por qué Growly?",
+      "title": "¿Por qué Grownly?",
       "reasons": [
         "Porque detrás de cada cosecha hay esfuerzo, y no debería perderse.",
         "Porque si es de aquí, ¿por qué buscarlo fuera?",
@@ -102,7 +102,7 @@
     "statistics": {
       "title": "Cantidad de material agrícola desaprovechado",
       "subtitle1": "Descubre el impacto real de las pérdidas agrícolas y nuestra misión para cambiarlo.",
-      "subtitle2": "En Growly, trabajamos para reducir estas pérdidas en continuo crecimiento y promover un sistema alimentario más sostenible.",
+      "subtitle2": "En Grownly, trabajamos para reducir estas pérdidas en continuo crecimiento y promover un sistema alimentario más sostenible.",
       "daily": "Diaria --",
       "weekly": "Semanal --",
       "monthly": "Mensual --",
@@ -137,7 +137,7 @@
     "navbar": {
       "home": "Hasiera",
       "about": "Guri buruz",
-      "why": "Zergatik Growly",
+      "why": "Zergatik Grownly",
       "stats": "Estatistikak",
       "contact": "Kontaktua",
       "cta": "Jarri gurekin harremanetan"
@@ -149,14 +149,14 @@
       "soon": "(Laster)"
     },
     "about": {
-      "title": "Zer da Growly?",
+      "title": "Zer da Grownly?",
       "p1": "Gaur egun, nekazaritzak bere bideragarritasuna mehatxatzen duten erronka larriei aurre egiten die. Nazioarteko merkatuaren lehia dela eta, inportatutako nekazaritzako produktuak merkeagoak izan ohi dira, eta horrek gure tokiko nekazariak arriskuan jartzen ditu. Hala ere, arazo hori arintzeko irtenbide berritzaile bat dago: nekazaritzako soberakinak saltzeko aukera ematen duen plataforma bat.",
       "p2": "Honek nekazariek merkaturatu ezin dutena saltzeko gune bat eskainiko du, elikagaien xahuketa saihestuz. Ekoizleak zuzenean konektatuz freskotasuna eta kalitatea prezio eskuragarrietan eskuratzeko interesa duten kontsumitzaileekin, gure tokiko ekonomiaren alde egiten dugu eta elikagaien xahuketaren ingurumen-inpaktua murrizten dugu.",
       "p3": "Ikuspegi honekin, nekazaritza-sektorearen iraunkortasunari laguntzeaz gain, tokiko produktuak kontsumitzearen garrantziari buruzko kontzientzia sortzen dugu. Teknologiaren eta nekazaritzaren arteko batasuna negozio noble hau suspertzeko gakoa izan daiteke.",
       "cta": "Erregistratu orain"
     },
     "whyGrowly": {
-      "title": "Zergatik Growly?",
+      "title": "Zergatik Grownly?",
       "reasons": [
         "Uztaro bakoitzaren atzean ahalegina dagoelako, eta ez litzateke galdu behar.",
         "Hemengoa bada, zergatik bilatu kanpoan?",
@@ -169,7 +169,7 @@
     "statistics": {
       "title": "Alferrik galdutako nekazaritzako materialaren kantitatea",
       "subtitle1": "Ezagutu nekazaritzako galeren benetako eragina eta hori aldatzeko gure eginkizuna.",
-      "subtitle2": "Growly-n, etengabe hazten ari diren galera horiek murrizteko eta elikadura-sistema jasangarriagoa sustatzeko lan egiten dugu.",
+      "subtitle2": "Grownly-n, etengabe hazten ari diren galera horiek murrizteko eta elikadura-sistema jasangarriagoa sustatzeko lan egiten dugu.",
       "daily": "Egunero --",
       "weekly": "Astero --",
       "monthly": "Hilero --",
@@ -204,7 +204,7 @@
     "navbar": {
       "home": "Inicio",
       "about": "Sobre Nós",
-      "why": "Por que Growly",
+      "why": "Por que Grownly",
       "stats": "Estatísticas",
       "contact": "Contacto",
       "cta": "Contacta connosco"
@@ -216,14 +216,14 @@
       "soon": "(Proximamente)"
     },
     "about": {
-      "title": "Que é Growly?",
+      "title": "Que é Grownly?",
       "p1": "Na actualidade, a agricultura enfronta serios desafíos que ameazan a súa viabilidade. Debido á competencia do mercado internacional, os produtos agrícolas importados adoitan ser máis económicos, o que pon en perigo aos nosos agricultores locais. Con todo, existe unha solución innovadora para mitigar esta problemática: unha plataforma que permite a venda de excedentes agrícolas.",
       "p2": "Esta ofrecerá un espazo onde os agricultores poidan vender o que non conseguen comercializar, evitando así o desperdicio de alimentos. Ao conectar directamente aos produtores con consumidores interesados en adquirir frescura e calidade a prezos accesibles, fomentamos o apoio á nosa economía local e reducimos o impacto ambiental do desperdicio alimentario.",
       "p3": "Con este enfoque, non só contribuímos á sustentabilidade do sector agrícola, senón que tamén xeramos conciencia sobre a importancia de consumir produtos locais. A unión entre tecnoloxía e agricultura pode ser a clave para revitalizar este nobre negocio.",
       "cta": "Rexistrate agora"
     },
     "whyGrowly": {
-      "title": "Por que Growly?",
+      "title": "Por que Grownly?",
       "reasons": [
         "Porque detrás de cada colleita hai esforzo, e non debería perderse.",
         "Porque se é de aquí, por que buscalo fóra?",
@@ -236,7 +236,7 @@
     "statistics": {
       "title": "Cantidade de material agrícola desaproveitado",
       "subtitle1": "Descubre o impacto real das perdas agrícolas e a nosa misión para cambialo.",
-      "subtitle2": "En Growly, traballamos para reducir estas perdas en continuo crecemento e promover un sistema alimentario máis sostible.",
+      "subtitle2": "En Grownly, traballamos para reducir estas perdas en continuo crecemento e promover un sistema alimentario máis sostible.",
       "daily": "Diaria --",
       "weekly": "Semanal --",
       "monthly": "Mensual --",
