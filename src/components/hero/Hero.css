@@ -126,79 +126,71 @@
 /* Responsive design para Hero */
 @media (max-width: 1024px) {
   .App-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .App-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: column;
-    padding-top: 70px !important;
+    padding-top: 80px !important;
   }
 
   .App-left {
-    width: 100%;
-    padding: 1.5rem;
-    align-items: center;
-    text-align: center;
+    padding: 2rem;
   }
 
   .App-logo {
-    width: 70px; /* Increase logo size for better visibility */
-    height: 70px;
-    margin-top: 20px;
+    width: 80px;
+    height: 80px;
   }
 
   .App-title {
-    font-size: 1.8rem;
-    text-align: center;
+    font-size: 2rem;
   }
 
   .App-subtitle {
-    font-size: 1rem;
-    padding: 0 1rem; /* Add some padding to the sides */
-    text-align: center;
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
   }
 
   .App-buttons {
     flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  .App-store-buttons {
-    justify-content: center;
+    gap: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
+  .hero-section {
+    padding-top: 60px !important;
+  }
+
   .App-left {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   .App-logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 
   .App-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .App-subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .App-cta {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
 
   .App-store-btn img {
-    height: 30px;
+    height: 35px;
   }
 }
