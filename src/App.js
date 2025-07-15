@@ -45,6 +45,7 @@ function App() {
 
   return (
     <div className="App">
+      <Analytics />
       <Navbar
         isLogoInNavbar={isLogoInNavbar}
         t={t.navbar}
