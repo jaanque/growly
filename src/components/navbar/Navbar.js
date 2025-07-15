@@ -29,11 +29,6 @@ const Navbar = ({ isLogoInNavbar }) => {
   return (
     <nav className={navClassName}>
       <div className="navbar-container">
-        <div className="menu-icon" onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
         <div className="navbar-logo-placeholder">
           {isLogoInNavbar && (
             <img
@@ -42,6 +37,11 @@ const Navbar = ({ isLogoInNavbar }) => {
               className={`navbar-logo ${logoVisibleClass}`} // Apply visible class
             />
           )}
+        </div>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </div>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <li><a href="#hero" onClick={() => setIsMenuOpen(false)}>Inici</a></li>
@@ -54,10 +54,10 @@ const Navbar = ({ isLogoInNavbar }) => {
           <li><a href="#blog">Blog</a></li>
           <li><a href="#trusted-by">Confien en Nosaltres</a></li>
           */ }
-          <li className="navbar-cta-container">
-            <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>
-          </li>
         </ul>
+        <div className="navbar-cta-container">
+          <a href="#contact-form-section" className="navbar-cta-button">Contacta'ns</a>
+        </div>
       </div>
     </nav>
   );

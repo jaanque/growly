@@ -94,7 +94,6 @@
 .navbar-logo-placeholder {
   display: flex;
   justify-content: flex-start;
-  flex-grow: 1;
 }
 
 .navbar-cta-container {
@@ -106,7 +105,7 @@
   background-color: #628B00; /* Main green color */
   color: #fff;
   padding: 7px 15px; /* Padding similar to nav links but can be adjusted */
-  border-radius: 50px; /* Consistent rounded corners */
+  border-radius: 8px; /* Consistent rounded corners */
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -142,20 +141,15 @@
 /* Responsive adjustments (basic for now) */
 @media (max-width: 768px) {
   .navbar-container {
-    justify-content: flex-start; /* Ensure logo and CTA are spaced out */
-  }
-
-  .navbar-logo-placeholder,
-  .navbar-cta-container {
-    display: none;
+    justify-content: space-between; /* Ensure logo and CTA are spaced out */
   }
   .nav-links {
     display: none; /* Hide nav links on small screens, consider a hamburger menu for them */
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 30px);
     position: absolute;
     top: 60px;
-    left: 0;
+    left: 15px;
     transform: none;
     background-color: rgba(248, 249, 250, 0.95);
     backdrop-filter: blur(5px);
@@ -175,6 +169,7 @@
 
   .menu-icon {
     display: block;
+    order: 3;
   }
 
   .site-navbar.menu-open .bar:nth-child(1) {
@@ -188,12 +183,19 @@
   .site-navbar.menu-open .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+
+  .navbar-cta-container {
+    margin-left: 0; /* Reset margin for centering or positioning */
+    order: 2;
+  }
+
+  .menu-icon {
+    display: block;
+    order: 3;
+    margin-left: 15px;
+  }
   .site-navbar {
     height: 50px; /* Slightly smaller on mobile */
-    width: 100%;
-    max-width: 100%;
-    left: 0;
-    transform: none;
     padding: 0 15px;
   }
 
@@ -203,18 +205,6 @@
 
   .nav-links li {
     width: 100%;
-    text-align: center;
-  }
-
-  .nav-links .navbar-cta-container {
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-
-  .nav-links .navbar-cta-button {
-    width: 100%;
-    display: block;
     text-align: center;
   }
 
