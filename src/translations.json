@@ -82,7 +82,7 @@
       "p1": "En la actualidad, la agricultura enfrenta serios desafíos que amenazan su viabilidad. Debido a la competencia del mercado internacional, los productos agrícolas importados suelen ser más económicos, lo que pone en peligro a nuestros agricultores locales. Sin embargo, existe una solución innovadora para mitigar esta problemática: una plataforma que permite la venta de excedentes agrícolas.",
       "p2": "Esta ofrecerá un espacio donde los agricultores puedan vender lo que no consiguen comercializar, evitando así el desperdicio de alimentos. Al conectar directamente a los productores con consumidores interesados en adquirir frescura y calidad a precios accesibles, fomentamos el apoyo a nuestra economía local y reducimos el impacto medioambiental del desperdicio alimentario.",
       "p3": "Con este enfoque, no solo contribuimos a la sostenibilidad del sector agrícola, sino que también generamos conciencia sobre la importancia de consumir productos locales. La unión entre tecnología y agricultura puede ser la clave para revitalizar este noble negocio.",
-      "cta": "Descubre Growly"
+      "cta": "Regístrate ahora"
     },
     "whyGrowly": {
       "title": "¿Por qué Growly?",
@@ -102,7 +102,8 @@
       "daily": "Diaria --",
       "weekly": "Semanal --",
       "monthly": "Mensual --",
-      "yearly": "Anual --"
+      "yearly": "Anual --",
+      "cta": "Contáctanos"
     },
     "contactForm": {
       "title": "¿Quieres formar parte del futuro?",
@@ -144,7 +145,7 @@
       "p1": "Gaur egun, nekazaritzak bere bideragarritasuna mehatxatzen duten erronka larriei aurre egiten die. Nazioarteko merkatuaren lehia dela eta, inportatutako nekazaritzako produktuak merkeagoak izan ohi dira, eta horrek gure tokiko nekazariak arriskuan jartzen ditu. Hala ere, arazo hori arintzeko irtenbide berritzaile bat dago: nekazaritzako soberakinak saltzeko aukera ematen duen plataforma bat.",
       "p2": "Honek nekazariek merkaturatu ezin dutena saltzeko gune bat eskainiko du, elikagaien xahuketa saihestuz. Ekoizleak zuzenean konektatuz freskotasuna eta kalitatea prezio eskuragarrietan eskuratzeko interesa duten kontsumitzaileekin, gure tokiko ekonomiaren alde egiten dugu eta elikagaien xahuketaren ingurumen-inpaktua murrizten dugu.",
       "p3": "Ikuspegi honekin, nekazaritza-sektorearen iraunkortasunari laguntzeaz gain, tokiko produktuak kontsumitzearen garrantziari buruzko kontzientzia sortzen dugu. Teknologiaren eta nekazaritzaren arteko batasuna negozio noble hau suspertzeko gakoa izan daiteke.",
-      "cta": "Ezagutu Growly"
+      "cta": "Erregistratu orain"
     },
     "whyGrowly": {
       "title": "Zergatik Growly?",
@@ -164,7 +165,8 @@
       "daily": "Egunero --",
       "weekly": "Astero --",
       "monthly": "Hilero --",
-      "yearly": "Urtero --"
+      "yearly": "Urtero --",
+      "cta": "Jarri gurekin harremanetan"
     },
     "contactForm": {
       "title": "Etorkizunaren parte izan nahi duzu?",
@@ -206,7 +208,7 @@
       "p1": "Na actualidade, a agricultura enfronta serios desafíos que ameazan a súa viabilidade. Debido á competencia do mercado internacional, os produtos agrícolas importados adoitan ser máis económicos, o que pon en perigo aos nosos agricultores locais. Con todo, existe unha solución innovadora para mitigar esta problemática: unha plataforma que permite a venda de excedentes agrícolas.",
       "p2": "Esta ofrecerá un espazo onde os agricultores poidan vender o que non conseguen comercializar, evitando así o desperdicio de alimentos. Ao conectar directamente aos produtores con consumidores interesados en adquirir frescura e calidade a prezos accesibles, fomentamos o apoio á nosa economía local e reducimos o impacto ambiental do desperdicio alimentario.",
       "p3": "Con este enfoque, non só contribuímos á sustentabilidade do sector agrícola, senón que tamén xeramos conciencia sobre a importancia de consumir produtos locais. A unión entre tecnoloxía e agricultura pode ser a clave para revitalizar este nobre negocio.",
-      "cta": "Descubre Growly"
+      "cta": "Rexistrate agora"
     },
     "whyGrowly": {
       "title": "Por que Growly?",
@@ -226,7 +228,8 @@
       "daily": "Diaria --",
       "weekly": "Semanal --",
       "monthly": "Mensual --",
-      "yearly": "Anual --"
+      "yearly": "Anual --",
+      "cta": "Contacta connosco"
     },
     "contactForm": {
       "title": "Queres formar parte do futuro?",
