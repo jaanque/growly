@@ -1,7 +1,9 @@
 import React from 'react';
 import './About.css';
+import { useTranslation } from 'react-i18next';
 
 function About() {
+  const { t } = useTranslation();
   return (
     <div id="about" className="App-content About-section">
       {/* Canviem l'ordre aquí: Primer el contenidor de la imatge, després el del text */}
@@ -14,18 +16,18 @@ function About() {
         />
       </div>
       <div className="App-left About-text-container"> {/* Contenidor pel text, amb una nova classe per estils específics si cal */}
-        <h1 className="App-title">Què és Growly?</h1>
+        <h1 className="App-title">{t('about.title')}</h1>
         <p className="App-subtitle">
-          En l'actualitat, l'agricultura enfronta seriosos desafiaments que amenacen la seva viabilitat. A causa de la competència del mercat internacional, els productes agrícoles importats solen ser més econòmics, la qual cosa posa en perill els nostres agricultors locals. No obstant això, existeix una solució innovadora per mitigar aquesta problemàtica: una plataforma que permet la venda d'excedents agrícoles.
+          {t('about.p1')}
         </p>
         <p className="App-subtitle">
-          Aquesta oferirà un espai on els agricultors puguin vendre el que no aconsegueixen comercialitzar, evitant així el malbaratament d'aliments. En connectar directament els productors amb consumidors interessats a adquirir frescor i qualitat a preus accessibles, fomentem el suport a la nostra economia local i reduïm l'impacte mediambiental del malbaratament alimentari.
+          {t('about.p2')}
         </p>
         <p className="App-subtitle">
-          Amb aquest enfocament, no només contribuïm a la sostenibilitat del sector agrícola, sinó que també generem consciència sobre la importància de consumir productes locals. La unió entre tecnologia i agricultura pot ser la clau per revitalitzar aquest noble negoci.
+          {t('about.p3')}
         </p>
         <br />
-        <button className="App-button">Descobreix Growly</button>
+        <button className="App-button">{t('about.button')}</button>
       </div>
     </div>
   );

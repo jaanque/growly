@@ -1,0 +1,62 @@
+{
+  "navbar": {
+    "home": "Inici",
+    "about": "Sobre Nosaltres",
+    "why": "Per què Growly",
+    "statistics": "Estadístiques",
+    "contact": "Contacte",
+    "contact_us": "Contacta'ns"
+  },
+  "hero": {
+    "title": "Grownly - Menjar responsable",
+    "subtitle": "Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible, econòmic i local.",
+    "cta": "Comença ara",
+    "soon": "(Pròximament)"
+  },
+  "about": {
+    "title": "Què és Growly?",
+    "p1": "En l'actualitat, l'agricultura enfronta seriosos desafiaments que amenacen la seva viabilitat. A causa de la competència del mercat internacional, els productes agrícoles importats solen ser més econòmics, la qual cosa posa en perill els nostres agricultors locals. No obstant això, existeix una solució innovadora per mitigar aquesta problemàtica: una plataforma que permet la venda d'excedents agrícoles.",
+    "p2": "Aquesta oferirà un espai on els agricultors puguin vendre el que no aconsegueixen comercialitzar, evitant així el malbaratament d'aliments. En connectar directament els productors amb consumidors interessats a adquirir frescor i qualitat a preus accessibles, fomentem el suport a la nostra economia local i reduïm l'impacte mediambiental del malbaratament alimentari.",
+    "p3": "Amb aquest enfocament, no només contribuïm a la sostenibilitat del sector agrícola, sinó que també generem consciència sobre la importància de consumir productes locals. La unió entre tecnologia i agricultura pot ser la clau per revitalitzar aquest noble negoci.",
+    "button": "Descobreix Growly"
+  },
+  "why_growly": {
+    "title": "Per què Growly?",
+    "reasons": {
+      "r1": "Perquè darrere de cada collita hi ha esforç, i no s'hauria de perdre.",
+      "r2": "Perquè si és d'aquí, per què buscar-ho fora?",
+      "r3": "Perquè menjar bé hauria de ser fàcil, just i possible.",
+      "r4": "Perquè hi ha una altra manera de fer les coses.",
+      "r5": "Perquè el que es cultiva amb afecte, mereix el seu destí.",
+      "r6": "Perquè això va de persones, no de malbaratament."
+    }
+  },
+  "statistics": {
+    "title": "Quantitat de material agrícola desaprofitat",
+    "subtitle1": "Descobreix l'impacte real de les pèrdues agrícoles i la nostra missió per canviar-ho.",
+    "subtitle2": "A Growly, treballem per reduir aquestes pèrdues en continu creixement i promoure un sistema alimentari més sostenible.",
+    "daily": "Diària --",
+    "weekly": "Setmanal --",
+    "monthly": "Mensual --",
+    "yearly": "Anual --"
+  },
+  "contact_form": {
+    "title": "Vols formar part del futur?",
+    "name": "Nom",
+    "email": "Correu Electrònic",
+    "phone": "Telèfon (Opcional)",
+    "user_type": "Sóc...",
+    "select_type": "Selecciona un tipus",
+    "buyer": "Comprador",
+    "seller": "Venedor",
+    "submit": "Enviar"
+  },
+  "footer": {
+    "about": "Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible, econòmic i local.",
+    "company": "Empresa",
+    "resources": "Recursos",
+    "sitemap": "Mapa del Lloc",
+    "contact": "Contacte",
+    "rights": "Tots els drets reservats."
+  }
+}

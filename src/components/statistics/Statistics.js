@@ -1,26 +1,28 @@
 import React from 'react';
 import './Statistics.css'; // CSS file for styling
+import { useTranslation } from 'react-i18next';
 
 function Statistics() {
+  const { t } = useTranslation();
   const data = [
     {
       id: 1,
-      period: "Diària --",
+      period: t('statistics.daily'),
       quantity: " 2.300.000 kg",
     },
     {
       id: 2,
-      period: "Setmanal --",
+      period: t('statistics.weekly'),
       quantity: " 16.100.000 kg",
     },
     {
       id: 3,
-      period: "Mensual --",
+      period: t('statistics.monthly'),
       quantity: " 64.400.000 kg",
     },
     {
       id: 4,
-      period: "Anual --",
+      period: t('statistics.yearly'),
       quantity: " 772.800.000 kg",
     }
   ];
@@ -28,9 +30,9 @@ function Statistics() {
   return (
     <div id="statistics" className="Statistics-section">
       <div className="Statistics-container">
-        <h1 className="App-title Statistics-title">Quantitat de material agrícola desaprofitat</h1>
-        <p className="Statistics-subtitle">Descobreix l'impacte real de les pèrdues agrícoles i la nostra missió per canviar-ho.</p>
-        <p className="Statistics-subtitle">A Growly, treballem per reduir aquestes pèrdues en continuo creixement i promoure un sistema alimentari més sostenible.</p>
+        <h1 className="App-title Statistics-title">{t('statistics.title')}</h1>
+        <p className="Statistics-subtitle">{t('statistics.subtitle1')}</p>
+        <p className="Statistics-subtitle">{t('statistics.subtitle2')}</p>
         <div className="Statistics-data-container">
           {data.map(item => (
             <div key={item.id} className="Statistics-text-item">

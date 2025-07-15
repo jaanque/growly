@@ -4,8 +4,10 @@ import { ReactComponent as FacebookIcon } from '../../resources/icons/facebook.s
 import { ReactComponent as TwitterIcon } from '../../resources/icons/twitter.svg';
 import { ReactComponent as InstagramIcon } from '../../resources/icons/instagram.svg';
 import { ReactComponent as LinkedinIcon } from '../../resources/icons/linkedin.svg';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -14,28 +16,28 @@ const Footer = () => {
         <div className="footer-column about-column">
           <h4>Growly</h4> {/* Or your actual company name/logo */}
           <p>
-            Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible, econòmic i local.
+            {t('footer.about')}
           </p>
           {/* Optional: Small logo image here */}
           {/* <img src="/path-to-your-logo-small.png" alt="Growly Logo" className="footer-logo" /> */}
         </div>
 
         <div className="footer-column links-column">
-          <h4>Empresa</h4>
+          <h4>{t('footer.company')}</h4>
           <ul>
-          <li><a href="#hero">Inici</a></li>
-          <li><a href="#about">Sobre Nosaltres</a></li>
-          <li><a href="#why-growly">Per què Growly</a></li>
-          <li><a href="#statistics">Estadístiques</a></li>
-          <li><a href="#contact-form-section">Contacte</a></li>
+          <li><a href="#hero">{t('navbar.home')}</a></li>
+          <li><a href="#about">{t('navbar.about')}</a></li>
+          <li><a href="#why-growly">{t('navbar.why')}</a></li>
+          <li><a href="#statistics">{t('navbar.statistics')}</a></li>
+          <li><a href="#contact-form-section">{t('navbar.contact')}</a></li>
           </ul>
         </div>
 
         <div className="footer-column links-column">
-          <h4>Recursos</h4>
+          <h4>{t('footer.resources')}</h4>
           <ul>
-            <li><a href="#contacto-form">Contacta'ns</a></li>
-            <li><a href="#">Mapa del Lloc</a></li>
+            <li><a href="#contacto-form">{t('navbar.contact_us')}</a></li>
+            <li><a href="#">{t('footer.sitemap')}</a></li>
           </ul>
         </div>
 
@@ -52,7 +54,7 @@ const Footer = () => {
         */ }
 
         <div className="footer-column contact-column">
-          <h4>Contacte</h4>
+          <h4>{t('footer.contact')}</h4>
           <p>
             <a href="tel:+34000000000">+34 621 203 854</a><br />
             <a href="mailto:info@growly.app">hola@grownly.cat</a>
@@ -67,7 +69,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} Growly. Tots els drets reservats.</p>
+        <p>&copy; {currentYear} Growly. {t('footer.rights')}</p>
       </div>
     </footer>
   );
