@@ -15,7 +15,7 @@ function Hero({ isLogoInNavbar }) {
         />
         <h1 className="App-title">Grownly - Menjar responsable</h1>
         <p className="App-subtitle">
-          Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible i econòmic.
+          Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible, econòmic i local.
         </p>
         <br />
         <div className="App-buttons">

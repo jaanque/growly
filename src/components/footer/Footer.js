@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-column about-column">
           <h4>Growly</h4> {/* Or your actual company name/logo */}
           <p>
-            Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible i econòmic.
+            Connectem pagesos i consumidors per vendre excedents frescos a preus reduïts, evitant el malbaratament i promovent un consum més sostenible, econòmic i local.
           </p>
           {/* Optional: Small logo image here */}
           {/* <img src="/path-to-your-logo-small.png" alt="Growly Logo" className="footer-logo" /> */}

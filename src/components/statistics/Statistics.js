@@ -30,6 +30,7 @@ function Statistics() {
       <div className="Statistics-container">
         <h1 className="App-title Statistics-title">Quantitat de material agrícola desaprofitat</h1>
         <p className="Statistics-subtitle">Descobreix l'impacte real de les pèrdues agrícoles i la nostra missió per canviar-ho.</p>
+        <p className="Statistics-subtitle">A Growly, treballem per reduir aquestes pèrdues en continuo creixement i promoure un sistema alimentari més sostenible.</p>
         <div className="Statistics-data-container">
           {data.map(item => (
             <div key={item.id} className="Statistics-text-item">
