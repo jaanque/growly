@@ -17,9 +17,11 @@ function Hero({ isLogoInNavbar, t }) {
         <p className="App-subtitle">{t.subtitle}</p>
         <br />
         <div className="App-buttons">
-          <button className="App-cta">
-            {t.cta}
-          </button>
+          <a href="#contacto-form" className="App-cta-link">
+            <button className="App-cta">
+              {t.cta}
+            </button>
+          </a>
           <div className="App-store-section">
             <div className="App-store-buttons">
               <a href="#" className="App-store-btn">
