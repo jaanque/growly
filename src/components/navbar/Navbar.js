@@ -57,7 +57,7 @@ const Navbar = ({ isLogoInNavbar, t, changeLanguage }) => {
           */ }
         </ul>
         <div className="navbar-cta-container">
-          <a href="#contact-form-section" className="navbar-cta-button">{t.cta}</a>
+          <a href="#contacto-form" className="navbar-cta-button">{t.cta}</a>
           <LanguageSelector changeLanguage={changeLanguage} />
         </div>
       </div>
